@@ -1,0 +1,278 @@
+@prefix : <http://purl.org/spar/bido/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix swc: <http://data.semanticweb.org/ns/swc/ontology#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:average-of-reviews-per-paper a [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Restriction ;
+                    owl:allValuesFrom [ a owl:Restriction ;
+                            owl:allValuesFrom [ a owl:Class ;
+                                    owl:unionOf ( swc:AcademicEvent fabio:Expression ) ] ;
+                            owl:onProperty [ owl:inverseOf :holdsBibliometricDataInTime ] ] ;
+                    owl:onProperty [ owl:inverseOf :withBibliometricData ] ] ;
+            owl:onProperty [ owl:inverseOf :hasMeasure ] ],
+        :BibliometricMeasure,
+        owl:NamedIndividual ;
+    rdfs:label "average number of reviews per paper" ;
+    rdfs:comment "It indicates how many reviewers has been used for each paper submitted to a venue." ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures> .
+
+:conference-management-toolkit a :ScholarlyVenueManagementSystem,
+        owl:NamedIndividual ;
+    rdfs:label "Conference Management Toolkit" ;
+    rdfs:comment "The Conference Management Toolkit (CMT) is a free conference management service sponsored by Microsoft Research." ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures> .
+
+:core-a-star a :ConferenceRankingCategory,
+        owl:NamedIndividual ;
+    rdfs:label "A*" ;
+    :isDefinedInRanking :core-conference-ranking ;
+    :isHigherThan :core-a ;
+    rdfs:comment "The CORE category for a flagship conference, a leading venue in a discipline area." ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures> .
+
+:demo-paper-accepted a [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Restriction ;
+                    owl:allValuesFrom [ a owl:Restriction ;
+                            owl:allValuesFrom [ a owl:Class ;
+                                    owl:unionOf ( swc:AcademicEvent fabio:Expression ) ] ;
+                            owl:onProperty [ owl:inverseOf :holdsBibliometricDataInTime ] ] ;
+                    owl:onProperty [ owl:inverseOf :withBibliometricData ] ] ;
+            owl:onProperty [ owl:inverseOf :hasMeasure ] ],
+        :BibliometricMeasure,
+        owl:NamedIndividual ;
+    rdfs:label "number of demo paper accepted" ;
+    rdfs:comment "It indicates how many demo papers has been accepted for publication/presentation in the venue." ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures> .
+
+:double-blind-peer-review a :PeerReviewType,
+        owl:NamedIndividual ;
+    rdfs:label "double blind peer review" ;
+    rdfs:comment "It identifies all the review processes where the identity of the authors is concealed from the reviewers, and vice versa." ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures> .
+
+:easychair a :ScholarlyVenueManagementSystem,
+        owl:NamedIndividual ;
+    rdfs:label "EasyChair" ;
+    rdfs:comment "EasyChair is a conference management system that is flexible, easy to use, and has many features to make it suitable for various conference models. It is currently probably the most commonly used conference management system." ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures> .
+
+:external-reviewers-involved a [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Restriction ;
+                    owl:allValuesFrom [ a owl:Restriction ;
+                            owl:allValuesFrom [ a owl:Class ;
+                                    owl:unionOf ( swc:AcademicEvent fabio:Expression ) ] ;
+                            owl:onProperty [ owl:inverseOf :holdsBibliometricDataInTime ] ] ;
+                    owl:onProperty [ owl:inverseOf :withBibliometricData ] ] ;
+            owl:onProperty [ owl:inverseOf :hasMeasure ] ],
+        :BibliometricMeasure,
+        owl:NamedIndividual ;
+    rdfs:label "number of external reviewers involved" ;
+    rdfs:comment "It indicates how many external reviewers have been involved in the reviewing phase." ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures> .
+
+:full-papers-accepted a [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Restriction ;
+                    owl:allValuesFrom [ a owl:Restriction ;
+                            owl:allValuesFrom [ a owl:Class ;
+                                    owl:unionOf ( swc:AcademicEvent fabio:Expression ) ] ;
+                            owl:onProperty [ owl:inverseOf :holdsBibliometricDataInTime ] ] ;
+                    owl:onProperty [ owl:inverseOf :withBibliometricData ] ] ;
+            owl:onProperty [ owl:inverseOf :hasMeasure ] ],
+        :BibliometricMeasure,
+        owl:NamedIndividual ;
+    rdfs:label "number of full paper accepted" ;
+    rdfs:comment "It indicates how many full papers has been accepted for publication/presentation in the venue." ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures> .
+
+:isDefinedInRanking a owl:ObjectProperty ;
+    rdfs:label "is defined in ranking" ;
+    rdfs:comment "It links a ranking category with the ranking that defines it." ;
+    rdfs:domain :ConferenceRankingCategory ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures> ;
+    rdfs:range :ConferenceRanking .
+
+:isLowerThan a owl:ObjectProperty ;
+    rdfs:label "is lower than" ;
+    rdfs:comment "It links a ranking category with one that is more important." ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures> ;
+    owl:inverseOf :isHigherThan .
+
+:open-peer-review a :PeerReviewType,
+        owl:NamedIndividual ;
+    rdfs:label "open peer review" ;
+    rdfs:comment "It identifies all the review processes where the identity of the authors and the reviewers is known." ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures> .
+
+:poster-papers-accepted a [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Restriction ;
+                    owl:allValuesFrom [ a owl:Restriction ;
+                            owl:allValuesFrom [ a owl:Class ;
+                                    owl:unionOf ( swc:AcademicEvent fabio:Expression ) ] ;
+                            owl:onProperty [ owl:inverseOf :holdsBibliometricDataInTime ] ] ;
+                    owl:onProperty [ owl:inverseOf :withBibliometricData ] ] ;
+            owl:onProperty [ owl:inverseOf :hasMeasure ] ],
+        :BibliometricMeasure,
+        owl:NamedIndividual ;
+    rdfs:label "number of poster paper accepted" ;
+    rdfs:comment "It indicates how many poster papers has been accepted for publication/presentation in the venue." ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures> .
+
+:short-papers-accepted a [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Restriction ;
+                    owl:allValuesFrom [ a owl:Restriction ;
+                            owl:allValuesFrom [ a owl:Class ;
+                                    owl:unionOf ( swc:AcademicEvent fabio:Expression ) ] ;
+                            owl:onProperty [ owl:inverseOf :holdsBibliometricDataInTime ] ] ;
+                    owl:onProperty [ owl:inverseOf :withBibliometricData ] ] ;
+            owl:onProperty [ owl:inverseOf :hasMeasure ] ],
+        :BibliometricMeasure,
+        owl:NamedIndividual ;
+    rdfs:label "number of short paper accepted" ;
+    rdfs:comment "It indicates how many short papers has been accepted for publication/presentation in the venue." ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures> .
+
+:single-blind-peer-review a :PeerReviewType,
+        owl:NamedIndividual ;
+    rdfs:label "single blind peer review" ;
+    rdfs:comment "It identifies all the review processes where the identity of the reviewers is concealed from the authors." ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures> .
+
+:submissions-sent-for-review a [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Restriction ;
+                    owl:allValuesFrom [ a owl:Restriction ;
+                            owl:allValuesFrom [ a owl:Class ;
+                                    owl:unionOf ( swc:AcademicEvent fabio:Expression ) ] ;
+                            owl:onProperty [ owl:inverseOf :holdsBibliometricDataInTime ] ] ;
+                    owl:onProperty [ owl:inverseOf :withBibliometricData ] ] ;
+            owl:onProperty [ owl:inverseOf :hasMeasure ] ],
+        :BibliometricMeasure,
+        owl:NamedIndividual ;
+    rdfs:label "number of submission sent for review" ;
+    rdfs:comment "It indicates how many submitted papers has been assagned to reviewers for revision." ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures> .
+
+:core-a a :ConferenceRankingCategory,
+        owl:NamedIndividual ;
+    rdfs:label "A" ;
+    :isDefinedInRanking :core-conference-ranking ;
+    :isHigherThan :core-b ;
+    rdfs:comment "The CORE category for an excellent conference, and highly respected in a discipline area." ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures> .
+
+:core-b a :ConferenceRankingCategory,
+        owl:NamedIndividual ;
+    rdfs:label "B" ;
+    :isDefinedInRanking :core-conference-ranking ;
+    :isHigherThan :core-c ;
+    rdfs:comment "The CORE category for a good conference, and well regarded in a discipline area." ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures> .
+
+:core-c a :ConferenceRankingCategory,
+        owl:NamedIndividual ;
+    rdfs:label "C" ;
+    :isDefinedInRanking :core-conference-ranking ;
+    :isHigherThan :core-unranked ;
+    rdfs:comment "The CORE category for other ranked conference venues that meet minimum standards." ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures> .
+
+:core-unranked a :ConferenceRankingCategory,
+        owl:NamedIndividual ;
+    rdfs:label "unranked" ;
+    :isDefinedInRanking :core-conference-ranking ;
+    rdfs:comment "The CORE category for a conference for which no ranking decision has been made." ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures> .
+
+:isHigherThan a owl:ObjectProperty ;
+    rdfs:label "is higher than" ;
+    rdfs:comment "It links a ranking category with one that is less important." ;
+    rdfs:domain :ConferenceRankingCategory ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures> ;
+    rdfs:range :ConferenceRankingCategory .
+
+:ConferenceRanking a owl:Class ;
+    rdfs:label "conference ranking" ;
+    rdfs:comment "This class describes conference rankings as composed by categories identifying different rankings." ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures> .
+
+:ScholarlyVenueManagementSystem a owl:Class ;
+    rdfs:label "scholarly venue management system" ;
+    rdfs:comment "This class describes all the possible venue management systems (such as conference management systems and journal management systems) that can be used for managing scholarly venues." ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures> ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Restriction ;
+                    owl:allValuesFrom [ a owl:Class ;
+                            owl:unionOf ( swc:AcademicEvent fabio:Expression ) ] ;
+                    owl:onProperty [ owl:inverseOf :holdsBibliometricDataInTime ] ] ;
+            owl:onProperty [ owl:inverseOf :withBibliometricData ] ],
+        :CategorialBibliometricData .
+
+:PeerReviewType a owl:Class ;
+    rdfs:label "peer review type" ;
+    rdfs:comment "This class describes different kinds of peer review processes, such as double-blind and open." ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures> ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Restriction ;
+                    owl:allValuesFrom [ a owl:Class ;
+                            owl:unionOf ( swc:AcademicEvent fabio:Expression ) ] ;
+                    owl:onProperty [ owl:inverseOf :holdsBibliometricDataInTime ] ] ;
+            owl:onProperty [ owl:inverseOf :withBibliometricData ] ],
+        :CategorialBibliometricData .
+
+:core-conference-ranking a :ConferenceRanking,
+        owl:NamedIndividual ;
+    rdfs:label "CORE conference ranking" ;
+    rdfs:comment "The CORE Conference Ranking (http://www.core.edu.au/index.php/conference-rankings) is an ongoing activity that provides assessments of major conferences in the computing disciplines.The rankings are managed by the CORE Executive Committee, with updates processed from time to time by a subcommittee established as needed." ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures> .
+
+:ConferenceRankingCategory a owl:Class ;
+    rdfs:label "conference ranking category" ;
+    rdfs:comment "This class identifies all the possible categories that can be used for ranking a conference according to the related ranking that defines them." ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures> ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Restriction ;
+                    owl:allValuesFrom swc:AcademicEvent ;
+                    owl:onProperty [ owl:inverseOf :holdsBibliometricDataInTime ] ] ;
+            owl:onProperty [ owl:inverseOf :withBibliometricData ] ],
+        :CategorialBibliometricData .
+
+fabio:Expression a owl:Class ;
+    rdfs:label "expression" ;
+    rdfs:comment "Any possible work such as journals, magazines, books, etc., created for scientific purposes and possibily related with review processes." ;
+    rdfs:isDefinedBy <http://purl.org/spar/fabio> .
+
+swc:AcademicEvent a owl:Class ;
+    rdfs:label "academic event" ;
+    rdfs:comment "Any academic event such as conferences, workshops, symposia." ;
+    rdfs:isDefinedBy <http://data.semanticweb.org/ns/swc/ontology> .
+
+<http://purl.org/spar/bido-review-measures> a owl:Ontology ;
+    rdfs:label "BiDO-Review-Measures" ;
+    dc:contributor "Aliaksandr Birukou" ;
+    dc:creator "Silvio Peroni" ;
+    dc:date "2015-07-13" ;
+    dc:description """The need of describing aspects related to the review process is an important aspect to address by publishers (e.g., Springer) for keeping track of crucial information about conferences and journals. In addition, these data can be crucial for assessing the quality of the venues where researchers publish papers.
+
+This module of BiDO describes a list of possible reviews measures tha can be used to define bibliometric data of scholarly venues such as conferences, workshops, and journals.""" ;
+    dc:rights "This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/4.0/)." ;
+    dc:title "BiDO Review Measures module (BiDO-Review-Measures)" ;
+    rdfs:comment """The BiDO Review Measures module (BiDO-Review-Measures) describes a list of possible reviews measures tha can be used to define bibliometric data of scholarly venues such as conferences, workshops, journals.
+
+**URL:** http://purl.org/spar/http://purl.org/spar/bido-review-measures
+
+**Creators**: [Silvio Peroni](http://orcid.org/0000-0003-0530-4305)
+
+**Contributors**: [Aliaksandr Birukou](https://orcid.org/0000-0002-4925-9131)
+
+**License:** [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode)
+
+**Website:** http://www.sparontologies.net/ontologies/bido""" ;
+    owl:imports <http://purl.org/spar/bido-core> ;
+    owl:versionIRI <http://purl.org/spar/bido-review-measures/2015-07-13> ;
+    owl:versionInfo "1.0"^^xsd:string .
+

@@ -1,0 +1,1573 @@
+[
+  {
+    "@id": "http://purl.org/spar/bido/core-a-star",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/bido/ConferenceRankingCategory"
+    ],
+    "http://purl.org/spar/bido/isDefinedInRanking": [
+      {
+        "@id": "http://purl.org/spar/bido/core-conference-ranking"
+      }
+    ],
+    "http://purl.org/spar/bido/isHigherThan": [
+      {
+        "@id": "http://purl.org/spar/bido/core-a"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The CORE category for a flagship conference, a leading venue in a discipline area."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-review-measures"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "A*"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/bido/core-b",
+    "@type": [
+      "http://purl.org/spar/bido/ConferenceRankingCategory",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://purl.org/spar/bido/isDefinedInRanking": [
+      {
+        "@id": "http://purl.org/spar/bido/core-conference-ranking"
+      }
+    ],
+    "http://purl.org/spar/bido/isHigherThan": [
+      {
+        "@id": "http://purl.org/spar/bido/core-c"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The CORE category for a good conference, and well regarded in a discipline area."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-review-measures"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "B"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/bido/core-c",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/bido/ConferenceRankingCategory"
+    ],
+    "http://purl.org/spar/bido/isDefinedInRanking": [
+      {
+        "@id": "http://purl.org/spar/bido/core-conference-ranking"
+      }
+    ],
+    "http://purl.org/spar/bido/isHigherThan": [
+      {
+        "@id": "http://purl.org/spar/bido/core-unranked"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The CORE category for other ranked conference venues that meet minimum standards."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-review-measures"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "C"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf7e916204cc244088ed545889d4fbd44",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/withBibliometricData"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/bido/core-a",
+    "@type": [
+      "http://purl.org/spar/bido/ConferenceRankingCategory",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://purl.org/spar/bido/isDefinedInRanking": [
+      {
+        "@id": "http://purl.org/spar/bido/core-conference-ranking"
+      }
+    ],
+    "http://purl.org/spar/bido/isHigherThan": [
+      {
+        "@id": "http://purl.org/spar/bido/core-b"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The CORE category for an excellent conference, and highly respected in a discipline area."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-review-measures"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "A"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ned7b170173874e8e990dbe3e9be88e98",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://data.semanticweb.org/ns/swc/ontology#AcademicEvent"
+          },
+          {
+            "@id": "http://purl.org/spar/fabio/Expression"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:N5d24bebe55d14681a88d4adf68a370ae",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/holdsBibliometricDataInTime"
+      }
+    ]
+  },
+  {
+    "@id": "_:N33ab0efcdbe848b893043125ba02f1ff",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/holdsBibliometricDataInTime"
+      }
+    ]
+  },
+  {
+    "@id": "_:N4a6b3abbcc6c48d1919aea21569647f3",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://data.semanticweb.org/ns/swc/ontology#AcademicEvent"
+          },
+          {
+            "@id": "http://purl.org/spar/fabio/Expression"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc4bee79c663b468ca1b8a5e4bf674977",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:Nbb8238135465463782899d1663234143"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:N4238d35a42314fcab8cac3cbbea00d7c"
+      }
+    ]
+  },
+  {
+    "@id": "_:N8d6f64f11c3e4dd9be6d8bb391f2049c",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/holdsBibliometricDataInTime"
+      }
+    ]
+  },
+  {
+    "@id": "_:N712da7f66eff489c9eed9e3c792d091d",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:Nddf7153524554f96b6cac48a049c8e53"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:Nf3178b56dd1c4a58b894f25b1a8438f5"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/bido/isHigherThan",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "It links a ranking category with one that is less important."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/spar/bido/ConferenceRankingCategory"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-review-measures"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "is higher than"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/spar/bido/ConferenceRankingCategory"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/bido/open-peer-review",
+    "@type": [
+      "http://purl.org/spar/bido/PeerReviewType",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "It identifies all the review processes where the identity of the authors and the reviewers is known."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-review-measures"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "open peer review"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd7ed910fe2764f4b90cac661de4dea82",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:N20633d5b6b9144ef80615e2abfa0ca0c"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:N0b59fcce3d6e4b87a31725c52641cf70"
+      }
+    ]
+  },
+  {
+    "@id": "_:N109736e2f0d94cd998f3343d8eef7411",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/holdsBibliometricDataInTime"
+      }
+    ]
+  },
+  {
+    "@id": "_:N2a1fe5a9b153478aaa0330c6ce614991",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://data.semanticweb.org/ns/swc/ontology#AcademicEvent"
+          },
+          {
+            "@id": "http://purl.org/spar/fabio/Expression"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:Nfc1bf2869f83436e8197a997fc676ece",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:Na6ee02794c324ed69a61a5fc7b6e03bc"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:N109736e2f0d94cd998f3343d8eef7411"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/bido/PeerReviewType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "This class describes different kinds of peer review processes, such as double-blind and open."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-review-measures"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "peer review type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:Ne39cab1fc2fd48c893750304e949af20"
+      },
+      {
+        "@id": "http://purl.org/spar/bido/CategorialBibliometricData"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na9a01e9977d34d7d9ca5398b4e9da051",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/holdsBibliometricDataInTime"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/bido/demo-paper-accepted",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/bido/BibliometricMeasure",
+      {
+        "@id": "_:N712da7f66eff489c9eed9e3c792d091d"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "It indicates how many demo papers has been accepted for publication/presentation in the venue."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-review-measures"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "number of demo paper accepted"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nbb8238135465463782899d1663234143",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:Ncaa1550848424733b4362f2fe337cea4"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:Ncdb6055859464d32aa9b7cc80fa970d6"
+      }
+    ]
+  },
+  {
+    "@id": "_:N38c8d52e7cb944dda18be4bf89029b54",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:N0421c88b931b42cc8a72a9b57b859c09"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:Nd211d0cd6abb4e04b5902a3aa9124ef0"
+      }
+    ]
+  },
+  {
+    "@id": "_:N080c310795aa4a60afbf9e3712ef85c8",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:N4cea88539c804eacb549376c5fd49e23"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:Na97fbad348a84b28a75517887507921e"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/bido/ConferenceRanking",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "This class describes conference rankings as composed by categories identifying different rankings."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-review-measures"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "conference ranking"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nbe0bf04c188a4ba7bc18d79d90ace7c7",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/withBibliometricData"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/bido/easychair",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/bido/ScholarlyVenueManagementSystem"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "EasyChair is a conference management system that is flexible, easy to use, and has many features to make it suitable for various conference models. It is currently probably the most commonly used conference management system."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-review-measures"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "EasyChair"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/bido/full-papers-accepted",
+    "@type": [
+      "http://purl.org/spar/bido/BibliometricMeasure",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      {
+        "@id": "_:Nb1d6c0cc82294600a2e73b3053c72273"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "It indicates how many full papers has been accepted for publication/presentation in the venue."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-review-measures"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "number of full paper accepted"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ncaa1550848424733b4362f2fe337cea4",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://data.semanticweb.org/ns/swc/ontology#AcademicEvent"
+          },
+          {
+            "@id": "http://purl.org/spar/fabio/Expression"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/bido/core-unranked",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/bido/ConferenceRankingCategory"
+    ],
+    "http://purl.org/spar/bido/isDefinedInRanking": [
+      {
+        "@id": "http://purl.org/spar/bido/core-conference-ranking"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The CORE category for a conference for which no ranking decision has been made."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-review-measures"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "unranked"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd211d0cd6abb4e04b5902a3aa9124ef0",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/withBibliometricData"
+      }
+    ]
+  },
+  {
+    "@id": "_:N998c6750e5864e41bcd3508c8c1fe874",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/withBibliometricData"
+      }
+    ]
+  },
+  {
+    "@id": "_:N743c9cc7ba7d43bab42b11684d2d573a",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/hasMeasure"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd73a506c80de41bfa213c0b270173049",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://data.semanticweb.org/ns/swc/ontology#AcademicEvent"
+          },
+          {
+            "@id": "http://purl.org/spar/fabio/Expression"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:Na15544248137443cbff89a903ff91b50",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:N9cc1da1046ec417e97195e8cda5793ce"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:N8d6f64f11c3e4dd9be6d8bb391f2049c"
+      }
+    ]
+  },
+  {
+    "@id": "_:N956c2cce7fa64014b618ef6863a986ad",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/hasMeasure"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/bido/external-reviewers-involved",
+    "@type": [
+      {
+        "@id": "_:N511416ecdb4a431dba89d67f914fa4e9"
+      },
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/bido/BibliometricMeasure"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "It indicates how many external reviewers have been involved in the reviewing phase."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-review-measures"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "number of external reviewers involved"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/bido/isDefinedInRanking",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "It links a ranking category with the ranking that defines it."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/spar/bido/ConferenceRankingCategory"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-review-measures"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "is defined in ranking"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/spar/bido/ConferenceRanking"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nbbc87181f7c5499c9ce4d7451499b9ea",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:N609c8a50439c46ddad91e600fed98772"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:N998c6750e5864e41bcd3508c8c1fe874"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/bido/ScholarlyVenueManagementSystem",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "This class describes all the possible venue management systems (such as conference management systems and journal management systems) that can be used for managing scholarly venues."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-review-measures"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "scholarly venue management system"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/spar/bido/CategorialBibliometricData"
+      },
+      {
+        "@id": "_:N080c310795aa4a60afbf9e3712ef85c8"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne6170fda6f9040438f253fe8bd6b1f6c",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:N4a6b3abbcc6c48d1919aea21569647f3"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:N5d24bebe55d14681a88d4adf68a370ae"
+      }
+    ]
+  },
+  {
+    "@id": "_:N4cea88539c804eacb549376c5fd49e23",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:N380a7c02444942b6a85862741e9dd33c"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:Na9a01e9977d34d7d9ca5398b4e9da051"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/bido/core-conference-ranking",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/bido/ConferenceRanking"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The CORE Conference Ranking (http://www.core.edu.au/index.php/conference-rankings) is an ongoing activity that provides assessments of major conferences in the computing disciplines.The rankings are managed by the CORE Executive Committee, with updates processed from time to time by a subcommittee established as needed."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-review-measures"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "CORE conference ranking"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc3e8bfbb61304e11a3b273c0f478d26a",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/hasMeasure"
+      }
+    ]
+  },
+  {
+    "@id": "_:N83f6f071945d4a54b6cfb6b3b9d0467b",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:N563ea879ac6e4b81893776ec20529643"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:Nc3e8bfbb61304e11a3b273c0f478d26a"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na97fbad348a84b28a75517887507921e",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/withBibliometricData"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/fabio/Expression",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Any possible work such as journals, magazines, books, etc., created for scientific purposes and possibily related with review processes."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/fabio"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "expression"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/bido/poster-papers-accepted",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/bido/BibliometricMeasure",
+      {
+        "@id": "_:N90919fc81b014898be14efa3339b3bbb"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "It indicates how many poster papers has been accepted for publication/presentation in the venue."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-review-measures"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "number of poster paper accepted"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/bido/conference-management-toolkit",
+    "@type": [
+      "http://purl.org/spar/bido/ScholarlyVenueManagementSystem",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The Conference Management Toolkit (CMT) is a free conference management service sponsored by Microsoft Research."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-review-measures"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Conference Management Toolkit"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/bido/isLowerThan",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "It links a ranking category with one that is more important."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-review-measures"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "is lower than"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/isHigherThan"
+      }
+    ]
+  },
+  {
+    "@id": "_:N0421c88b931b42cc8a72a9b57b859c09",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:Nd73a506c80de41bfa213c0b270173049"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:N2033b8c2496a43a8be33f02af9b66a7c"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/bido/submissions-sent-for-review",
+    "@type": [
+      {
+        "@id": "_:N9abc9551a6dc499d9e8537f997fd99b0"
+      },
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/bido/BibliometricMeasure"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "It indicates how many submitted papers has been assagned to reviewers for revision."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-review-measures"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "number of submission sent for review"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/bido/average-of-reviews-per-paper",
+    "@type": [
+      "http://purl.org/spar/bido/BibliometricMeasure",
+      {
+        "@id": "_:Nb3bb1292658c46e399478c0b49b932fd"
+      },
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "It indicates how many reviewers has been used for each paper submitted to a venue."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-review-measures"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "average number of reviews per paper"
+      }
+    ]
+  },
+  {
+    "@id": "_:N511416ecdb4a431dba89d67f914fa4e9",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:N38c8d52e7cb944dda18be4bf89029b54"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:Ncd519373afb248cd97a2acb06ae761ec"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf3178b56dd1c4a58b894f25b1a8438f5",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/hasMeasure"
+      }
+    ]
+  },
+  {
+    "@id": "_:N4238d35a42314fcab8cac3cbbea00d7c",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/withBibliometricData"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/bido/single-blind-peer-review",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/bido/PeerReviewType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "It identifies all the review processes where the identity of the reviewers is concealed from the authors."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-review-measures"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "single blind peer review"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/bido-review-measures",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Ontology"
+    ],
+    "http://purl.org/dc/elements/1.1/contributor": [
+      {
+        "@value": "Aliaksandr Birukou"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/creator": [
+      {
+        "@value": "Silvio Peroni"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/date": [
+      {
+        "@value": "2015-07-13"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/description": [
+      {
+        "@value": "The need of describing aspects related to the review process is an important aspect to address by publishers (e.g., Springer) for keeping track of crucial information about conferences and journals. In addition, these data can be crucial for assessing the quality of the venues where researchers publish papers.\n\nThis module of BiDO describes a list of possible reviews measures tha can be used to define bibliometric data of scholarly venues such as conferences, workshops, and journals."
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/rights": [
+      {
+        "@value": "This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/4.0/)."
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "BiDO Review Measures module (BiDO-Review-Measures)"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The BiDO Review Measures module (BiDO-Review-Measures) describes a list of possible reviews measures tha can be used to define bibliometric data of scholarly venues such as conferences, workshops, journals.\n\n**URL:** http://purl.org/spar/http://purl.org/spar/bido-review-measures\n\n**Creators**: [Silvio Peroni](http://orcid.org/0000-0003-0530-4305)\n\n**Contributors**: [Aliaksandr Birukou](https://orcid.org/0000-0002-4925-9131)\n\n**License:** [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode)\n\n**Website:** http://www.sparontologies.net/ontologies/bido"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "BiDO-Review-Measures"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#imports": [
+      {
+        "@id": "http://purl.org/spar/bido-core"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionIRI": [
+      {
+        "@id": "http://purl.org/spar/bido-review-measures/2015-07-13"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionInfo": [
+      {
+        "@value": "1.0"
+      }
+    ]
+  },
+  {
+    "@id": "_:N563ea879ac6e4b81893776ec20529643",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:Nf9bda91a559c4bec87b113d1ee4f7b80"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:Nbe0bf04c188a4ba7bc18d79d90ace7c7"
+      }
+    ]
+  },
+  {
+    "@id": "http://data.semanticweb.org/ns/swc/ontology#AcademicEvent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Any academic event such as conferences, workshops, symposia."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://data.semanticweb.org/ns/swc/ontology"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "academic event"
+      }
+    ]
+  },
+  {
+    "@id": "_:N8e0df24fb0914f33b8824903b1742666",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/holdsBibliometricDataInTime"
+      }
+    ]
+  },
+  {
+    "@id": "_:N6745773e37664cb9b6260e18d179791e",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:Ne6170fda6f9040438f253fe8bd6b1f6c"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:Nd53dc6484f2645cb8c9b33cb3d9a296e"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/bido/double-blind-peer-review",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/bido/PeerReviewType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "It identifies all the review processes where the identity of the authors is concealed from the reviewers, and vice versa."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-review-measures"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "double blind peer review"
+      }
+    ]
+  },
+  {
+    "@id": "_:N609c8a50439c46ddad91e600fed98772",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:N2a1fe5a9b153478aaa0330c6ce614991"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:N33ab0efcdbe848b893043125ba02f1ff"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/bido/short-papers-accepted",
+    "@type": [
+      "http://purl.org/spar/bido/BibliometricMeasure",
+      {
+        "@id": "_:N83f6f071945d4a54b6cfb6b3b9d0467b"
+      },
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "It indicates how many short papers has been accepted for publication/presentation in the venue."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-review-measures"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "number of short paper accepted"
+      }
+    ]
+  },
+  {
+    "@id": "_:N63cca342bf8741b9816570fdb58792f0",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/holdsBibliometricDataInTime"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nbfba403b17e545cdb5d954cd3376ab8d",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/withBibliometricData"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb1d6c0cc82294600a2e73b3053c72273",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:Nbbc87181f7c5499c9ce4d7451499b9ea"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:N743c9cc7ba7d43bab42b11684d2d573a"
+      }
+    ]
+  },
+  {
+    "@id": "_:N6ae91934ae314717ba3ce39b7ecc357c",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/holdsBibliometricDataInTime"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd53dc6484f2645cb8c9b33cb3d9a296e",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/withBibliometricData"
+      }
+    ]
+  },
+  {
+    "@id": "_:N9abc9551a6dc499d9e8537f997fd99b0",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:Nc4bee79c663b468ca1b8a5e4bf674977"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:N92fbd4c6e204459682f2cdaace76f5c0"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne39cab1fc2fd48c893750304e949af20",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:N6c817a9e035d47469fba2484c57f8b41"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:Nbfba403b17e545cdb5d954cd3376ab8d"
+      }
+    ]
+  },
+  {
+    "@id": "_:N6c817a9e035d47469fba2484c57f8b41",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:Nace7b26a036143bd811fe5ac57bffc28"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:N6ae91934ae314717ba3ce39b7ecc357c"
+      }
+    ]
+  },
+  {
+    "@id": "_:N20633d5b6b9144ef80615e2abfa0ca0c",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://data.semanticweb.org/ns/swc/ontology#AcademicEvent"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:N63cca342bf8741b9816570fdb58792f0"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf9bda91a559c4bec87b113d1ee4f7b80",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:Ned7b170173874e8e990dbe3e9be88e98"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:N8e0df24fb0914f33b8824903b1742666"
+      }
+    ]
+  },
+  {
+    "@id": "_:N90919fc81b014898be14efa3339b3bbb",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:N9ec8ffdd33ad44f6ae5fadfe3245f467"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:N956c2cce7fa64014b618ef6863a986ad"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nbfead114d6fe4583a78988ea65fd0737",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/withBibliometricData"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na6ee02794c324ed69a61a5fc7b6e03bc",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://data.semanticweb.org/ns/swc/ontology#AcademicEvent"
+          },
+          {
+            "@id": "http://purl.org/spar/fabio/Expression"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/bido/ConferenceRankingCategory",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "This class identifies all the possible categories that can be used for ranking a conference according to the related ranking that defines them."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-review-measures"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "conference ranking category"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:Nd7ed910fe2764f4b90cac661de4dea82"
+      },
+      {
+        "@id": "http://purl.org/spar/bido/CategorialBibliometricData"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ncd519373afb248cd97a2acb06ae761ec",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/hasMeasure"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ncdb6055859464d32aa9b7cc80fa970d6",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/holdsBibliometricDataInTime"
+      }
+    ]
+  },
+  {
+    "@id": "_:N380a7c02444942b6a85862741e9dd33c",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://data.semanticweb.org/ns/swc/ontology#AcademicEvent"
+          },
+          {
+            "@id": "http://purl.org/spar/fabio/Expression"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:N9ec8ffdd33ad44f6ae5fadfe3245f467",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:Nfc1bf2869f83436e8197a997fc676ece"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:Nbfead114d6fe4583a78988ea65fd0737"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb3bb1292658c46e399478c0b49b932fd",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:N6745773e37664cb9b6260e18d179791e"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:N6702c6a8198f4c678382707e3fa3d13c"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nddf7153524554f96b6cac48a049c8e53",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:Na15544248137443cbff89a903ff91b50"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:Nf7e916204cc244088ed545889d4fbd44"
+      }
+    ]
+  },
+  {
+    "@id": "_:N6702c6a8198f4c678382707e3fa3d13c",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/hasMeasure"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nace7b26a036143bd811fe5ac57bffc28",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://data.semanticweb.org/ns/swc/ontology#AcademicEvent"
+          },
+          {
+            "@id": "http://purl.org/spar/fabio/Expression"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:N2033b8c2496a43a8be33f02af9b66a7c",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/holdsBibliometricDataInTime"
+      }
+    ]
+  },
+  {
+    "@id": "_:N9cc1da1046ec417e97195e8cda5793ce",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://data.semanticweb.org/ns/swc/ontology#AcademicEvent"
+          },
+          {
+            "@id": "http://purl.org/spar/fabio/Expression"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:N0b59fcce3d6e4b87a31725c52641cf70",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/withBibliometricData"
+      }
+    ]
+  },
+  {
+    "@id": "_:N92fbd4c6e204459682f2cdaace76f5c0",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/hasMeasure"
+      }
+    ]
+  }
+]

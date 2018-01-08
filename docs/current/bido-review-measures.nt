@@ -1,0 +1,328 @@
+_:Ncd519373afb248cd97a2acb06ae761ec <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/hasMeasure> .
+_:Nbfba403b17e545cdb5d954cd3376ab8d <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
+_:N20633d5b6b9144ef80615e2abfa0ca0c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Nbf61c08486ef48f79ee35781f2c0ff6f <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/Expression> .
+_:N83f6f071945d4a54b6cfb6b3b9d0467b <http://www.w3.org/2002/07/owl#onProperty> _:Nc3e8bfbb61304e11a3b273c0f478d26a .
+_:Nbbc87181f7c5499c9ce4d7451499b9ea <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido/isHigherThan> <http://www.w3.org/2000/01/rdf-schema#comment> "It links a ranking category with one that is less important." .
+_:Ncaa1550848424733b4362f2fe337cea4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/bido/ScholarlyVenueManagementSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N0372d4596d674c03b3a3f419dca2ed60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Nbb8238135465463782899d1663234143 <http://www.w3.org/2002/07/owl#onProperty> _:Ncdb6055859464d32aa9b7cc80fa970d6 .
+<http://purl.org/spar/bido/short-papers-accepted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:N83f6f071945d4a54b6cfb6b3b9d0467b .
+<http://purl.org/spar/bido/single-blind-peer-review> <http://www.w3.org/2000/01/rdf-schema#comment> "It identifies all the review processes where the identity of the reviewers is concealed from the authors." .
+<http://purl.org/spar/bido/full-papers-accepted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/bido/core-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/ConferenceRankingCategory> .
+<http://purl.org/spar/bido/isLowerThan> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/isHigherThan> .
+_:Ncaa1550848424733b4362f2fe337cea4 <http://www.w3.org/2002/07/owl#unionOf> _:Nea04e3c58c09406fb90a25adc123e740 .
+<http://purl.org/spar/bido/external-reviewers-involved> <http://www.w3.org/2000/01/rdf-schema#comment> "It indicates how many external reviewers have been involved in the reviewing phase." .
+<http://purl.org/spar/bido/external-reviewers-involved> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/BibliometricMeasure> .
+_:N9d61d609fa3d4de1ab89e7e895dab66d <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/spar/bido-review-measures> <http://www.w3.org/2000/01/rdf-schema#label> "BiDO-Review-Measures" .
+<http://purl.org/spar/bido/short-papers-accepted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/BibliometricMeasure> .
+<http://purl.org/spar/bido/core-c> <http://purl.org/spar/bido/isHigherThan> <http://purl.org/spar/bido/core-unranked> .
+_:Nc4bee79c663b468ca1b8a5e4bf674977 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido/average-of-reviews-per-paper> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures> .
+_:N4238d35a42314fcab8cac3cbbea00d7c <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
+<http://purl.org/spar/bido/PeerReviewType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nbbc87181f7c5499c9ce4d7451499b9ea <http://www.w3.org/2002/07/owl#onProperty> _:N998c6750e5864e41bcd3508c8c1fe874 .
+_:Nf9bda91a559c4bec87b113d1ee4f7b80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Na5335b8711d04794b1f76692427d8b28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N0372d4596d674c03b3a3f419dca2ed60 .
+_:N511416ecdb4a431dba89d67f914fa4e9 <http://www.w3.org/2002/07/owl#onProperty> _:Ncd519373afb248cd97a2acb06ae761ec .
+_:N90919fc81b014898be14efa3339b3bbb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:N0421c88b931b42cc8a72a9b57b859c09 <http://www.w3.org/2002/07/owl#onProperty> _:N2033b8c2496a43a8be33f02af9b66a7c .
+_:Nb3bb1292658c46e399478c0b49b932fd <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido-review-measures> <http://purl.org/dc/elements/1.1/rights> "This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/4.0/)." .
+<http://purl.org/spar/bido/ConferenceRankingCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nf3178b56dd1c4a58b894f25b1a8438f5 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/hasMeasure> .
+_:Nace7b26a036143bd811fe5ac57bffc28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nbfead114d6fe4583a78988ea65fd0737 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
+<http://purl.org/spar/bido/average-of-reviews-per-paper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/bido/ConferenceRankingCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/bido/CategorialBibliometricData> .
+_:N6c817a9e035d47469fba2484c57f8b41 <http://www.w3.org/2002/07/owl#allValuesFrom> _:Nace7b26a036143bd811fe5ac57bffc28 .
+<http://purl.org/spar/bido/core-a-star> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures> .
+_:Nea04e3c58c09406fb90a25adc123e740 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N80ff395607a64d3aa28cb3f7a797fe66 .
+<http://purl.org/spar/bido/isLowerThan> <http://www.w3.org/2000/01/rdf-schema#comment> "It links a ranking category with one that is more important." .
+_:Na15544248137443cbff89a903ff91b50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido/full-papers-accepted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/BibliometricMeasure> .
+<http://purl.org/spar/bido/poster-papers-accepted> <http://www.w3.org/2000/01/rdf-schema#comment> "It indicates how many poster papers has been accepted for publication/presentation in the venue." .
+_:N80ff395607a64d3aa28cb3f7a797fe66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/Expression> .
+<http://purl.org/spar/bido/core-conference-ranking> <http://www.w3.org/2000/01/rdf-schema#comment> "The CORE Conference Ranking (http://www.core.edu.au/index.php/conference-rankings) is an ongoing activity that provides assessments of major conferences in the computing disciplines.The rankings are managed by the CORE Executive Committee, with updates processed from time to time by a subcommittee established as needed." .
+<http://purl.org/spar/bido/single-blind-peer-review> <http://www.w3.org/2000/01/rdf-schema#label> "single blind peer review" .
+_:N313895f7e00544a6a70400341431d048 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.semanticweb.org/ns/swc/ontology#AcademicEvent> .
+_:N9abc9551a6dc499d9e8537f997fd99b0 <http://www.w3.org/2002/07/owl#onProperty> _:N92fbd4c6e204459682f2cdaace76f5c0 .
+_:N9abc9551a6dc499d9e8537f997fd99b0 <http://www.w3.org/2002/07/owl#allValuesFrom> _:Nc4bee79c663b468ca1b8a5e4bf674977 .
+_:Nbb8238135465463782899d1663234143 <http://www.w3.org/2002/07/owl#allValuesFrom> _:Ncaa1550848424733b4362f2fe337cea4 .
+_:N609c8a50439c46ddad91e600fed98772 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido/open-peer-review> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/PeerReviewType> .
+_:Nd7ed910fe2764f4b90cac661de4dea82 <http://www.w3.org/2002/07/owl#allValuesFrom> _:N20633d5b6b9144ef80615e2abfa0ca0c .
+_:Nd7ed910fe2764f4b90cac661de4dea82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido/double-blind-peer-review> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:Nddf7153524554f96b6cac48a049c8e53 <http://www.w3.org/2002/07/owl#onProperty> _:Nf7e916204cc244088ed545889d4fbd44 .
+<http://purl.org/spar/bido/open-peer-review> <http://www.w3.org/2000/01/rdf-schema#comment> "It identifies all the review processes where the identity of the authors and the reviewers is known." .
+<http://purl.org/spar/bido-review-measures> <http://www.w3.org/2000/01/rdf-schema#comment> "The BiDO Review Measures module (BiDO-Review-Measures) describes a list of possible reviews measures tha can be used to define bibliometric data of scholarly venues such as conferences, workshops, journals.\n\n**URL:** http://purl.org/spar/http://purl.org/spar/bido-review-measures\n\n**Creators**: [Silvio Peroni](http://orcid.org/0000-0003-0530-4305)\n\n**Contributors**: [Aliaksandr Birukou](https://orcid.org/0000-0002-4925-9131)\n\n**License:** [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode)\n\n**Website:** http://www.sparontologies.net/ontologies/bido" .
+<http://purl.org/spar/bido/double-blind-peer-review> <http://www.w3.org/2000/01/rdf-schema#comment> "It identifies all the review processes where the identity of the authors is concealed from the reviewers, and vice versa." .
+<http://purl.org/spar/bido/isLowerThan> <http://www.w3.org/2000/01/rdf-schema#label> "is lower than" .
+<http://purl.org/spar/bido/easychair> <http://www.w3.org/2000/01/rdf-schema#label> "EasyChair" .
+_:Ne39cab1fc2fd48c893750304e949af20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido/open-peer-review> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures> .
+<http://purl.org/spar/bido/isLowerThan> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures> .
+_:Nf9bda91a559c4bec87b113d1ee4f7b80 <http://www.w3.org/2002/07/owl#onProperty> _:N8e0df24fb0914f33b8824903b1742666 .
+<http://purl.org/spar/bido/isLowerThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N92b42dc2251f40acae6a5af89e40d094 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.semanticweb.org/ns/swc/ontology#AcademicEvent> .
+<http://data.semanticweb.org/ns/swc/ontology#AcademicEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Any academic event such as conferences, workshops, symposia." .
+<http://purl.org/spar/bido/easychair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:N2033b8c2496a43a8be33f02af9b66a7c <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
+<http://purl.org/spar/bido/PeerReviewType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures> .
+_:N511416ecdb4a431dba89d67f914fa4e9 <http://www.w3.org/2002/07/owl#allValuesFrom> _:N38c8d52e7cb944dda18be4bf89029b54 .
+_:Nf7e916204cc244088ed545889d4fbd44 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
+_:Nddf7153524554f96b6cac48a049c8e53 <http://www.w3.org/2002/07/owl#allValuesFrom> _:Na15544248137443cbff89a903ff91b50 .
+<http://purl.org/spar/bido/core-a-star> <http://www.w3.org/2000/01/rdf-schema#comment> "The CORE category for a flagship conference, a leading venue in a discipline area." .
+_:N109736e2f0d94cd998f3343d8eef7411 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
+<http://purl.org/spar/bido/core-b> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures> .
+<http://purl.org/spar/bido/PeerReviewType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/bido/CategorialBibliometricData> .
+_:Nd73a506c80de41bfa213c0b270173049 <http://www.w3.org/2002/07/owl#unionOf> _:N92b42dc2251f40acae6a5af89e40d094 .
+<http://purl.org/spar/bido/core-c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/bido/isDefinedInRanking> <http://www.w3.org/2000/01/rdf-schema#comment> "It links a ranking category with the ranking that defines it." .
+_:Nfc1bf2869f83436e8197a997fc676ece <http://www.w3.org/2002/07/owl#onProperty> _:N109736e2f0d94cd998f3343d8eef7411 .
+_:N6ae91934ae314717ba3ce39b7ecc357c <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
+_:N609c8a50439c46ddad91e600fed98772 <http://www.w3.org/2002/07/owl#allValuesFrom> _:N2a1fe5a9b153478aaa0330c6ce614991 .
+<http://purl.org/spar/bido/core-c> <http://purl.org/spar/bido/isDefinedInRanking> <http://purl.org/spar/bido/core-conference-ranking> .
+<http://purl.org/spar/bido/average-of-reviews-per-paper> <http://www.w3.org/2000/01/rdf-schema#label> "average number of reviews per paper" .
+_:Na97fbad348a84b28a75517887507921e <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
+<http://purl.org/spar/bido/core-b> <http://www.w3.org/2000/01/rdf-schema#comment> "The CORE category for a good conference, and well regarded in a discipline area." .
+<http://purl.org/spar/bido/double-blind-peer-review> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/PeerReviewType> .
+_:Ndbea548236424b39a235fc686a809663 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/Expression> .
+_:Neb2e6c0609384d23acf2929a4bd47a9c <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.semanticweb.org/ns/swc/ontology#AcademicEvent> .
+<http://purl.org/spar/bido-review-measures> <http://purl.org/dc/elements/1.1/title> "BiDO Review Measures module (BiDO-Review-Measures)" .
+<http://purl.org/spar/bido/open-peer-review> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:Nc8a86a464ccc4c1f9546789814344bc3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N0d8fa9b3bd9944a2b1326302b29b6d7d .
+<http://purl.org/spar/bido/single-blind-peer-review> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures> .
+<http://purl.org/spar/bido/demo-paper-accepted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:Nf9f8ef36a1a144d3a555d169f77303af <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Nbbc87181f7c5499c9ce4d7451499b9ea <http://www.w3.org/2002/07/owl#allValuesFrom> _:N609c8a50439c46ddad91e600fed98772 .
+_:Na5335b8711d04794b1f76692427d8b28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.semanticweb.org/ns/swc/ontology#AcademicEvent> .
+_:Nb1d6c0cc82294600a2e73b3053c72273 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido/ConferenceRankingCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Nd7ed910fe2764f4b90cac661de4dea82 .
+<http://purl.org/spar/bido/isDefinedInRanking> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures> .
+<http://purl.org/spar/bido/short-papers-accepted> <http://www.w3.org/2000/01/rdf-schema#comment> "It indicates how many short papers has been accepted for publication/presentation in the venue." .
+_:N4a6b3abbcc6c48d1919aea21569647f3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/bido/ScholarlyVenueManagementSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:N080c310795aa4a60afbf9e3712ef85c8 .
+<http://purl.org/spar/bido/core-c> <http://www.w3.org/2000/01/rdf-schema#label> "C" .
+<http://purl.org/spar/bido/double-blind-peer-review> <http://www.w3.org/2000/01/rdf-schema#label> "double blind peer review" .
+_:N80ff395607a64d3aa28cb3f7a797fe66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Nc8a86a464ccc4c1f9546789814344bc3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.semanticweb.org/ns/swc/ontology#AcademicEvent> .
+<http://purl.org/spar/fabio/Expression> <http://www.w3.org/2000/01/rdf-schema#label> "expression" .
+<http://purl.org/spar/bido/isHigherThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N080c310795aa4a60afbf9e3712ef85c8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Nea04e3c58c09406fb90a25adc123e740 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.semanticweb.org/ns/swc/ontology#AcademicEvent> .
+_:N9d61d609fa3d4de1ab89e7e895dab66d <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/Expression> .
+<http://purl.org/spar/bido/full-papers-accepted> <http://www.w3.org/2000/01/rdf-schema#label> "number of full paper accepted" .
+_:N712da7f66eff489c9eed9e3c792d091d <http://www.w3.org/2002/07/owl#allValuesFrom> _:Nddf7153524554f96b6cac48a049c8e53 .
+<http://purl.org/spar/bido/isHigherThan> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures> .
+<http://purl.org/spar/bido/isHigherThan> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/bido/ConferenceRankingCategory> .
+<http://purl.org/spar/bido/core-b> <http://purl.org/spar/bido/isHigherThan> <http://purl.org/spar/bido/core-c> .
+_:N90919fc81b014898be14efa3339b3bbb <http://www.w3.org/2002/07/owl#onProperty> _:N956c2cce7fa64014b618ef6863a986ad .
+_:Nb3bb1292658c46e399478c0b49b932fd <http://www.w3.org/2002/07/owl#onProperty> _:N6702c6a8198f4c678382707e3fa3d13c .
+_:N38c8d52e7cb944dda18be4bf89029b54 <http://www.w3.org/2002/07/owl#onProperty> _:Nd211d0cd6abb4e04b5902a3aa9124ef0 .
+_:Na9a01e9977d34d7d9ca5398b4e9da051 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
+_:N9ec8ffdd33ad44f6ae5fadfe3245f467 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/Expression> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio> .
+<http://purl.org/spar/bido/ScholarlyVenueManagementSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/bido/CategorialBibliometricData> .
+_:N9cc1da1046ec417e97195e8cda5793ce <http://www.w3.org/2002/07/owl#unionOf> _:Neb2e6c0609384d23acf2929a4bd47a9c .
+<http://purl.org/spar/bido/demo-paper-accepted> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures> .
+<http://purl.org/spar/bido/PeerReviewType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Ne39cab1fc2fd48c893750304e949af20 .
+_:Nc3e8bfbb61304e11a3b273c0f478d26a <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/hasMeasure> .
+_:Ned7b170173874e8e990dbe3e9be88e98 <http://www.w3.org/2002/07/owl#unionOf> _:Nfb66032cdbc44b7684952f8e3d73164a .
+<http://purl.org/spar/bido/single-blind-peer-review> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:Nfc1bf2869f83436e8197a997fc676ece <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido/poster-papers-accepted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/BibliometricMeasure> .
+<http://purl.org/spar/bido/PeerReviewType> <http://www.w3.org/2000/01/rdf-schema#comment> "This class describes different kinds of peer review processes, such as double-blind and open." .
+<http://purl.org/spar/bido/easychair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/ScholarlyVenueManagementSystem> .
+_:Nb1d6c0cc82294600a2e73b3053c72273 <http://www.w3.org/2002/07/owl#onProperty> _:N743c9cc7ba7d43bab42b11684d2d573a .
+<http://purl.org/spar/bido/isDefinedInRanking> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/bido/ConferenceRankingCategory> .
+_:Nfc1bf2869f83436e8197a997fc676ece <http://www.w3.org/2002/07/owl#allValuesFrom> _:Na6ee02794c324ed69a61a5fc7b6e03bc .
+<http://data.semanticweb.org/ns/swc/ontology#AcademicEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Neb2e6c0609384d23acf2929a4bd47a9c <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Ndbea548236424b39a235fc686a809663 .
+_:N0421c88b931b42cc8a72a9b57b859c09 <http://www.w3.org/2002/07/owl#allValuesFrom> _:Nd73a506c80de41bfa213c0b270173049 .
+<http://purl.org/spar/bido/demo-paper-accepted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:N712da7f66eff489c9eed9e3c792d091d .
+<http://purl.org/spar/bido/external-reviewers-involved> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:N998c6750e5864e41bcd3508c8c1fe874 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
+_:N63cca342bf8741b9816570fdb58792f0 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
+<http://purl.org/spar/bido/external-reviewers-involved> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures> .
+<http://purl.org/spar/bido/core-b> <http://purl.org/spar/bido/isDefinedInRanking> <http://purl.org/spar/bido/core-conference-ranking> .
+<http://purl.org/spar/bido/poster-papers-accepted> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures> .
+<http://purl.org/spar/bido/short-papers-accepted> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures> .
+<http://purl.org/spar/bido/submissions-sent-for-review> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures> .
+<http://purl.org/spar/bido/ConferenceRanking> <http://www.w3.org/2000/01/rdf-schema#label> "conference ranking" .
+<http://purl.org/spar/bido/demo-paper-accepted> <http://www.w3.org/2000/01/rdf-schema#label> "number of demo paper accepted" .
+<http://purl.org/spar/bido/core-unranked> <http://www.w3.org/2000/01/rdf-schema#label> "unranked" .
+_:N6702c6a8198f4c678382707e3fa3d13c <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/hasMeasure> .
+_:N2a1fe5a9b153478aaa0330c6ce614991 <http://www.w3.org/2002/07/owl#unionOf> _:Nc8a86a464ccc4c1f9546789814344bc3 .
+<http://purl.org/spar/bido/core-b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/bido/ConferenceRanking> <http://www.w3.org/2000/01/rdf-schema#comment> "This class describes conference rankings as composed by categories identifying different rankings." .
+<http://purl.org/spar/bido/conference-management-toolkit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:N080c310795aa4a60afbf9e3712ef85c8 <http://www.w3.org/2002/07/owl#allValuesFrom> _:N4cea88539c804eacb549376c5fd49e23 .
+<http://purl.org/spar/bido/poster-papers-accepted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/bido/core-c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/ConferenceRankingCategory> .
+<http://purl.org/spar/bido-review-measures> <http://www.w3.org/2002/07/owl#versionIRI> <http://purl.org/spar/bido-review-measures/2015-07-13> .
+<http://purl.org/spar/bido/isDefinedInRanking> <http://www.w3.org/2000/01/rdf-schema#label> "is defined in ranking" .
+_:N0d8fa9b3bd9944a2b1326302b29b6d7d <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/spar/bido/core-c> <http://www.w3.org/2000/01/rdf-schema#comment> "The CORE category for other ranked conference venues that meet minimum standards." .
+_:N511416ecdb4a431dba89d67f914fa4e9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/Expression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/bido/external-reviewers-involved> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:N511416ecdb4a431dba89d67f914fa4e9 .
+<http://purl.org/spar/bido/conference-management-toolkit> <http://www.w3.org/2000/01/rdf-schema#comment> "The Conference Management Toolkit (CMT) is a free conference management service sponsored by Microsoft Research." .
+_:Ndbea548236424b39a235fc686a809663 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/spar/bido/core-b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/ConferenceRankingCategory> .
+<http://purl.org/spar/bido/average-of-reviews-per-paper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:Nb3bb1292658c46e399478c0b49b932fd .
+_:Ne6170fda6f9040438f253fe8bd6b1f6c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido-review-measures> <http://purl.org/dc/elements/1.1/description> "The need of describing aspects related to the review process is an important aspect to address by publishers (e.g., Springer) for keeping track of crucial information about conferences and journals. In addition, these data can be crucial for assessing the quality of the venues where researchers publish papers.\n\nThis module of BiDO describes a list of possible reviews measures tha can be used to define bibliometric data of scholarly venues such as conferences, workshops, and journals." .
+_:N313895f7e00544a6a70400341431d048 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N957ab7fb97b74aca957ddb698f77b28f .
+<http://purl.org/spar/bido/submissions-sent-for-review> <http://www.w3.org/2000/01/rdf-schema#comment> "It indicates how many submitted papers has been assagned to reviewers for revision." .
+_:N4cea88539c804eacb549376c5fd49e23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido/isDefinedInRanking> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/bido/ConferenceRanking> .
+_:N4cea88539c804eacb549376c5fd49e23 <http://www.w3.org/2002/07/owl#onProperty> _:Na9a01e9977d34d7d9ca5398b4e9da051 .
+_:N38c8d52e7cb944dda18be4bf89029b54 <http://www.w3.org/2002/07/owl#allValuesFrom> _:N0421c88b931b42cc8a72a9b57b859c09 .
+<http://purl.org/spar/bido/single-blind-peer-review> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/PeerReviewType> .
+_:Nf9bda91a559c4bec87b113d1ee4f7b80 <http://www.w3.org/2002/07/owl#allValuesFrom> _:Ned7b170173874e8e990dbe3e9be88e98 .
+_:N2a1fe5a9b153478aaa0330c6ce614991 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/bido/ScholarlyVenueManagementSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "This class describes all the possible venue management systems (such as conference management systems and journal management systems) that can be used for managing scholarly venues." .
+_:Ned7b170173874e8e990dbe3e9be88e98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N20633d5b6b9144ef80615e2abfa0ca0c <http://www.w3.org/2002/07/owl#allValuesFrom> <http://data.semanticweb.org/ns/swc/ontology#AcademicEvent> .
+_:N957ab7fb97b74aca957ddb698f77b28f <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N20633d5b6b9144ef80615e2abfa0ca0c <http://www.w3.org/2002/07/owl#onProperty> _:N63cca342bf8741b9816570fdb58792f0 .
+_:Nc4bee79c663b468ca1b8a5e4bf674977 <http://www.w3.org/2002/07/owl#allValuesFrom> _:Nbb8238135465463782899d1663234143 .
+_:N9abc9551a6dc499d9e8537f997fd99b0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Nf9f8ef36a1a144d3a555d169f77303af <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/Expression> .
+_:Ne39cab1fc2fd48c893750304e949af20 <http://www.w3.org/2002/07/owl#allValuesFrom> _:N6c817a9e035d47469fba2484c57f8b41 .
+_:N83f6f071945d4a54b6cfb6b3b9d0467b <http://www.w3.org/2002/07/owl#allValuesFrom> _:N563ea879ac6e4b81893776ec20529643 .
+<http://purl.org/spar/bido/demo-paper-accepted> <http://www.w3.org/2000/01/rdf-schema#comment> "It indicates how many demo papers has been accepted for publication/presentation in the venue." .
+<http://purl.org/spar/bido/ConferenceRanking> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures> .
+_:N92b42dc2251f40acae6a5af89e40d094 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nf9f8ef36a1a144d3a555d169f77303af .
+_:N9ec8ffdd33ad44f6ae5fadfe3245f467 <http://www.w3.org/2002/07/owl#onProperty> _:Nbfead114d6fe4583a78988ea65fd0737 .
+_:N6745773e37664cb9b6260e18d179791e <http://www.w3.org/2002/07/owl#allValuesFrom> _:Ne6170fda6f9040438f253fe8bd6b1f6c .
+<http://purl.org/spar/bido-review-measures> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N54f990b824cb4e3d8301a6efd9df6e00 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/Expression> .
+_:N6745773e37664cb9b6260e18d179791e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:N38c8d52e7cb944dda18be4bf89029b54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://data.semanticweb.org/ns/swc/ontology#AcademicEvent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.semanticweb.org/ns/swc/ontology> .
+_:Ncdb6055859464d32aa9b7cc80fa970d6 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
+_:N712da7f66eff489c9eed9e3c792d091d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Na15544248137443cbff89a903ff91b50 <http://www.w3.org/2002/07/owl#allValuesFrom> _:N9cc1da1046ec417e97195e8cda5793ce .
+_:N9ec8ffdd33ad44f6ae5fadfe3245f467 <http://www.w3.org/2002/07/owl#allValuesFrom> _:Nfc1bf2869f83436e8197a997fc676ece .
+_:N380a7c02444942b6a85862741e9dd33c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/bido/ConferenceRankingCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "This class identifies all the possible categories that can be used for ranking a conference according to the related ranking that defines them." .
+<http://purl.org/spar/bido/average-of-reviews-per-paper> <http://www.w3.org/2000/01/rdf-schema#comment> "It indicates how many reviewers has been used for each paper submitted to a venue." .
+_:N598e3ca1d2364ee7964694851d08e383 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.semanticweb.org/ns/swc/ontology#AcademicEvent> .
+<http://purl.org/spar/bido/full-papers-accepted> <http://www.w3.org/2000/01/rdf-schema#comment> "It indicates how many full papers has been accepted for publication/presentation in the venue." .
+<http://purl.org/spar/bido/core-a-star> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/bido/average-of-reviews-per-paper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/BibliometricMeasure> .
+_:N92fbd4c6e204459682f2cdaace76f5c0 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/hasMeasure> .
+<http://purl.org/spar/bido/double-blind-peer-review> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures> .
+_:Nddf7153524554f96b6cac48a049c8e53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido/external-reviewers-involved> <http://www.w3.org/2000/01/rdf-schema#label> "number of external reviewers involved" .
+<http://purl.org/spar/bido/ConferenceRanking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/bido/full-papers-accepted> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures> .
+<http://purl.org/spar/bido/short-papers-accepted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/bido/core-unranked> <http://www.w3.org/2000/01/rdf-schema#comment> "The CORE category for a conference for which no ranking decision has been made." .
+_:N1d44de74c3194811b33b7e57b73f8ccf <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nbf61c08486ef48f79ee35781f2c0ff6f .
+_:N0372d4596d674c03b3a3f419dca2ed60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/Expression> .
+_:N8e0df24fb0914f33b8824903b1742666 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
+<http://purl.org/spar/bido/core-a-star> <http://purl.org/spar/bido/isHigherThan> <http://purl.org/spar/bido/core-a> .
+<http://purl.org/spar/bido/core-unranked> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:N0b59fcce3d6e4b87a31725c52641cf70 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
+_:Nd53dc6484f2645cb8c9b33cb3d9a296e <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
+_:Nd211d0cd6abb4e04b5902a3aa9124ef0 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
+_:Nbb8238135465463782899d1663234143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Nbf61c08486ef48f79ee35781f2c0ff6f <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/spar/bido/easychair> <http://www.w3.org/2000/01/rdf-schema#comment> "EasyChair is a conference management system that is flexible, easy to use, and has many features to make it suitable for various conference models. It is currently probably the most commonly used conference management system." .
+<http://data.semanticweb.org/ns/swc/ontology#AcademicEvent> <http://www.w3.org/2000/01/rdf-schema#label> "academic event" .
+<http://purl.org/spar/bido/ConferenceRankingCategory> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures> .
+_:N957ab7fb97b74aca957ddb698f77b28f <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/Expression> .
+<http://purl.org/spar/bido/core-unranked> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures> .
+<http://purl.org/spar/bido/PeerReviewType> <http://www.w3.org/2000/01/rdf-schema#label> "peer review type" .
+_:Nfb66032cdbc44b7684952f8e3d73164a <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.semanticweb.org/ns/swc/ontology#AcademicEvent> .
+<http://purl.org/spar/bido/core-a> <http://www.w3.org/2000/01/rdf-schema#comment> "The CORE category for an excellent conference, and highly respected in a discipline area." .
+<http://purl.org/spar/bido/core-a> <http://purl.org/spar/bido/isHigherThan> <http://purl.org/spar/bido/core-b> .
+<http://purl.org/spar/bido/ConferenceRankingCategory> <http://www.w3.org/2000/01/rdf-schema#label> "conference ranking category" .
+<http://purl.org/spar/bido/core-conference-ranking> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures> .
+<http://purl.org/spar/bido/easychair> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures> .
+<http://purl.org/spar/bido/conference-management-toolkit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/ScholarlyVenueManagementSystem> .
+_:Nd73a506c80de41bfa213c0b270173049 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/bido/isHigherThan> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/bido/ConferenceRankingCategory> .
+<http://purl.org/spar/bido/core-a> <http://purl.org/spar/bido/isDefinedInRanking> <http://purl.org/spar/bido/core-conference-ranking> .
+_:Nace7b26a036143bd811fe5ac57bffc28 <http://www.w3.org/2002/07/owl#unionOf> _:Na5335b8711d04794b1f76692427d8b28 .
+<http://purl.org/spar/bido/core-a-star> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/ConferenceRankingCategory> .
+<http://purl.org/spar/bido/core-c> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures> .
+<http://purl.org/spar/bido/core-conference-ranking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/ConferenceRanking> .
+<http://purl.org/spar/bido/core-a> <http://www.w3.org/2000/01/rdf-schema#label> "A" .
+<http://purl.org/spar/bido-review-measures> <http://purl.org/dc/elements/1.1/contributor> "Aliaksandr Birukou" .
+<http://purl.org/spar/fabio/Expression> <http://www.w3.org/2000/01/rdf-schema#comment> "Any possible work such as journals, magazines, books, etc., created for scientific purposes and possibily related with review processes." .
+<http://purl.org/spar/bido/short-papers-accepted> <http://www.w3.org/2000/01/rdf-schema#label> "number of short paper accepted" .
+_:N83f6f071945d4a54b6cfb6b3b9d0467b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Nd7ed910fe2764f4b90cac661de4dea82 <http://www.w3.org/2002/07/owl#onProperty> _:N0b59fcce3d6e4b87a31725c52641cf70 .
+<http://purl.org/spar/bido/core-conference-ranking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/bido/ScholarlyVenueManagementSystem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures> .
+_:N0421c88b931b42cc8a72a9b57b859c09 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:N743c9cc7ba7d43bab42b11684d2d573a <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/hasMeasure> .
+_:N956c2cce7fa64014b618ef6863a986ad <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/hasMeasure> .
+_:N4cea88539c804eacb549376c5fd49e23 <http://www.w3.org/2002/07/owl#allValuesFrom> _:N380a7c02444942b6a85862741e9dd33c .
+<http://purl.org/spar/bido/core-unranked> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/ConferenceRankingCategory> .
+_:N5d24bebe55d14681a88d4adf68a370ae <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
+_:Na6ee02794c324ed69a61a5fc7b6e03bc <http://www.w3.org/2002/07/owl#unionOf> _:N313895f7e00544a6a70400341431d048 .
+<http://purl.org/spar/bido/demo-paper-accepted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/BibliometricMeasure> .
+<http://purl.org/spar/bido/full-papers-accepted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:Nb1d6c0cc82294600a2e73b3053c72273 .
+<http://purl.org/spar/bido/submissions-sent-for-review> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:N6c817a9e035d47469fba2484c57f8b41 <http://www.w3.org/2002/07/owl#onProperty> _:N6ae91934ae314717ba3ce39b7ecc357c .
+<http://purl.org/spar/bido/conference-management-toolkit> <http://www.w3.org/2000/01/rdf-schema#label> "Conference Management Toolkit" .
+<http://purl.org/spar/bido-review-measures> <http://purl.org/dc/elements/1.1/creator> "Silvio Peroni" .
+_:N598e3ca1d2364ee7964694851d08e383 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N9d61d609fa3d4de1ab89e7e895dab66d .
+<http://purl.org/spar/bido/core-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/bido/isDefinedInRanking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/bido/conference-management-toolkit> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures> .
+_:Na15544248137443cbff89a903ff91b50 <http://www.w3.org/2002/07/owl#onProperty> _:N8d6f64f11c3e4dd9be6d8bb391f2049c .
+<http://purl.org/spar/bido/open-peer-review> <http://www.w3.org/2000/01/rdf-schema#label> "open peer review" .
+<http://purl.org/spar/bido/core-a> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures> .
+_:Na6ee02794c324ed69a61a5fc7b6e03bc <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N54f990b824cb4e3d8301a6efd9df6e00 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N90919fc81b014898be14efa3339b3bbb <http://www.w3.org/2002/07/owl#allValuesFrom> _:N9ec8ffdd33ad44f6ae5fadfe3245f467 .
+_:Nbe0bf04c188a4ba7bc18d79d90ace7c7 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
+_:N4a6b3abbcc6c48d1919aea21569647f3 <http://www.w3.org/2002/07/owl#unionOf> _:N598e3ca1d2364ee7964694851d08e383 .
+<http://purl.org/spar/bido/core-a-star> <http://purl.org/spar/bido/isDefinedInRanking> <http://purl.org/spar/bido/core-conference-ranking> .
+_:N563ea879ac6e4b81893776ec20529643 <http://www.w3.org/2002/07/owl#onProperty> _:Nbe0bf04c188a4ba7bc18d79d90ace7c7 .
+<http://purl.org/spar/bido/submissions-sent-for-review> <http://www.w3.org/2000/01/rdf-schema#label> "number of submission sent for review" .
+_:Nb1d6c0cc82294600a2e73b3053c72273 <http://www.w3.org/2002/07/owl#allValuesFrom> _:Nbbc87181f7c5499c9ce4d7451499b9ea .
+_:N8d6f64f11c3e4dd9be6d8bb391f2049c <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
+_:Nfb66032cdbc44b7684952f8e3d73164a <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N54f990b824cb4e3d8301a6efd9df6e00 .
+_:N6c817a9e035d47469fba2484c57f8b41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido/core-b> <http://www.w3.org/2000/01/rdf-schema#label> "B" .
+_:N6745773e37664cb9b6260e18d179791e <http://www.w3.org/2002/07/owl#onProperty> _:Nd53dc6484f2645cb8c9b33cb3d9a296e .
+<http://purl.org/spar/bido/submissions-sent-for-review> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/BibliometricMeasure> .
+_:N563ea879ac6e4b81893776ec20529643 <http://www.w3.org/2002/07/owl#allValuesFrom> _:Nf9bda91a559c4bec87b113d1ee4f7b80 .
+_:N9cc1da1046ec417e97195e8cda5793ce <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Ne6170fda6f9040438f253fe8bd6b1f6c <http://www.w3.org/2002/07/owl#onProperty> _:N5d24bebe55d14681a88d4adf68a370ae .
+_:N0d8fa9b3bd9944a2b1326302b29b6d7d <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/Expression> .
+<http://purl.org/spar/bido/submissions-sent-for-review> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:N9abc9551a6dc499d9e8537f997fd99b0 .
+_:N080c310795aa4a60afbf9e3712ef85c8 <http://www.w3.org/2002/07/owl#onProperty> _:Na97fbad348a84b28a75517887507921e .
+_:N712da7f66eff489c9eed9e3c792d091d <http://www.w3.org/2002/07/owl#onProperty> _:Nf3178b56dd1c4a58b894f25b1a8438f5 .
+_:N380a7c02444942b6a85862741e9dd33c <http://www.w3.org/2002/07/owl#unionOf> _:N1d44de74c3194811b33b7e57b73f8ccf .
+<http://purl.org/spar/bido/ScholarlyVenueManagementSystem> <http://www.w3.org/2000/01/rdf-schema#label> "scholarly venue management system" .
+_:Ne39cab1fc2fd48c893750304e949af20 <http://www.w3.org/2002/07/owl#onProperty> _:Nbfba403b17e545cdb5d954cd3376ab8d .
+<http://purl.org/spar/bido/poster-papers-accepted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:N90919fc81b014898be14efa3339b3bbb .
+_:Ne6170fda6f9040438f253fe8bd6b1f6c <http://www.w3.org/2002/07/owl#allValuesFrom> _:N4a6b3abbcc6c48d1919aea21569647f3 .
+<http://purl.org/spar/bido-review-measures> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/spar/bido-core> .
+_:Nc4bee79c663b468ca1b8a5e4bf674977 <http://www.w3.org/2002/07/owl#onProperty> _:N4238d35a42314fcab8cac3cbbea00d7c .
+<http://purl.org/spar/bido/isHigherThan> <http://www.w3.org/2000/01/rdf-schema#label> "is higher than" .
+<http://purl.org/spar/bido/core-conference-ranking> <http://www.w3.org/2000/01/rdf-schema#label> "CORE conference ranking" .
+<http://purl.org/spar/bido/core-unranked> <http://purl.org/spar/bido/isDefinedInRanking> <http://purl.org/spar/bido/core-conference-ranking> .
+<http://purl.org/spar/bido/core-a-star> <http://www.w3.org/2000/01/rdf-schema#label> "A*" .
+<http://purl.org/spar/bido/poster-papers-accepted> <http://www.w3.org/2000/01/rdf-schema#label> "number of poster paper accepted" .
+_:Nb3bb1292658c46e399478c0b49b932fd <http://www.w3.org/2002/07/owl#allValuesFrom> _:N6745773e37664cb9b6260e18d179791e .
+_:N33ab0efcdbe848b893043125ba02f1ff <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
+_:N1d44de74c3194811b33b7e57b73f8ccf <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.semanticweb.org/ns/swc/ontology#AcademicEvent> .
+<http://purl.org/spar/bido-review-measures> <http://purl.org/dc/elements/1.1/date> "2015-07-13" .
+_:N609c8a50439c46ddad91e600fed98772 <http://www.w3.org/2002/07/owl#onProperty> _:N33ab0efcdbe848b893043125ba02f1ff .
+_:N563ea879ac6e4b81893776ec20529643 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido-review-measures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+

@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns="http://purl.org/spar/bido/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="Ncd519373afb248cd97a2acb06ae761ec">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbfba403b17e545cdb5d954cd3376ab8d">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N20633d5b6b9144ef80615e2abfa0ca0c">
+    <owl:allValuesFrom rdf:resource="http://data.semanticweb.org/ns/swc/ontology#AcademicEvent"/>
+    <owl:onProperty rdf:nodeID="N63cca342bf8741b9816570fdb58792f0"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbf61c08486ef48f79ee35781f2c0ff6f">
+    <rdf:first rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N83f6f071945d4a54b6cfb6b3b9d0467b">
+    <owl:onProperty rdf:nodeID="Nc3e8bfbb61304e11a3b273c0f478d26a"/>
+    <owl:allValuesFrom rdf:nodeID="N563ea879ac6e4b81893776ec20529643"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbbc87181f7c5499c9ce4d7451499b9ea">
+    <owl:onProperty rdf:nodeID="N998c6750e5864e41bcd3508c8c1fe874"/>
+    <owl:allValuesFrom rdf:nodeID="N609c8a50439c46ddad91e600fed98772"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/isHigherThan">
+    <rdfs:label>is higher than</rdfs:label>
+    <rdfs:range rdf:resource="http://purl.org/spar/bido/ConferenceRankingCategory"/>
+    <rdfs:domain rdf:resource="http://purl.org/spar/bido/ConferenceRankingCategory"/>
+    <rdfs:comment>It links a ranking category with one that is less important.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncaa1550848424733b4362f2fe337cea4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="Nea04e3c58c09406fb90a25adc123e740"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/ScholarlyVenueManagementSystem">
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/bido/CategorialBibliometricData"/>
+    <rdfs:comment>This class describes all the possible venue management systems (such as conference management systems and journal management systems) that can be used for managing scholarly venues.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="N080c310795aa4a60afbf9e3712ef85c8"/>
+    <rdfs:label>scholarly venue management system</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0372d4596d674c03b3a3f419dca2ed60">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/spar/fabio/Expression"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbb8238135465463782899d1663234143">
+    <owl:allValuesFrom rdf:nodeID="Ncaa1550848424733b4362f2fe337cea4"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:nodeID="Ncdb6055859464d32aa9b7cc80fa970d6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/short-papers-accepted">
+    <rdf:type rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
+    <rdf:type rdf:nodeID="N83f6f071945d4a54b6cfb6b3b9d0467b"/>
+    <rdfs:comment>It indicates how many short papers has been accepted for publication/presentation in the venue.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+    <rdfs:label>number of short paper accepted</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/single-blind-peer-review">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.org/spar/bido/PeerReviewType"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+    <rdfs:label>single blind peer review</rdfs:label>
+    <rdfs:comment>It identifies all the review processes where the identity of the reviewers is concealed from the authors.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/full-papers-accepted">
+    <rdf:type rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
+    <rdfs:comment>It indicates how many full papers has been accepted for publication/presentation in the venue.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:nodeID="Nb1d6c0cc82294600a2e73b3053c72273"/>
+    <rdfs:label>number of full paper accepted</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/core-a">
+    <rdf:type rdf:resource="http://purl.org/spar/bido/ConferenceRankingCategory"/>
+    <rdfs:label>A</rdfs:label>
+    <isDefinedInRanking rdf:resource="http://purl.org/spar/bido/core-conference-ranking"/>
+    <rdfs:comment>The CORE category for an excellent conference, and highly respected in a discipline area.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <isHigherThan rdf:resource="http://purl.org/spar/bido/core-b"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/isLowerThan">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment>It links a ranking category with one that is more important.</rdfs:comment>
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/isHigherThan"/>
+    <rdfs:label>is lower than</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/external-reviewers-involved">
+    <rdf:type rdf:nodeID="N511416ecdb4a431dba89d67f914fa4e9"/>
+    <rdfs:label>number of external reviewers involved</rdfs:label>
+    <rdfs:comment>It indicates how many external reviewers have been involved in the reviewing phase.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+    <rdf:type rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9d61d609fa3d4de1ab89e7e895dab66d">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/spar/fabio/Expression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido-review-measures">
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0</owl:versionInfo>
+    <rdfs:label>BiDO-Review-Measures</rdfs:label>
+    <dc:contributor>Aliaksandr Birukou</dc:contributor>
+    <dc:description>The need of describing aspects related to the review process is an important aspect to address by publishers (e.g., Springer) for keeping track of crucial information about conferences and journals. In addition, these data can be crucial for assessing the quality of the venues where researchers publish papers.
+
+This module of BiDO describes a list of possible reviews measures tha can be used to define bibliometric data of scholarly venues such as conferences, workshops, and journals.</dc:description>
+    <rdfs:comment>The BiDO Review Measures module (BiDO-Review-Measures) describes a list of possible reviews measures tha can be used to define bibliometric data of scholarly venues such as conferences, workshops, journals.
+
+**URL:** http://purl.org/spar/http://purl.org/spar/bido-review-measures
+
+**Creators**: [Silvio Peroni](http://orcid.org/0000-0003-0530-4305)
+
+**Contributors**: [Aliaksandr Birukou](https://orcid.org/0000-0002-4925-9131)
+
+**License:** [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode)
+
+**Website:** http://www.sparontologies.net/ontologies/bido</rdfs:comment>
+    <dc:title>BiDO Review Measures module (BiDO-Review-Measures)</dc:title>
+    <dc:date>2015-07-13</dc:date>
+    <owl:versionIRI rdf:resource="http://purl.org/spar/bido-review-measures/2015-07-13"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <dc:creator>Silvio Peroni</dc:creator>
+    <owl:imports rdf:resource="http://purl.org/spar/bido-core"/>
+    <dc:rights>This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/4.0/).</dc:rights>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/core-c">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+    <isHigherThan rdf:resource="http://purl.org/spar/bido/core-unranked"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.org/spar/bido/ConferenceRankingCategory"/>
+    <rdfs:comment>The CORE category for other ranked conference venues that meet minimum standards.</rdfs:comment>
+    <isDefinedInRanking rdf:resource="http://purl.org/spar/bido/core-conference-ranking"/>
+    <rdfs:label>C</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc4bee79c663b468ca1b8a5e4bf674977">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:nodeID="N4238d35a42314fcab8cac3cbbea00d7c"/>
+    <owl:allValuesFrom rdf:nodeID="Nbb8238135465463782899d1663234143"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/average-of-reviews-per-paper">
+    <rdfs:comment>It indicates how many reviewers has been used for each paper submitted to a venue.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+    <rdfs:label>average number of reviews per paper</rdfs:label>
+    <rdf:type rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
+    <rdf:type rdf:nodeID="Nb3bb1292658c46e399478c0b49b932fd"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4238d35a42314fcab8cac3cbbea00d7c">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/PeerReviewType">
+    <rdfs:subClassOf rdf:nodeID="Ne39cab1fc2fd48c893750304e949af20"/>
+    <rdfs:label>peer review type</rdfs:label>
+    <rdfs:comment>This class describes different kinds of peer review processes, such as double-blind and open.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/bido/CategorialBibliometricData"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf9bda91a559c4bec87b113d1ee4f7b80">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:nodeID="Ned7b170173874e8e990dbe3e9be88e98"/>
+    <owl:onProperty rdf:nodeID="N8e0df24fb0914f33b8824903b1742666"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na5335b8711d04794b1f76692427d8b28">
+    <rdf:first rdf:resource="http://data.semanticweb.org/ns/swc/ontology#AcademicEvent"/>
+    <rdf:rest rdf:nodeID="N0372d4596d674c03b3a3f419dca2ed60"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N511416ecdb4a431dba89d67f914fa4e9">
+    <owl:allValuesFrom rdf:nodeID="N38c8d52e7cb944dda18be4bf89029b54"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:nodeID="Ncd519373afb248cd97a2acb06ae761ec"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N90919fc81b014898be14efa3339b3bbb">
+    <owl:onProperty rdf:nodeID="N956c2cce7fa64014b618ef6863a986ad"/>
+    <owl:allValuesFrom rdf:nodeID="N9ec8ffdd33ad44f6ae5fadfe3245f467"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0421c88b931b42cc8a72a9b57b859c09">
+    <owl:allValuesFrom rdf:nodeID="Nd73a506c80de41bfa213c0b270173049"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:nodeID="N2033b8c2496a43a8be33f02af9b66a7c"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb3bb1292658c46e399478c0b49b932fd">
+    <owl:onProperty rdf:nodeID="N6702c6a8198f4c678382707e3fa3d13c"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:nodeID="N6745773e37664cb9b6260e18d179791e"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/ConferenceRankingCategory">
+    <rdfs:comment>This class identifies all the possible categories that can be used for ranking a conference according to the related ranking that defines them.</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="Nd7ed910fe2764f4b90cac661de4dea82"/>
+    <rdfs:label>conference ranking category</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/bido/CategorialBibliometricData"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf3178b56dd1c4a58b894f25b1a8438f5">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nace7b26a036143bd811fe5ac57bffc28">
+    <owl:unionOf rdf:nodeID="Na5335b8711d04794b1f76692427d8b28"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbfead114d6fe4583a78988ea65fd0737">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6c817a9e035d47469fba2484c57f8b41">
+    <owl:onProperty rdf:nodeID="N6ae91934ae314717ba3ce39b7ecc357c"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:nodeID="Nace7b26a036143bd811fe5ac57bffc28"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/core-a-star">
+    <isDefinedInRanking rdf:resource="http://purl.org/spar/bido/core-conference-ranking"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>A*</rdfs:label>
+    <rdf:type rdf:resource="http://purl.org/spar/bido/ConferenceRankingCategory"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+    <rdfs:comment>The CORE category for a flagship conference, a leading venue in a discipline area.</rdfs:comment>
+    <isHigherThan rdf:resource="http://purl.org/spar/bido/core-a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nea04e3c58c09406fb90a25adc123e740">
+    <rdf:rest rdf:nodeID="N80ff395607a64d3aa28cb3f7a797fe66"/>
+    <rdf:first rdf:resource="http://data.semanticweb.org/ns/swc/ontology#AcademicEvent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na15544248137443cbff89a903ff91b50">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:nodeID="N8d6f64f11c3e4dd9be6d8bb391f2049c"/>
+    <owl:allValuesFrom rdf:nodeID="N9cc1da1046ec417e97195e8cda5793ce"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/poster-papers-accepted">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+    <rdf:type rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
+    <rdfs:comment>It indicates how many poster papers has been accepted for publication/presentation in the venue.</rdfs:comment>
+    <rdfs:label>number of poster paper accepted</rdfs:label>
+    <rdf:type rdf:nodeID="N90919fc81b014898be14efa3339b3bbb"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N80ff395607a64d3aa28cb3f7a797fe66">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/spar/fabio/Expression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/core-conference-ranking">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+    <rdfs:label>CORE conference ranking</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.org/spar/bido/ConferenceRanking"/>
+    <rdfs:comment>The CORE Conference Ranking (http://www.core.edu.au/index.php/conference-rankings) is an ongoing activity that provides assessments of major conferences in the computing disciplines.The rankings are managed by the CORE Executive Committee, with updates processed from time to time by a subcommittee established as needed.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N313895f7e00544a6a70400341431d048">
+    <rdf:first rdf:resource="http://data.semanticweb.org/ns/swc/ontology#AcademicEvent"/>
+    <rdf:rest rdf:nodeID="N957ab7fb97b74aca957ddb698f77b28f"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9abc9551a6dc499d9e8537f997fd99b0">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:nodeID="N92fbd4c6e204459682f2cdaace76f5c0"/>
+    <owl:allValuesFrom rdf:nodeID="Nc4bee79c663b468ca1b8a5e4bf674977"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N609c8a50439c46ddad91e600fed98772">
+    <owl:allValuesFrom rdf:nodeID="N2a1fe5a9b153478aaa0330c6ce614991"/>
+    <owl:onProperty rdf:nodeID="N33ab0efcdbe848b893043125ba02f1ff"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/open-peer-review">
+    <rdfs:comment>It identifies all the review processes where the identity of the authors and the reviewers is known.</rdfs:comment>
+    <rdf:type rdf:resource="http://purl.org/spar/bido/PeerReviewType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+    <rdfs:label>open peer review</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd7ed910fe2764f4b90cac661de4dea82">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:nodeID="N0b59fcce3d6e4b87a31725c52641cf70"/>
+    <owl:allValuesFrom rdf:nodeID="N20633d5b6b9144ef80615e2abfa0ca0c"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/double-blind-peer-review">
+    <rdfs:comment>It identifies all the review processes where the identity of the authors is concealed from the reviewers, and vice versa.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>double blind peer review</rdfs:label>
+    <rdf:type rdf:resource="http://purl.org/spar/bido/PeerReviewType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nddf7153524554f96b6cac48a049c8e53">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:nodeID="Nf7e916204cc244088ed545889d4fbd44"/>
+    <owl:allValuesFrom rdf:nodeID="Na15544248137443cbff89a903ff91b50"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/easychair">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.org/spar/bido/ScholarlyVenueManagementSystem"/>
+    <rdfs:label>EasyChair</rdfs:label>
+    <rdfs:comment>EasyChair is a conference management system that is flexible, easy to use, and has many features to make it suitable for various conference models. It is currently probably the most commonly used conference management system.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne39cab1fc2fd48c893750304e949af20">
+    <owl:onProperty rdf:nodeID="Nbfba403b17e545cdb5d954cd3376ab8d"/>
+    <owl:allValuesFrom rdf:nodeID="N6c817a9e035d47469fba2484c57f8b41"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N92b42dc2251f40acae6a5af89e40d094">
+    <rdf:first rdf:resource="http://data.semanticweb.org/ns/swc/ontology#AcademicEvent"/>
+    <rdf:rest rdf:nodeID="Nf9f8ef36a1a144d3a555d169f77303af"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.semanticweb.org/ns/swc/ontology#AcademicEvent">
+    <rdfs:isDefinedBy rdf:resource="http://data.semanticweb.org/ns/swc/ontology"/>
+    <rdfs:comment>Any academic event such as conferences, workshops, symposia.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>academic event</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2033b8c2496a43a8be33f02af9b66a7c">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf7e916204cc244088ed545889d4fbd44">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N109736e2f0d94cd998f3343d8eef7411">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/core-b">
+    <isHigherThan rdf:resource="http://purl.org/spar/bido/core-c"/>
+    <rdfs:label>B</rdfs:label>
+    <rdf:type rdf:resource="http://purl.org/spar/bido/ConferenceRankingCategory"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:comment>The CORE category for a good conference, and well regarded in a discipline area.</rdfs:comment>
+    <isDefinedInRanking rdf:resource="http://purl.org/spar/bido/core-conference-ranking"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd73a506c80de41bfa213c0b270173049">
+    <owl:unionOf rdf:nodeID="N92b42dc2251f40acae6a5af89e40d094"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/isDefinedInRanking">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+    <rdfs:label>is defined in ranking</rdfs:label>
+    <rdfs:range rdf:resource="http://purl.org/spar/bido/ConferenceRanking"/>
+    <rdfs:comment>It links a ranking category with the ranking that defines it.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://purl.org/spar/bido/ConferenceRankingCategory"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfc1bf2869f83436e8197a997fc676ece">
+    <owl:onProperty rdf:nodeID="N109736e2f0d94cd998f3343d8eef7411"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:nodeID="Na6ee02794c324ed69a61a5fc7b6e03bc"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6ae91934ae314717ba3ce39b7ecc357c">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na97fbad348a84b28a75517887507921e">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndbea548236424b39a235fc686a809663">
+    <rdf:first rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Neb2e6c0609384d23acf2929a4bd47a9c">
+    <rdf:rest rdf:nodeID="Ndbea548236424b39a235fc686a809663"/>
+    <rdf:first rdf:resource="http://data.semanticweb.org/ns/swc/ontology#AcademicEvent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc8a86a464ccc4c1f9546789814344bc3">
+    <rdf:rest rdf:nodeID="N0d8fa9b3bd9944a2b1326302b29b6d7d"/>
+    <rdf:first rdf:resource="http://data.semanticweb.org/ns/swc/ontology#AcademicEvent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/demo-paper-accepted">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+    <rdf:type rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
+    <rdf:type rdf:nodeID="N712da7f66eff489c9eed9e3c792d091d"/>
+    <rdfs:label>number of demo paper accepted</rdfs:label>
+    <rdfs:comment>It indicates how many demo papers has been accepted for publication/presentation in the venue.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf9f8ef36a1a144d3a555d169f77303af">
+    <rdf:first rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb1d6c0cc82294600a2e73b3053c72273">
+    <owl:allValuesFrom rdf:nodeID="Nbbc87181f7c5499c9ce4d7451499b9ea"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:nodeID="N743c9cc7ba7d43bab42b11684d2d573a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4a6b3abbcc6c48d1919aea21569647f3">
+    <owl:unionOf rdf:nodeID="N598e3ca1d2364ee7964694851d08e383"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/fabio/Expression">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>Any possible work such as journals, magazines, books, etc., created for scientific purposes and possibily related with review processes.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio"/>
+    <rdfs:label>expression</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N080c310795aa4a60afbf9e3712ef85c8">
+    <owl:onProperty rdf:nodeID="Na97fbad348a84b28a75517887507921e"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:nodeID="N4cea88539c804eacb549376c5fd49e23"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N712da7f66eff489c9eed9e3c792d091d">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:nodeID="Nf3178b56dd1c4a58b894f25b1a8438f5"/>
+    <owl:allValuesFrom rdf:nodeID="Nddf7153524554f96b6cac48a049c8e53"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N38c8d52e7cb944dda18be4bf89029b54">
+    <owl:onProperty rdf:nodeID="Nd211d0cd6abb4e04b5902a3aa9124ef0"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:nodeID="N0421c88b931b42cc8a72a9b57b859c09"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na9a01e9977d34d7d9ca5398b4e9da051">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9ec8ffdd33ad44f6ae5fadfe3245f467">
+    <owl:allValuesFrom rdf:nodeID="Nfc1bf2869f83436e8197a997fc676ece"/>
+    <owl:onProperty rdf:nodeID="Nbfead114d6fe4583a78988ea65fd0737"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9cc1da1046ec417e97195e8cda5793ce">
+    <owl:unionOf rdf:nodeID="Neb2e6c0609384d23acf2929a4bd47a9c"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc3e8bfbb61304e11a3b273c0f478d26a">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ned7b170173874e8e990dbe3e9be88e98">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="Nfb66032cdbc44b7684952f8e3d73164a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N998c6750e5864e41bcd3508c8c1fe874">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N63cca342bf8741b9816570fdb58792f0">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/submissions-sent-for-review">
+    <rdf:type rdf:nodeID="N9abc9551a6dc499d9e8537f997fd99b0"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+    <rdfs:label>number of submission sent for review</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
+    <rdfs:comment>It indicates how many submitted papers has been assagned to reviewers for revision.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/ConferenceRanking">
+    <rdfs:comment>This class describes conference rankings as composed by categories identifying different rankings.</rdfs:comment>
+    <rdfs:label>conference ranking</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/core-unranked">
+    <rdfs:comment>The CORE category for a conference for which no ranking decision has been made.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>unranked</rdfs:label>
+    <isDefinedInRanking rdf:resource="http://purl.org/spar/bido/core-conference-ranking"/>
+    <rdf:type rdf:resource="http://purl.org/spar/bido/ConferenceRankingCategory"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6702c6a8198f4c678382707e3fa3d13c">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2a1fe5a9b153478aaa0330c6ce614991">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="Nc8a86a464ccc4c1f9546789814344bc3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/conference-management-toolkit">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+    <rdf:type rdf:resource="http://purl.org/spar/bido/ScholarlyVenueManagementSystem"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Conference Management Toolkit</rdfs:label>
+    <rdfs:comment>The Conference Management Toolkit (CMT) is a free conference management service sponsored by Microsoft Research.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0d8fa9b3bd9944a2b1326302b29b6d7d">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/spar/fabio/Expression"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne6170fda6f9040438f253fe8bd6b1f6c">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:nodeID="N5d24bebe55d14681a88d4adf68a370ae"/>
+    <owl:allValuesFrom rdf:nodeID="N4a6b3abbcc6c48d1919aea21569647f3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4cea88539c804eacb549376c5fd49e23">
+    <owl:allValuesFrom rdf:nodeID="N380a7c02444942b6a85862741e9dd33c"/>
+    <owl:onProperty rdf:nodeID="Na9a01e9977d34d7d9ca5398b4e9da051"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N957ab7fb97b74aca957ddb698f77b28f">
+    <rdf:first rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6745773e37664cb9b6260e18d179791e">
+    <owl:onProperty rdf:nodeID="Nd53dc6484f2645cb8c9b33cb3d9a296e"/>
+    <owl:allValuesFrom rdf:nodeID="Ne6170fda6f9040438f253fe8bd6b1f6c"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N54f990b824cb4e3d8301a6efd9df6e00">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/spar/fabio/Expression"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncdb6055859464d32aa9b7cc80fa970d6">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N380a7c02444942b6a85862741e9dd33c">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="N1d44de74c3194811b33b7e57b73f8ccf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N598e3ca1d2364ee7964694851d08e383">
+    <rdf:rest rdf:nodeID="N9d61d609fa3d4de1ab89e7e895dab66d"/>
+    <rdf:first rdf:resource="http://data.semanticweb.org/ns/swc/ontology#AcademicEvent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N92fbd4c6e204459682f2cdaace76f5c0">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1d44de74c3194811b33b7e57b73f8ccf">
+    <rdf:first rdf:resource="http://data.semanticweb.org/ns/swc/ontology#AcademicEvent"/>
+    <rdf:rest rdf:nodeID="Nbf61c08486ef48f79ee35781f2c0ff6f"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8e0df24fb0914f33b8824903b1742666">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0b59fcce3d6e4b87a31725c52641cf70">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd53dc6484f2645cb8c9b33cb3d9a296e">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd211d0cd6abb4e04b5902a3aa9124ef0">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfb66032cdbc44b7684952f8e3d73164a">
+    <rdf:rest rdf:nodeID="N54f990b824cb4e3d8301a6efd9df6e00"/>
+    <rdf:first rdf:resource="http://data.semanticweb.org/ns/swc/ontology#AcademicEvent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N743c9cc7ba7d43bab42b11684d2d573a">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N956c2cce7fa64014b618ef6863a986ad">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5d24bebe55d14681a88d4adf68a370ae">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na6ee02794c324ed69a61a5fc7b6e03bc">
+    <owl:unionOf rdf:nodeID="N313895f7e00544a6a70400341431d048"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbe0bf04c188a4ba7bc18d79d90ace7c7">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N563ea879ac6e4b81893776ec20529643">
+    <owl:allValuesFrom rdf:nodeID="Nf9bda91a559c4bec87b113d1ee4f7b80"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:nodeID="Nbe0bf04c188a4ba7bc18d79d90ace7c7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8d6f64f11c3e4dd9be6d8bb391f2049c">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N33ab0efcdbe848b893043125ba02f1ff">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
+  </rdf:Description>
+</rdf:RDF>
