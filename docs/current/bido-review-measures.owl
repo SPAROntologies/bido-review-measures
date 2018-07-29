@@ -1,51 +1,60 @@
 <?xml version="1.0"?>
-
-
-<!DOCTYPE rdf:RDF [
-    <!ENTITY fabio "http://purl.org/spar/fabio/" >
-    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
-    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
-    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
-    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology#" >
-]>
-
-
 <rdf:RDF xmlns="http://purl.org/spar/bido/"
      xml:base="http://purl.org/spar/bido/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:fabio="http://purl.org/spar/fabio/"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:swc="http://data.semanticweb.org/ns/swc/ontology#"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.org/spar/bido-review-measures">
-        <rdfs:label>BiDO-Review-Measures</rdfs:label>
-        <owl:versionInfo rdf:datatype="&xsd;string">1.0</owl:versionInfo>
-        <owl:versionIRI rdf:resource="http://purl.org/spar/bido-review-measures/2015-07-13"/>
-        <dc:contributor>Aliaksandr Birukou</dc:contributor>
-        <dc:creator>Silvio Peroni</dc:creator>
-        <dc:date>2015-07-13</dc:date>
-        <dc:description>The need of describing aspects related to the review process is an important aspect to address by publishers (e.g., Springer) for keeping track of crucial information about conferences and journals. In addition, these data can be crucial for assessing the quality of the venues where researchers publish papers.
-
-This module of BiDO describes a list of possible reviews measures tha can be used to define bibliometric data of scholarly venues such as conferences, workshops, and journals.</dc:description>
-        <dc:rights>This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/4.0/).</dc:rights>
+        <owl:versionIRI rdf:resource="http://purl.org/spar/bido-review-measures/2018-07-13"/>
+        <owl:imports rdf:resource="http://purl.org/spar/bido-core"/>
+        <dc:creator>Idafen Santana-Pérez</dc:creator>
         <dc:title>BiDO Review Measures module (BiDO-Review-Measures)</dc:title>
-        <rdfs:comment>The BiDO Review Measures module (BiDO-Review-Measures) describes a list of possible reviews measures tha can be used to define bibliometric data of scholarly venues such as conferences, workshops, journals.
+        <dc:creator>Silvio Peroni</dc:creator>
+        <dc:creator>María Poveda-Villalón</dc:creator>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.1</owl:versionInfo>
+        <dc:rights>This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/4.0/).</dc:rights>
+        <rdfs:label>BiDO-Review-Measures</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The BiDO Review Measures module (BiDO-Review-Measures) describes a list of possible reviews measures that can be used to define bibliometric data of scholarly venues such as conferences, workshops, journals.
 
-**URL:** http://purl.org/spar/http://purl.org/spar/bido-review-measures
+**URL:** http://purl.org/spar/bido-review-measures
 
-**Creators**: [Silvio Peroni](http://orcid.org/0000-0003-0530-4305)
+**Creators**: [Silvio Peroni](http://orcid.org/0000-0003-0530-4305), [Idafen Santana-Pérez](https://orcid.org/0000-0001-8296-8629), [María Poveda-Villalón](https://orcid.org/0000-0003-3587-0367)
 
 **Contributors**: [Aliaksandr Birukou](https://orcid.org/0000-0002-4925-9131)
 
 **License:** [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode)
 
 **Website:** http://www.sparontologies.net/ontologies/bido</rdfs:comment>
-        <owl:imports rdf:resource="http://purl.org/spar/bido-core"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-07-13</dc:date>
+        <dc:description>The need of describing aspects related to the review process is an important aspect to address by publishers (e.g., Springer) for keeping track of crucial information about conferences and journals. In addition, these data can be crucial for assessing the quality of the venues where researchers publish papers.
+
+This module of BiDO describes a list of possible reviews measures tha can be used to define bibliometric data of scholarly venues such as conferences, workshops, and journals.</dc:description>
+        <dc:contributor>Aliaksandr Birukou</dc:contributor>
+        <owl:priorVersion rdf:resource="http://purl.org/spar/bido-review-measures/2015-07-13"/>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
     
 
 
@@ -60,14 +69,27 @@ This module of BiDO describes a list of possible reviews measures tha can be use
     
 
 
-    <!-- http://purl.org/spar/bido/isDefinedInRanking -->
+    <!-- http://purl.org/spar/bido/hasMeasure -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/spar/bido/isDefinedInRanking">
-        <rdfs:label>is defined in ranking</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/bido/hasMeasure"/>
+    
+
+
+    <!-- http://purl.org/spar/bido/holdsBibliometricDataInTime -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
+    
+
+
+    <!-- http://purl.org/spar/bido/isDefinedIn -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/bido/isDefinedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+        <rdfs:domain rdf:resource="http://purl.org/spar/bido/CategorialBibliometricData"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
         <rdfs:comment>It links a ranking category with the ranking that defines it.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
-        <rdfs:range rdf:resource="http://purl.org/spar/bido/ConferenceRanking"/>
-        <rdfs:domain rdf:resource="http://purl.org/spar/bido/ConferenceRankingCategory"/>
+        <rdfs:label>is defined in ranking</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -75,11 +97,12 @@ This module of BiDO describes a list of possible reviews measures tha can be use
     <!-- http://purl.org/spar/bido/isHigherThan -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/spar/bido/isHigherThan">
-        <rdfs:label>is higher than</rdfs:label>
+        <owl:inverseOf rdf:resource="http://purl.org/spar/bido/isLowerThan"/>
+        <rdfs:domain rdf:resource="http://purl.org/spar/bido/CategorialBibliometricData"/>
+        <rdfs:range rdf:resource="http://purl.org/spar/bido/CategorialBibliometricData"/>
         <rdfs:comment>It links a ranking category with one that is less important.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
-        <rdfs:range rdf:resource="http://purl.org/spar/bido/ConferenceRankingCategory"/>
-        <rdfs:domain rdf:resource="http://purl.org/spar/bido/ConferenceRankingCategory"/>
+        <rdfs:label>is higher than</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -87,11 +110,67 @@ This module of BiDO describes a list of possible reviews measures tha can be use
     <!-- http://purl.org/spar/bido/isLowerThan -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/spar/bido/isLowerThan">
-        <rdfs:label>is lower than</rdfs:label>
         <rdfs:comment>It links a ranking category with one that is more important.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
-        <owl:inverseOf rdf:resource="http://purl.org/spar/bido/isHigherThan"/>
+        <rdfs:label>is lower than</rdfs:label>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/bido/withBibliometricData -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/bido/withBibliometricData"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#closeMatch -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/spar/bido/hasConfidenceValue -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/spar/bido/hasConfidenceValue">
+        <rdfs:domain rdf:resource="http://purl.org/spar/bido/ReviewerConfidenceValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">The confidence value of expertise in the review topic given by the reviwer.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">has confidence value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/spar/bido/hasRatingValue -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/spar/bido/hasRatingValue">
+        <rdfs:domain rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">The value of the rating given to a review.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">has rating value</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
@@ -108,20 +187,33 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <!-- http://data.semanticweb.org/ns/swc/ontology#AcademicEvent -->
 
-    <owl:Class rdf:about="&swc;AcademicEvent">
-        <rdfs:label>academic event</rdfs:label>
+    <owl:Class rdf:about="http://data.semanticweb.org/ns/swc/ontology#AcademicEvent">
         <rdfs:comment>Any academic event such as conferences, workshops, symposia.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.semanticweb.org/ns/swc/ontology"/>
+        <rdfs:label>academic event</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/bido/BibliometricMeasure -->
+
+    <owl:Class rdf:about="http://purl.org/spar/bido/BibliometricMeasure"/>
+    
+
+
+    <!-- http://purl.org/spar/bido/CategorialBibliometricData -->
+
+    <owl:Class rdf:about="http://purl.org/spar/bido/CategorialBibliometricData"/>
     
 
 
     <!-- http://purl.org/spar/bido/ConferenceRanking -->
 
     <owl:Class rdf:about="http://purl.org/spar/bido/ConferenceRanking">
-        <rdfs:label>conference ranking</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
         <rdfs:comment>This class describes conference rankings as composed by categories identifying different rankings.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label>conference ranking</rdfs:label>
     </owl:Class>
     
 
@@ -129,7 +221,6 @@ This module of BiDO describes a list of possible reviews measures tha can be use
     <!-- http://purl.org/spar/bido/ConferenceRankingCategory -->
 
     <owl:Class rdf:about="http://purl.org/spar/bido/ConferenceRankingCategory">
-        <rdfs:label>conference ranking category</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/spar/bido/CategorialBibliometricData"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -145,13 +236,36 @@ This module of BiDO describes a list of possible reviews measures tha can be use
                                 <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
                             </rdf:Description>
                         </owl:onProperty>
-                        <owl:allValuesFrom rdf:resource="&swc;AcademicEvent"/>
+                        <owl:allValuesFrom rdf:resource="http://data.semanticweb.org/ns/swc/ontology#AcademicEvent"/>
                     </owl:Restriction>
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>This class identifies all the possible categories that can be used for ranking a conference according to the related ranking that defines them.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label>conference ranking category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/bido/DiscreteReviewRatingScale -->
+
+    <owl:Class rdf:about="http://purl.org/spar/bido/DiscreteReviewRatingScale">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/bido/ReviewRatingScale"/>
+        <rdfs:comment xml:lang="en">A discrete scale defining the rating given by a reviewer for a specific scientific contribution.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">discrete review rating scale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/bido/DiscreteReviewerConfidenceScale -->
+
+    <owl:Class rdf:about="http://purl.org/spar/bido/DiscreteReviewerConfidenceScale">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/bido/ReviewerConfidenceScale"/>
+        <rdfs:comment xml:lang="en">A discrete scale defining the confidence of a reviewer for a given topic.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">discrete reviewer confidence scale</rdfs:label>
     </owl:Class>
     
 
@@ -159,7 +273,6 @@ This module of BiDO describes a list of possible reviews measures tha can be use
     <!-- http://purl.org/spar/bido/PeerReviewType -->
 
     <owl:Class rdf:about="http://purl.org/spar/bido/PeerReviewType">
-        <rdfs:label>peer review type</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/spar/bido/CategorialBibliometricData"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -178,8 +291,8 @@ This module of BiDO describes a list of possible reviews measures tha can be use
                         <owl:allValuesFrom>
                             <owl:Class>
                                 <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="&swc;AcademicEvent"/>
-                                    <rdf:Description rdf:about="&fabio;Expression"/>
+                                    <rdf:Description rdf:about="http://data.semanticweb.org/ns/swc/ontology#AcademicEvent"/>
+                                    <rdf:Description rdf:about="http://purl.org/spar/fabio/Expression"/>
                                 </owl:unionOf>
                             </owl:Class>
                         </owl:allValuesFrom>
@@ -189,6 +302,51 @@ This module of BiDO describes a list of possible reviews measures tha can be use
         </rdfs:subClassOf>
         <rdfs:comment>This class describes different kinds of peer review processes, such as double-blind and open.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label>peer review type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/bido/ReviewRatingScale -->
+
+    <owl:Class rdf:about="http://purl.org/spar/bido/ReviewRatingScale">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <rdfs:comment xml:lang="en">A scale defining the rating given by a reviewer for a specific scientific contribution.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">review rating scale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/bido/ReviewRatingValue -->
+
+    <owl:Class rdf:about="http://purl.org/spar/bido/ReviewRatingValue">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/bido/CategorialBibliometricData"/>
+        <rdfs:comment xml:lang="en">This class describes the set of values compliant with a given review rating scale.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">review rating value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/bido/ReviewerConfidenceScale -->
+
+    <owl:Class rdf:about="http://purl.org/spar/bido/ReviewerConfidenceScale">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <rdfs:comment xml:lang="en">A scale defining the confidence of a reviewer for a given topic.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">reviewer confidence scale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/bido/ReviewerConfidenceValue -->
+
+    <owl:Class rdf:about="http://purl.org/spar/bido/ReviewerConfidenceValue">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/bido/CategorialBibliometricData"/>
+        <rdfs:comment xml:lang="en">This class describes the set of values compliant with a given reviewer confidence scale.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">reviewer confidence value</rdfs:label>
     </owl:Class>
     
 
@@ -196,7 +354,6 @@ This module of BiDO describes a list of possible reviews measures tha can be use
     <!-- http://purl.org/spar/bido/ScholarlyVenueManagementSystem -->
 
     <owl:Class rdf:about="http://purl.org/spar/bido/ScholarlyVenueManagementSystem">
-        <rdfs:label>scholarly venue management system</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/spar/bido/CategorialBibliometricData"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -215,8 +372,8 @@ This module of BiDO describes a list of possible reviews measures tha can be use
                         <owl:allValuesFrom>
                             <owl:Class>
                                 <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="&swc;AcademicEvent"/>
-                                    <rdf:Description rdf:about="&fabio;Expression"/>
+                                    <rdf:Description rdf:about="http://data.semanticweb.org/ns/swc/ontology#AcademicEvent"/>
+                                    <rdf:Description rdf:about="http://purl.org/spar/fabio/Expression"/>
                                 </owl:unionOf>
                             </owl:Class>
                         </owl:allValuesFrom>
@@ -226,16 +383,25 @@ This module of BiDO describes a list of possible reviews measures tha can be use
         </rdfs:subClassOf>
         <rdfs:comment>This class describes all the possible venue management systems (such as conference management systems and journal management systems) that can be used for managing scholarly venues.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label>scholarly venue management system</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.org/spar/fabio/Expression -->
 
-    <owl:Class rdf:about="&fabio;Expression">
-        <rdfs:label>expression</rdfs:label>
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Expression">
         <rdfs:comment>Any possible work such as journals, magazines, books, etc., created for scientific purposes and possibily related with review processes.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio"/>
+        <rdfs:label>expression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
     </owl:Class>
     
 
@@ -248,6 +414,270 @@ This module of BiDO describes a list of possible reviews measures tha can be use
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.org/NET/rdflicense/cc-by4.0 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/NET/rdflicense/cc-by4.0"/>
+    
+
+
+    <!-- http://purl.org/spar/bido/a-na-wr -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/a-na-wr">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/DiscreteReviewRatingScale"/>
+        <rdfs:comment xml:lang="en">Discrete scale from Approved to Not Approved, including Aprproved With Reservations.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">Approved to Not Approved review rating scale</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/a-na-wr-app -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/a-na-wr-app">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-acc"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-10-10"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-4"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-5"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-n2-p2-pos1"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-n2-p2-pos2"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-acc"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-sacc"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-nb-acc"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-nb-sacc"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/a-na-wr"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">Approved (Approved to Not Approved review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/a-na-wr-appwr -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/a-na-wr-appwr">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-minrev"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-3"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-wacc"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-nb-wacc"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/a-na-wr"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">Approved with reservations (Approved to Not Approved review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/a-na-wr-napp -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/a-na-wr-napp">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-rej"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-10-0"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-0"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-1"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-n2-p2-neg1"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-n2-p2-neg2"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-rej"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-srej"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-nb-rej"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-nb-srej"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/a-na-wr"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">Not approved (Approved to Not Approved review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/a-r-ts -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/a-r-ts">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/DiscreteReviewRatingScale"/>
+        <rdfs:comment xml:lang="en">Discrete scale from Accept to Reject, including pre-screening and two strikes rule</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">Accept to Reject, Two Strikes review rating scale</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/a-r-ts-acc -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/a-r-ts-acc">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-app"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-10-10"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-4"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-5"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-n2-p2-pos1"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-n2-p2-pos2"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-acc"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-sacc"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-nb-acc"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-nb-sacc"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/a-r-ts"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">Accept (Accept to Reject, Two Strikes review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/a-r-ts-majrev -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/a-r-ts-majrev">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-10-5"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-n2-p2-0"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-bdl"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/a-r-ts"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">Major revision (Accept to Reject, Two Strikes review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/a-r-ts-minrev -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/a-r-ts-minrev">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-appwr"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-3"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-wacc"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-nb-wacc"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/a-r-ts"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">Minor revision (Accept to Reject, Two Strikes review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/a-r-ts-rej -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/a-r-ts-rej">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-napp"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-10-0"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-0"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-1"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-n2-p2-neg1"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-n2-p2-neg2"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-rej"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-srej"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-nb-rej"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-nb-srej"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/a-r-ts"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">Reject (Accept to Reject, Two Strikes review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/a-r-ts-rejps -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/a-r-ts-rejps">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/a-r-ts"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">Reject, Pre-Screening (Accept to Reject, Two Strikes review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/a-r-ts-rejts -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/a-r-ts-rejts">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/a-r-ts"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">Reject, Two Strikes (Accept to Reject, Two Strikes review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/acl-1-5 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/acl-1-5">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/DiscreteReviewerConfidenceScale"/>
+        <rdfs:comment xml:lang="en">Discrete scale from 1 to 5, used by Association for Computational Linguistics annual meetings</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">Discrete 1 to 5 review rating scale</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/acl-1-5-acl1 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/acl-1-5-acl1">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewerConfidenceValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/acl-1-5-acl1"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/ex-null-null"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/acl-1-5"/>
+        <hasConfidenceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasConfidenceValue>
+        <rdfs:comment xml:lang="en">Not reviewer&apos;s area of expertise, or paper is very hard to understand. The evaluation is just an educated guess.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">1 out of 5 (Discrete 1 to 5 review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/acl-1-5-acl2 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/acl-1-5-acl2">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewerConfidenceValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/acl-1-5-acl2"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/ex-null-low"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/acl-1-5"/>
+        <hasConfidenceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</hasConfidenceValue>
+        <rdfs:comment xml:lang="en">Reviewers is willing to defend my evaluation, but it is fairly likely that he/she missed some details, didn&apos;t understand some central points, or can&apos;t be sure about the novelty of the work.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">2 out of 5 (Discrete 1 to 5 review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/acl-1-5-acl3 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/acl-1-5-acl3">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewerConfidenceValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/acl-1-5-acl3"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/ex-null-med"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/acl-1-5"/>
+        <hasConfidenceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</hasConfidenceValue>
+        <rdfs:comment xml:lang="en">Reviewer is pretty sure, but there&apos;s a chance he/she missed something. Although she/he has a good feel for this area in general, she/he did not carefully check the paper&apos;s details, e.g., the math, experimental design, or novelty.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">3 out of 5 (Discrete 1 to 5 review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/acl-1-5-acl4 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/acl-1-5-acl4">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewerConfidenceValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/acl-1-5-acl4"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/ex-null-high"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/acl-1-5"/>
+        <hasConfidenceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</hasConfidenceValue>
+        <rdfs:comment xml:lang="en">Reviewer is quite sure, tried to check the important points carefully. It&apos;s unlikely, though conceivable, that he/she missed something that should affect his/her ratings.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">4 out of 5 (Discrete 1 to 5 review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/acl-1-5-acl5 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/acl-1-5-acl5">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewerConfidenceValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/acl-1-5-acl5"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/ex-null-exp"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/acl-1-5"/>
+        <hasConfidenceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</hasConfidenceValue>
+        <rdfs:comment xml:lang="en">Reviewer is positive that the evaluation is correct, has read the paper very carefully and is familiar with related work.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">5 out of 5 (Discrete 1 to 5 review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
     
 
 
@@ -279,8 +709,8 @@ This module of BiDO describes a list of possible reviews measures tha can be use
                                 <owl:allValuesFrom>
                                     <owl:Class>
                                         <owl:unionOf rdf:parseType="Collection">
-                                            <rdf:Description rdf:about="&swc;AcademicEvent"/>
-                                            <rdf:Description rdf:about="&fabio;Expression"/>
+                                            <rdf:Description rdf:about="http://data.semanticweb.org/ns/swc/ontology#AcademicEvent"/>
+                                            <rdf:Description rdf:about="http://purl.org/spar/fabio/Expression"/>
                                         </owl:unionOf>
                                     </owl:Class>
                                 </owl:allValuesFrom>
@@ -290,9 +720,9 @@ This module of BiDO describes a list of possible reviews measures tha can be use
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdf:type>
-        <rdfs:label>average number of reviews per paper</rdfs:label>
         <rdfs:comment>It indicates how many reviewers has been used for each paper submitted to a venue.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label>average number of reviews per paper</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -301,9 +731,9 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/conference-management-toolkit">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ScholarlyVenueManagementSystem"/>
-        <rdfs:label>Conference Management Toolkit</rdfs:label>
         <rdfs:comment>The Conference Management Toolkit (CMT) is a free conference management service sponsored by Microsoft Research.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label>Conference Management Toolkit</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -312,11 +742,11 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/core-a">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ConferenceRankingCategory"/>
-        <rdfs:label>A</rdfs:label>
+        <isDefinedIn rdf:resource="http://purl.org/spar/bido/core-conference-ranking"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/core-b"/>
         <rdfs:comment>The CORE category for an excellent conference, and highly respected in a discipline area.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
-        <isHigherThan rdf:resource="http://purl.org/spar/bido/core-b"/>
-        <isDefinedInRanking rdf:resource="http://purl.org/spar/bido/core-conference-ranking"/>
+        <rdfs:label>A</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -325,11 +755,11 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/core-a-star">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ConferenceRankingCategory"/>
-        <rdfs:label>A*</rdfs:label>
+        <isDefinedIn rdf:resource="http://purl.org/spar/bido/core-conference-ranking"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/core-a"/>
         <rdfs:comment>The CORE category for a flagship conference, a leading venue in a discipline area.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
-        <isHigherThan rdf:resource="http://purl.org/spar/bido/core-a"/>
-        <isDefinedInRanking rdf:resource="http://purl.org/spar/bido/core-conference-ranking"/>
+        <rdfs:label>A*</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -338,11 +768,11 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/core-b">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ConferenceRankingCategory"/>
-        <rdfs:label>B</rdfs:label>
+        <isDefinedIn rdf:resource="http://purl.org/spar/bido/core-conference-ranking"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/core-c"/>
         <rdfs:comment>The CORE category for a good conference, and well regarded in a discipline area.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
-        <isHigherThan rdf:resource="http://purl.org/spar/bido/core-c"/>
-        <isDefinedInRanking rdf:resource="http://purl.org/spar/bido/core-conference-ranking"/>
+        <rdfs:label>B</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -351,11 +781,11 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/core-c">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ConferenceRankingCategory"/>
-        <rdfs:label>C</rdfs:label>
+        <isDefinedIn rdf:resource="http://purl.org/spar/bido/core-conference-ranking"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/core-unranked"/>
         <rdfs:comment>The CORE category for other ranked conference venues that meet minimum standards.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
-        <isDefinedInRanking rdf:resource="http://purl.org/spar/bido/core-conference-ranking"/>
-        <isHigherThan rdf:resource="http://purl.org/spar/bido/core-unranked"/>
+        <rdfs:label>C</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -364,9 +794,9 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/core-conference-ranking">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ConferenceRanking"/>
-        <rdfs:label>CORE conference ranking</rdfs:label>
         <rdfs:comment>The CORE Conference Ranking (http://www.core.edu.au/index.php/conference-rankings) is an ongoing activity that provides assessments of major conferences in the computing disciplines.The rankings are managed by the CORE Executive Committee, with updates processed from time to time by a subcommittee established as needed.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label>CORE conference ranking</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -375,10 +805,10 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/core-unranked">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ConferenceRankingCategory"/>
-        <rdfs:label>unranked</rdfs:label>
+        <isDefinedIn rdf:resource="http://purl.org/spar/bido/core-conference-ranking"/>
         <rdfs:comment>The CORE category for a conference for which no ranking decision has been made.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
-        <isDefinedInRanking rdf:resource="http://purl.org/spar/bido/core-conference-ranking"/>
+        <rdfs:label>unranked</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -411,8 +841,8 @@ This module of BiDO describes a list of possible reviews measures tha can be use
                                 <owl:allValuesFrom>
                                     <owl:Class>
                                         <owl:unionOf rdf:parseType="Collection">
-                                            <rdf:Description rdf:about="&swc;AcademicEvent"/>
-                                            <rdf:Description rdf:about="&fabio;Expression"/>
+                                            <rdf:Description rdf:about="http://data.semanticweb.org/ns/swc/ontology#AcademicEvent"/>
+                                            <rdf:Description rdf:about="http://purl.org/spar/fabio/Expression"/>
                                         </owl:unionOf>
                                     </owl:Class>
                                 </owl:allValuesFrom>
@@ -422,9 +852,374 @@ This module of BiDO describes a list of possible reviews measures tha can be use
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdf:type>
-        <rdfs:label>number of demo paper accepted</rdfs:label>
         <rdfs:comment>It indicates how many demo papers has been accepted for publication/presentation in the venue.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label>number of demo paper accepted</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/dis-0-10 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-0-10">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/DiscreteReviewRatingScale"/>
+        <rdfs:comment xml:lang="en">Discrete scale from 0 to 10</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">Discrete 0 to 10 review rating scale</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/dis-0-10-0 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-0-10-0">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-napp"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-rej"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-0"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-n2-p2-neg2"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-srej"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-nb-srej"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/dis-0-10"/>
+        <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</hasRatingValue>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">0 out of 10 (Discrete 0 to 10 review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/dis-0-10-1 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-0-10-1">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/dis-0-10"/>
+        <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasRatingValue>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">1 out of 10 (Discrete 0 to 10 review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/dis-0-10-10 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-0-10-10">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-app"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-acc"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-5"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-n2-p2-pos2"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-sacc"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-nb-sacc"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/dis-0-10"/>
+        <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</hasRatingValue>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">10 out of 10 (Discrete 0 to 10 review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/dis-0-10-2 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-0-10-2">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/dis-0-10"/>
+        <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</hasRatingValue>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">2 out of 10 (Discrete 0 to 10 review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/dis-0-10-3 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-0-10-3">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/dis-0-10"/>
+        <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</hasRatingValue>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">3 out of 10 (Discrete 0 to 10 review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/dis-0-10-4 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-0-10-4">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/dis-0-10"/>
+        <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</hasRatingValue>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">4 out of 10 (Discrete 0 to 10 review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/dis-0-10-5 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-0-10-5">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-majrev"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-n2-p2-0"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-bdl"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/dis-0-10"/>
+        <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</hasRatingValue>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">5 out of 10 (Discrete 0 to 10 review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/dis-0-10-6 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-0-10-6">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/dis-0-10"/>
+        <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</hasRatingValue>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">6 out of 10 (Discrete 0 to 10 review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/dis-0-10-7 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-0-10-7">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/dis-0-10"/>
+        <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</hasRatingValue>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">7 out of 10 (Discrete 0 to 10 review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/dis-0-10-8 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-0-10-8">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/dis-0-10"/>
+        <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</hasRatingValue>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">8 out of 10 (Discrete 0 to 10 review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/dis-0-10-9 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-0-10-9">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/dis-0-10"/>
+        <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</hasRatingValue>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">9 out of 10 (Discrete 0 to 10 review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/dis-0-5 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-0-5">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/DiscreteReviewRatingScale"/>
+        <rdfs:comment xml:lang="en">Discrete scale from 0 to 5</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">Discrete 0 to 5 review rating scale</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/dis-0-5-0 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-0-5-0">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-napp"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-rej"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-10-0"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-n2-p2-neg2"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-srej"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-nb-srej"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/dis-0-5"/>
+        <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</hasRatingValue>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">0 out of 5 (Discrete 0 to 5 review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/dis-0-5-1 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-0-5-1">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-napp"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-rej"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-n2-p2-neg1"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-rej"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-nb-rej"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/dis-0-5"/>
+        <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasRatingValue>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">1 out of 5 (Discrete 0 to 5 review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/dis-0-5-2 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-0-5-2">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-wrej"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-nb-wrej"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/dis-0-5"/>
+        <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</hasRatingValue>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">2 out of 5 (Discrete 0 to 5 review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/dis-0-5-3 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-0-5-3">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-appwr"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-minrev"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-wacc"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-nb-wacc"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/dis-0-5"/>
+        <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</hasRatingValue>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">3 out of 5 (Discrete 0 to 5 review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/dis-0-5-4 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-0-5-4">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-app"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-acc"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-n2-p2-pos1"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-acc"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-nb-acc"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/dis-0-5"/>
+        <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</hasRatingValue>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">4 out of 5 (Discrete 0 to 5 review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/dis-0-5-5 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-0-5-5">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-app"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-acc"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-10-10"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-n2-p2-pos2"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-sacc"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-nb-sacc"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/dis-0-5"/>
+        <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</hasRatingValue>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">5 out of 5 (Discrete 0 to 5 review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/dis-n2-p2 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-n2-p2">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/DiscreteReviewRatingScale"/>
+        <rdfs:comment xml:lang="en">Discrete scale from -2 to 2, including 0</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">Discrete -2 to 2 review rating scale</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/dis-n2-p2-0 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-n2-p2-0">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-majrev"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-10-5"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-bdl"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/dis-n2-p2"/>
+        <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</hasRatingValue>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">0 on a [-2,2] scale (Discrete -2 to 2 review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/dis-n2-p2-neg1 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-n2-p2-neg1">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-napp"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-rej"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-1"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-rej"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-nb-rej"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/dis-n2-p2"/>
+        <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">-1</hasRatingValue>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">-1 on a [-2,2] scale (Discrete -2 to 2 review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/dis-n2-p2-neg2 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-n2-p2-neg2">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-napp"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-rej"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-10-0"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-0"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-srej"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-nb-srej"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/dis-n2-p2"/>
+        <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">-2</hasRatingValue>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">-2 on a [-2,2] scale (Discrete -2 to 2 review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/dis-n2-p2-pos1 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-n2-p2-pos1">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-app"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-acc"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-4"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-acc"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-nb-acc"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/dis-n2-p2"/>
+        <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasRatingValue>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">1 on a [-2,2] scale (Discrete -2 to 2 review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/dis-n2-p2-pos2 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-n2-p2-pos2">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-app"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-acc"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-10-10"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-5"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-sacc"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-nb-sacc"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/dis-n2-p2"/>
+        <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</hasRatingValue>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">2 on a [-2,2] scale (Discrete -2 to 2 review rating scale)</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -433,9 +1228,9 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/double-blind-peer-review">
         <rdf:type rdf:resource="http://purl.org/spar/bido/PeerReviewType"/>
-        <rdfs:label>double blind peer review</rdfs:label>
         <rdfs:comment>It identifies all the review processes where the identity of the authors is concealed from the reviewers, and vice versa.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label>double blind peer review</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -444,9 +1239,90 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/easychair">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ScholarlyVenueManagementSystem"/>
-        <rdfs:label>EasyChair</rdfs:label>
         <rdfs:comment>EasyChair is a conference management system that is flexible, easy to use, and has many features to make it suitable for various conference models. It is currently probably the most commonly used conference management system.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label>EasyChair</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/ex-null -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/ex-null">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/DiscreteReviewerConfidenceScale"/>
+        <rdfs:comment xml:lang="en">Discrete scale from Expert to Null, also representend in an scale from 4 to 0</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">Expert to Null reviewer confidence scale</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/ex-null-exp -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/ex-null-exp">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewerConfidenceValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/acl-1-5-acl5"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/ex-null-exp"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/ex-null"/>
+        <hasConfidenceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</hasConfidenceValue>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">Expert (Expert to Null reviewer confidence scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/ex-null-high -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/ex-null-high">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewerConfidenceValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/acl-1-5-acl4"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/ex-null-high"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/ex-null"/>
+        <hasConfidenceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</hasConfidenceValue>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">High (Expert to Null reviewer confidence scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/ex-null-low -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/ex-null-low">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewerConfidenceValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/acl-1-5-acl2"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/ex-null-low"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/ex-null"/>
+        <hasConfidenceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasConfidenceValue>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">Low (Expert to Null reviewer confidence scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/ex-null-med -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/ex-null-med">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewerConfidenceValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/acl-1-5-acl3"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/ex-null-med"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/ex-null"/>
+        <hasConfidenceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</hasConfidenceValue>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">Medium (Expert to Null reviewer confidence scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/ex-null-null -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/ex-null-null">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewerConfidenceValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/acl-1-5-acl1"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/ex-null-null"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/ex-null"/>
+        <hasConfidenceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</hasConfidenceValue>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">Null (Expert to Null reviewer confidence scale)</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -479,8 +1355,8 @@ This module of BiDO describes a list of possible reviews measures tha can be use
                                 <owl:allValuesFrom>
                                     <owl:Class>
                                         <owl:unionOf rdf:parseType="Collection">
-                                            <rdf:Description rdf:about="&swc;AcademicEvent"/>
-                                            <rdf:Description rdf:about="&fabio;Expression"/>
+                                            <rdf:Description rdf:about="http://data.semanticweb.org/ns/swc/ontology#AcademicEvent"/>
+                                            <rdf:Description rdf:about="http://purl.org/spar/fabio/Expression"/>
                                         </owl:unionOf>
                                     </owl:Class>
                                 </owl:allValuesFrom>
@@ -490,9 +1366,9 @@ This module of BiDO describes a list of possible reviews measures tha can be use
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdf:type>
-        <rdfs:label>number of external reviewers involved</rdfs:label>
         <rdfs:comment>It indicates how many external reviewers have been involved in the reviewing phase.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label>number of external reviewers involved</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -525,8 +1401,8 @@ This module of BiDO describes a list of possible reviews measures tha can be use
                                 <owl:allValuesFrom>
                                     <owl:Class>
                                         <owl:unionOf rdf:parseType="Collection">
-                                            <rdf:Description rdf:about="&swc;AcademicEvent"/>
-                                            <rdf:Description rdf:about="&fabio;Expression"/>
+                                            <rdf:Description rdf:about="http://data.semanticweb.org/ns/swc/ontology#AcademicEvent"/>
+                                            <rdf:Description rdf:about="http://purl.org/spar/fabio/Expression"/>
                                         </owl:unionOf>
                                     </owl:Class>
                                 </owl:allValuesFrom>
@@ -536,9 +1412,9 @@ This module of BiDO describes a list of possible reviews measures tha can be use
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdf:type>
-        <rdfs:label>number of full paper accepted</rdfs:label>
         <rdfs:comment>It indicates how many full papers has been accepted for publication/presentation in the venue.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label>number of full paper accepted</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -547,9 +1423,9 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/open-peer-review">
         <rdf:type rdf:resource="http://purl.org/spar/bido/PeerReviewType"/>
-        <rdfs:label>open peer review</rdfs:label>
         <rdfs:comment>It identifies all the review processes where the identity of the authors and the reviewers is known.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label>open peer review</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -582,8 +1458,8 @@ This module of BiDO describes a list of possible reviews measures tha can be use
                                 <owl:allValuesFrom>
                                     <owl:Class>
                                         <owl:unionOf rdf:parseType="Collection">
-                                            <rdf:Description rdf:about="&swc;AcademicEvent"/>
-                                            <rdf:Description rdf:about="&fabio;Expression"/>
+                                            <rdf:Description rdf:about="http://data.semanticweb.org/ns/swc/ontology#AcademicEvent"/>
+                                            <rdf:Description rdf:about="http://purl.org/spar/fabio/Expression"/>
                                         </owl:unionOf>
                                     </owl:Class>
                                 </owl:allValuesFrom>
@@ -593,9 +1469,235 @@ This module of BiDO describes a list of possible reviews measures tha can be use
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdf:type>
-        <rdfs:label>number of poster paper accepted</rdfs:label>
         <rdfs:comment>It indicates how many poster papers has been accepted for publication/presentation in the venue.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label>number of poster paper accepted</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/sa-sr-bl -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/sa-sr-bl">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/DiscreteReviewRatingScale"/>
+        <rdfs:comment xml:lang="en">Discrete scale from Strong Reject to Strong Accept, including Bordeline</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">Strong Reject to Strong Accept review rating scale</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/sa-sr-bl-acc -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/sa-sr-bl-acc">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-app"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-acc"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-4"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-n2-p2-pos1"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-nb-acc"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/sa-sr-bl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">Accept (Strong Reject to Strong Accept review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/sa-sr-bl-bdl -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/sa-sr-bl-bdl">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-majrev"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-10-5"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-n2-p2-0"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/sa-sr-bl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">Borderline (Strong Reject to Strong Accept review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/sa-sr-bl-rej -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/sa-sr-bl-rej">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-napp"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-rej"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-1"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-n2-p2-neg1"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-nb-rej"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/sa-sr-bl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">Reject (Strong Reject to Strong Accept review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/sa-sr-bl-sacc -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/sa-sr-bl-sacc">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-app"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-acc"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-10-10"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-5"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-n2-p2-pos2"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-nb-sacc"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/sa-sr-bl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">Strong Accept (Strong Reject to Strong Accept review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/sa-sr-bl-srej -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/sa-sr-bl-srej">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-napp"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-rej"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-10-0"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-0"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-n2-p2-neg2"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-nb-srej"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/sa-sr-bl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">Strong Reject (Strong Reject to Strong Accept review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/sa-sr-bl-wacc -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/sa-sr-bl-wacc">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-appwr"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-minrev"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-3"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-nb-wacc"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/sa-sr-bl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">Weak Accept (Strong Reject to Strong Accept review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/sa-sr-bl-wrej -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/sa-sr-bl-wrej">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-2"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-nb-wrej"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/sa-sr-bl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">Weak Reject (Strong Reject to Strong Accept review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/sa-sr-nb -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/sa-sr-nb">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/DiscreteReviewRatingScale"/>
+        <rdfs:comment xml:lang="en">Discrete scale from Strong Reject to Strong Accept, excluding Bordeline</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">Strong Reject to Strong Accept, without Borderline review rating scale</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/sa-sr-nb-acc -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/sa-sr-nb-acc">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-app"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-acc"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-10-10"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-4"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-n2-p2-pos1"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-acc"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/sa-sr-nb"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">Accept (Strong Reject to Strong Accept, without Borderline review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/sa-sr-nb-rej -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/sa-sr-nb-rej">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-napp"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-rej"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-10-0"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-1"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-n2-p2-neg1"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-rej"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/sa-sr-nb"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">Reject (Strong Reject to Strong Accept, without Borderline review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/sa-sr-nb-sacc -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/sa-sr-nb-sacc">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-app"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-acc"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-10-10"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-5"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-n2-p2-pos2"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-sacc"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/sa-sr-nb"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">Strong Accept (Strong Reject to Strong Accept, without Borderline review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/sa-sr-nb-srej -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/sa-sr-nb-srej">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-napp"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-rej"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-10-0"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-0"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-n2-p2-neg2"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-srej"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/sa-sr-nb"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">Strong Reject (Strong Reject to Strong Accept, without Borderline review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/sa-sr-nb-wacc -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/sa-sr-nb-wacc">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-appwr"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-minrev"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-3"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-wacc"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/sa-sr-nb"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">Weak Accept (Strong Reject to Strong Accept, without Borderline review rating scale)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/sa-sr-nb-wrej -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/sa-sr-nb-wrej">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-2"/>
+        <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-wrej"/>
+        <skos:inScheme rdf:resource="http://purl.org/spar/bido/sa-sr-nb"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">Weak Reject (Strong Reject to Strong Accept, without Borderline review rating scale)</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -628,8 +1730,8 @@ This module of BiDO describes a list of possible reviews measures tha can be use
                                 <owl:allValuesFrom>
                                     <owl:Class>
                                         <owl:unionOf rdf:parseType="Collection">
-                                            <rdf:Description rdf:about="&swc;AcademicEvent"/>
-                                            <rdf:Description rdf:about="&fabio;Expression"/>
+                                            <rdf:Description rdf:about="http://data.semanticweb.org/ns/swc/ontology#AcademicEvent"/>
+                                            <rdf:Description rdf:about="http://purl.org/spar/fabio/Expression"/>
                                         </owl:unionOf>
                                     </owl:Class>
                                 </owl:allValuesFrom>
@@ -639,9 +1741,9 @@ This module of BiDO describes a list of possible reviews measures tha can be use
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdf:type>
-        <rdfs:label>number of short paper accepted</rdfs:label>
         <rdfs:comment>It indicates how many short papers has been accepted for publication/presentation in the venue.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label>number of short paper accepted</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -650,9 +1752,9 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/single-blind-peer-review">
         <rdf:type rdf:resource="http://purl.org/spar/bido/PeerReviewType"/>
-        <rdfs:label>single blind peer review</rdfs:label>
         <rdfs:comment>It identifies all the review processes where the identity of the reviewers is concealed from the authors.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label>single blind peer review</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -685,8 +1787,8 @@ This module of BiDO describes a list of possible reviews measures tha can be use
                                 <owl:allValuesFrom>
                                     <owl:Class>
                                         <owl:unionOf rdf:parseType="Collection">
-                                            <rdf:Description rdf:about="&swc;AcademicEvent"/>
-                                            <rdf:Description rdf:about="&fabio;Expression"/>
+                                            <rdf:Description rdf:about="http://data.semanticweb.org/ns/swc/ontology#AcademicEvent"/>
+                                            <rdf:Description rdf:about="http://purl.org/spar/fabio/Expression"/>
                                         </owl:unionOf>
                                     </owl:Class>
                                 </owl:allValuesFrom>
@@ -696,13 +1798,43 @@ This module of BiDO describes a list of possible reviews measures tha can be use
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdf:type>
-        <rdfs:label>number of submission sent for review</rdfs:label>
         <rdfs:comment>It indicates how many submitted papers has been assagned to reviewers for revision.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label>number of submission sent for review</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/to-10-continuos -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/to-10-continuos">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingScale"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">0 to 10 continuos review rating scale</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/to-15-continuos -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/to-15-continuos">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingScale"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <rdfs:label xml:lang="en">0 to 15 continuos review rating scale</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/spar/bido/to-5-continuos -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/to-5-continuos">
+        <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingScale"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
+        <skos:prefLabel xml:lang="en">0 to 5 continuos review rating scale</skos:prefLabel>
     </owl:NamedIndividual>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
 
