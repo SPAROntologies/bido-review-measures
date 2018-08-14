@@ -438,6 +438,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/a-na-wr-app">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/a-na-wr-appwr"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-acc"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-10-10"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-4"/>
@@ -459,6 +460,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/a-na-wr-appwr">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/a-na-wr-napp"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-minrev"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-3"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-wacc"/>
@@ -506,6 +508,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/a-r-ts-acc">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/a-r-ts-minrev"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-app"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-10-10"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-4"/>
@@ -527,6 +530,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/a-r-ts-majrev">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/a-r-ts-rej"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-10-5"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-n2-p2-0"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-bdl"/>
@@ -541,6 +545,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/a-r-ts-minrev">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/a-r-ts-majrev"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-appwr"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-3"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-wacc"/>
@@ -556,6 +561,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/a-r-ts-rej">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/a-r-ts-rejps"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-napp"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-10-0"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-0"/>
@@ -577,6 +583,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/a-r-ts-rejps">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/a-r-ts-rejts"/>
         <skos:inScheme rdf:resource="http://purl.org/spar/bido/a-r-ts"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
         <rdfs:label xml:lang="en">Reject, Pre-Screening (Accept to Reject, Two Strikes review rating scale)</rdfs:label>
@@ -625,6 +632,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/acl-1-5-acl2">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewerConfidenceValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/acl-1-5-acl1"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/acl-1-5-acl2"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/ex-null-low"/>
         <skos:inScheme rdf:resource="http://purl.org/spar/bido/acl-1-5"/>
@@ -640,6 +648,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/acl-1-5-acl3">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewerConfidenceValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/acl-1-5-acl2"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/acl-1-5-acl3"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/ex-null-med"/>
         <skos:inScheme rdf:resource="http://purl.org/spar/bido/acl-1-5"/>
@@ -655,6 +664,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/acl-1-5-acl4">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewerConfidenceValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/acl-1-5-acl3"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/acl-1-5-acl4"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/ex-null-high"/>
         <skos:inScheme rdf:resource="http://purl.org/spar/bido/acl-1-5"/>
@@ -670,6 +680,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/acl-1-5-acl5">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewerConfidenceValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/acl-1-5-acl4"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/acl-1-5-acl5"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/ex-null-exp"/>
         <skos:inScheme rdf:resource="http://purl.org/spar/bido/acl-1-5"/>
@@ -892,6 +903,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-0-10-1">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/dis-0-10-0"/>
         <skos:inScheme rdf:resource="http://purl.org/spar/bido/dis-0-10"/>
         <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasRatingValue>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
@@ -904,6 +916,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-0-10-10">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/dis-0-10-9"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-app"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-acc"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-5"/>
@@ -922,6 +935,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-0-10-2">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/dis-0-10-1"/>
         <skos:inScheme rdf:resource="http://purl.org/spar/bido/dis-0-10"/>
         <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</hasRatingValue>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
@@ -934,6 +948,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-0-10-3">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/dis-0-10-2"/>
         <skos:inScheme rdf:resource="http://purl.org/spar/bido/dis-0-10"/>
         <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</hasRatingValue>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
@@ -946,6 +961,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-0-10-4">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/dis-0-10-3"/>
         <skos:inScheme rdf:resource="http://purl.org/spar/bido/dis-0-10"/>
         <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</hasRatingValue>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
@@ -958,6 +974,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-0-10-5">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/dis-0-10-4"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-majrev"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-n2-p2-0"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-bdl"/>
@@ -973,6 +990,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-0-10-6">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/dis-0-10-5"/>
         <skos:inScheme rdf:resource="http://purl.org/spar/bido/dis-0-10"/>
         <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</hasRatingValue>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
@@ -985,6 +1003,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-0-10-7">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/dis-0-10-6"/>
         <skos:inScheme rdf:resource="http://purl.org/spar/bido/dis-0-10"/>
         <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</hasRatingValue>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
@@ -997,6 +1016,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-0-10-8">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/dis-0-10-7"/>
         <skos:inScheme rdf:resource="http://purl.org/spar/bido/dis-0-10"/>
         <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</hasRatingValue>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
@@ -1009,6 +1029,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-0-10-9">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/dis-0-10-8"/>
         <skos:inScheme rdf:resource="http://purl.org/spar/bido/dis-0-10"/>
         <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</hasRatingValue>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
@@ -1050,6 +1071,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-0-5-1">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/dis-0-5-0"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-napp"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-rej"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-n2-p2-neg1"/>
@@ -1067,6 +1089,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-0-5-2">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/dis-0-5-1"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-wrej"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-nb-wrej"/>
         <skos:inScheme rdf:resource="http://purl.org/spar/bido/dis-0-5"/>
@@ -1081,6 +1104,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-0-5-3">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/dis-0-5-2"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-appwr"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-minrev"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-wacc"/>
@@ -1097,6 +1121,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-0-5-4">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/dis-0-5-3"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-app"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-acc"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-n2-p2-pos1"/>
@@ -1114,6 +1139,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-0-5-5">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/dis-0-5-4"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-app"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-acc"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-10-10"/>
@@ -1143,6 +1169,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-n2-p2-0">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/dis-n2-p2-neg1"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-majrev"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-10-5"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-bdl"/>
@@ -1158,13 +1185,13 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-n2-p2-neg1">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/dis-n2-p2-neg2"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-napp"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-rej"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-1"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-rej"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-nb-rej"/>
         <skos:inScheme rdf:resource="http://purl.org/spar/bido/dis-n2-p2"/>
-        <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">-1</hasRatingValue>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures"/>
         <rdfs:label xml:lang="en">-1 on a [-2,2] scale (Discrete -2 to 2 review rating scale)</rdfs:label>
     </owl:NamedIndividual>
@@ -1193,6 +1220,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-n2-p2-pos1">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/dis-n2-p2-0"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-app"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-acc"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-4"/>
@@ -1210,6 +1238,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/dis-n2-p2-pos2">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/dis-n2-p2-pos1"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-app"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-acc"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-10-10"/>
@@ -1261,6 +1290,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/ex-null-exp">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewerConfidenceValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/ex-null-high"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/acl-1-5-acl5"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/ex-null-exp"/>
         <skos:inScheme rdf:resource="http://purl.org/spar/bido/ex-null"/>
@@ -1275,6 +1305,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/ex-null-high">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewerConfidenceValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/ex-null-med"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/acl-1-5-acl4"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/ex-null-high"/>
         <skos:inScheme rdf:resource="http://purl.org/spar/bido/ex-null"/>
@@ -1289,6 +1320,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/ex-null-low">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewerConfidenceValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/ex-null-null"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/acl-1-5-acl2"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/ex-null-low"/>
         <skos:inScheme rdf:resource="http://purl.org/spar/bido/ex-null"/>
@@ -1303,6 +1335,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/ex-null-med">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewerConfidenceValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/ex-null-low"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/acl-1-5-acl3"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/ex-null-med"/>
         <skos:inScheme rdf:resource="http://purl.org/spar/bido/ex-null"/>
@@ -1491,6 +1524,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/sa-sr-bl-acc">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/sa-sr-bl-wacc"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-app"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-acc"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-4"/>
@@ -1507,6 +1541,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/sa-sr-bl-bdl">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/sa-sr-bl-wrej"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-majrev"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-10-5"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-n2-p2-0"/>
@@ -1521,6 +1556,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/sa-sr-bl-rej">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/sa-sr-bl-srej"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-napp"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-rej"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-1"/>
@@ -1537,6 +1573,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/sa-sr-bl-sacc">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/sa-sr-bl-acc"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-app"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-acc"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-10-10"/>
@@ -1571,6 +1608,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/sa-sr-bl-wacc">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/sa-sr-bl-bdl"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-appwr"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-minrev"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-3"/>
@@ -1586,6 +1624,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/sa-sr-bl-wrej">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/sa-sr-bl-rej"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-2"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-nb-wrej"/>
         <skos:inScheme rdf:resource="http://purl.org/spar/bido/sa-sr-bl"/>
@@ -1610,6 +1649,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/sa-sr-nb-acc">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/sa-sr-nb-wacc"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-app"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-acc"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-10-10"/>
@@ -1627,6 +1667,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/sa-sr-nb-rej">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/sa-sr-nb-srej"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-napp"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-rej"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-10-0"/>
@@ -1644,6 +1685,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/sa-sr-nb-sacc">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/sa-sr-nb-acc"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-app"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-acc"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-10-10"/>
@@ -1678,6 +1720,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/sa-sr-nb-wacc">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/sa-sr-nb-wrej"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-appwr"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-minrev"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-3"/>
@@ -1693,6 +1736,7 @@ This module of BiDO describes a list of possible reviews measures tha can be use
 
     <owl:NamedIndividual rdf:about="http://purl.org/spar/bido/sa-sr-nb-wrej">
         <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+        <isHigherThan rdf:resource="http://purl.org/spar/bido/sa-sr-nb-rej"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-2"/>
         <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-wrej"/>
         <skos:inScheme rdf:resource="http://purl.org/spar/bido/sa-sr-nb"/>
