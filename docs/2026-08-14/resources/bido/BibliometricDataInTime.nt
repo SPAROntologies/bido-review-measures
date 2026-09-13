@@ -1,0 +1,17 @@
+<http://purl.org/spar/bido/BibliometricDataInTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-core/> .
+<http://purl.org/spar/bido/BibliometricDataInTime> <http://purl.org/vocab/vann/example> "\n    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;\n        tvc:atTime :my-time-interval ;\n        bido:accordingTo :my-organization ;\n        bido:withBibliometricData :my-bibliometric-data .\n    " .
+_:Nda6db73384ff44f48054160f967daaeb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido/BibliometricDataInTime> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Nda6db73384ff44f48054160f967daaeb .
+_:Nda6db73384ff44f48054160f967daaeb <http://www.w3.org/2002/07/owl#onProperty> <http://www.essepuntato.it/2012/04/tvc/withValue> .
+<http://purl.org/spar/bido/BibliometricDataInTime> <http://www.w3.org/2000/01/rdf-schema#comment> "A particular situation that describes a bibliometric data a person, an article, or any other publication-related entity may have, that can be restricted to a particular time interval." .
+_:Nda6db73384ff44f48054160f967daaeb <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/bido/BibliometricMeasure> .
+<http://purl.org/spar/bido/BibliometricDataInTime> <http://www.w3.org/2000/01/rdf-schema#label> "bibliometric data in time" .
+<http://purl.org/spar/bido/BibliometricDataInTime> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:N350e267dcdfd46f4ba4671c3c5b426c4 .
+_:N350e267dcdfd46f4ba4671c3c5b426c4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.essepuntato.it/2012/04/tvc/atTime> .
+_:N350e267dcdfd46f4ba4671c3c5b426c4 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2006/time#Interval> .
+<http://purl.org/spar/bido/BibliometricDataInTime> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/bido/BibliometricDataInTime> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.essepuntato.it/2012/04/tvc/ValueInTime> .
+<http://purl.org/spar/bido/BibliometricDataInTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N350e267dcdfd46f4ba4671c3c5b426c4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido/BibliometricDataInTime> <http://www.w3.org/2000/01/rdf-schema#label> "bibliometric data in time"@en .
+<http://purl.org/spar/bido/BibliometricDataInTime> <http://www.w3.org/2000/01/rdf-schema#comment> "A particular situation that describes a bibliometric data a person, an article, or any other publication-related entity may have, that can be restricted to a particular time interval."@en .

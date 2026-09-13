@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/BibliometricDataInTime">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-core/"/>
+    <vann:example>
+    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
+        tvc:atTime :my-time-interval ;
+        bido:accordingTo :my-organization ;
+        bido:withBibliometricData :my-bibliometric-data .
+    </vann:example>
+    <rdfs:subClassOf rdf:nodeID="Nda6db73384ff44f48054160f967daaeb"/>
+    <rdfs:subClassOf rdf:nodeID="N350e267dcdfd46f4ba4671c3c5b426c4"/>
+    <rdfs:subClassOf rdf:resource="http://www.essepuntato.it/2012/04/tvc/ValueInTime"/>
+    <rdfs:comment>A particular situation that describes a bibliometric data a person, an article, or any other publication-related entity may have, that can be restricted to a particular time interval.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A particular situation that describes a bibliometric data a person, an article, or any other publication-related entity may have, that can be restricted to a particular time interval.</rdfs:comment>
+    <rdfs:label>bibliometric data in time</rdfs:label>
+    <rdfs:label xml:lang="en">bibliometric data in time</rdfs:label>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nda6db73384ff44f48054160f967daaeb">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.essepuntato.it/2012/04/tvc/withValue"/>
+    <owl:allValuesFrom rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N350e267dcdfd46f4ba4671c3c5b426c4">
+    <owl:onProperty rdf:resource="http://www.essepuntato.it/2012/04/tvc/atTime"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2006/time#Interval"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+</rdf:RDF>
