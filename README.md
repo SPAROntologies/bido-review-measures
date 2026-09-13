@@ -6,7 +6,7 @@ The BiDO Review Measures module (BiDO-Review-Measures) describes a list of possi
 
 **Creators**: [Silvio Peroni](http://orcid.org/0000-0003-0530-4305)
 
-**Contributors**: [Aliaksandr Birukou](https://orcid.org/0000-0002-4925-9131)
+**Contributors**: [Aliaksandr Birukou](https://orcid.org/0000-0002-4925-9131), [Sebastian Barzaghi](https://orcid.org/0000-0002-0799-1527)
 
 **License:** [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode)
 

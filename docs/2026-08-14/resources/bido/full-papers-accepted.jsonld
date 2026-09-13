@@ -1,0 +1,127 @@
+[
+  {
+    "@id": "http://purl.org/spar/bido/full-papers-accepted",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/bido/BibliometricMeasure",
+      {
+        "@id": "_:n3cff7311421d4dd39e9713bfd19183b7b28"
+      }
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-academic-event a swc:AcademicEvent ;\n        bido:holdsBibliometricDataInTime :my-bibliometric-data-in-time .\n\n    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;\n        tvc:atTime :my-time-interval ;\n        bido:accordingTo :my-organization ;\n        bido:withBibliometricData :my-numeric-bibliometric-data .\n\n    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;\n        bido:hasMeasure bido:full-papers-accepted ;\n        bido:hasNumericValue \"30\"^^xsd:float .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A measure indicating how many full papers has been accepted for publication or presentation in the venue."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-review-measures/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "number of full paper accepted"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3cff7311421d4dd39e9713bfd19183b7b28",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:n3cff7311421d4dd39e9713bfd19183b7b29"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:n3cff7311421d4dd39e9713bfd19183b7b36"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3cff7311421d4dd39e9713bfd19183b7b36",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/hasMeasure"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3cff7311421d4dd39e9713bfd19183b7b29",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:n3cff7311421d4dd39e9713bfd19183b7b30"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:n3cff7311421d4dd39e9713bfd19183b7b35"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3cff7311421d4dd39e9713bfd19183b7b30",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:n3cff7311421d4dd39e9713bfd19183b7b31"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:n3cff7311421d4dd39e9713bfd19183b7b34"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3cff7311421d4dd39e9713bfd19183b7b31",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://data.semanticweb.org/ns/swc/ontology#AcademicEvent"
+          },
+          {
+            "@id": "http://purl.org/spar/fabio/Expression"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:n3cff7311421d4dd39e9713bfd19183b7b34",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/holdsBibliometricDataInTime"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3cff7311421d4dd39e9713bfd19183b7b35",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/withBibliometricData"
+      }
+    ]
+  }
+]
