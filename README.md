@@ -6,7 +6,7 @@
 [![Documentation](https://img.shields.io/badge/docs-sparontologies.net-blue)](http://www.sparontologies.net/ontologies/bido-review-measures)
 [![IRI](https://img.shields.io/badge/IRI-purl.org%2Fspar%2Fbido--review--measures-blue)](http://purl.org/spar/bido-review-measures)
 
-The **_BiDO Review Measures module (BiDO-Review-Measures)_** describes a list of possible reviews measures tha can be used to define bibliometric data of scholarly venues such as conferences, workshops, journals.
+The **_BiDO Review Measures module (BiDO-Review-Measures)_** describes a list of possible reviews measures that can be used to define bibliometric data of scholarly venues such as conferences, workshops, journals.
 
 **URL:** http://purl.org/spar/http://purl.org/spar/bido-review-measures
 
