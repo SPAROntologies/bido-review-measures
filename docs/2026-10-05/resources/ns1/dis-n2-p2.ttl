@@ -1,0 +1,22 @@
+@prefix ns1: <http://purl.org/spar/bido/> .
+@prefix ns5: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+ns1:dis-n2-p2 a ns1:DiscreteReviewRatingScale,
+        owl:NamedIndividual ;
+    rdfs:label "Discrete -2 to 2 review rating scale"@en ;
+    vann:example """
+    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
+        tvc:atTime :my-time-interval ;
+        bido:accordingTo :my-organization ;
+        bido:withBibliometricData bido:dis-n2-p2-0 .
+
+    bido:dis-n2-p2-0
+        bido:isDefinedIn bido:dis-n2-p2 .
+    """ ;
+    rdfs:comment "Discrete scale from -2 to 2, including 0."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures/> ;
+    ns5:term_status <http://purl.org/linked-data/registry#statusStable> .
+

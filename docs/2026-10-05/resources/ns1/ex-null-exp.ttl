@@ -1,0 +1,25 @@
+@prefix ns1: <http://purl.org/spar/bido/> .
+@prefix ns5: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:ex-null-exp a ns1:ReviewerConfidenceValue,
+        owl:NamedIndividual ;
+    rdfs:label "Expert (Expert to Null reviewer confidence scale)"@en ;
+    ns1:hasConfidenceValue "4"^^xsd:int ;
+    ns1:isDefinedIn ns1:ex-null ;
+    vann:example """
+    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
+        tvc:atTime :my-time-interval ;
+        bido:accordingTo :my-organization ;
+        bido:withBibliometricData bido:ex-null-exp .
+    """ ;
+    rdfs:comment "The value 'Expert' in a discrete scale from 'Expert' to 'Null' for rating reviewers' confidence."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures/> ;
+    ns5:term_status <http://purl.org/linked-data/registry#statusStable> ;
+    skos:closeMatch ns1:acl-1-5-acl5,
+        ns1:ex-null-exp .
+

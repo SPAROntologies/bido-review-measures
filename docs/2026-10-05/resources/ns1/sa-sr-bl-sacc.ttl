@@ -1,0 +1,27 @@
+@prefix ns1: <http://purl.org/spar/bido/> .
+@prefix ns5: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+ns1:sa-sr-bl-sacc a ns1:ReviewRatingValue,
+        owl:NamedIndividual ;
+    rdfs:label "Strong Accept (Strong Reject to Strong Accept review rating scale)"@en ;
+    ns1:isDefinedIn ns1:sa-sr-bl ;
+    vann:example """
+    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
+        tvc:atTime :my-time-interval ;
+        bido:accordingTo :my-organization ;
+        bido:withBibliometricData bido:sa-sr-bl-sacc .
+    """ ;
+    rdfs:comment "The value 'Strong Accept' in a scale from 'Strong Reject' to 'Strong Accept' for review rating."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures/> ;
+    ns5:term_status <http://purl.org/linked-data/registry#statusStable> ;
+    skos:closeMatch ns1:a-na-wr-app,
+        ns1:a-r-ts-acc,
+        ns1:dis-0-10-10,
+        ns1:dis-0-5-5,
+        ns1:dis-n2-p2-pos2,
+        ns1:sa-sr-nb-sacc .
+
