@@ -1,0 +1,22 @@
+@prefix ns1: <http://purl.org/spar/bido/> .
+@prefix ns5: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+ns1:to-10-continuous a ns1:ReviewRatingScale,
+        owl:NamedIndividual ;
+    rdfs:label "0 to 10 continuous review rating scale"@en ;
+    vann:example """
+    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
+        tvc:atTime :my-time-interval ;
+        bido:accordingTo :my-organization ;
+        bido:withBibliometricData :my-review-rating-value .
+
+    :my-review-rating-value        
+        bido:isDefinedIn bido:to-10-continuous .
+    """ ;
+    rdfs:comment "A continuous review rating scale, ranging from 0 to 10."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures/> ;
+    ns5:term_status <http://purl.org/linked-data/registry#statusStable> .
+

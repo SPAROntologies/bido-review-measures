@@ -1,0 +1,22 @@
+@prefix ns1: <http://purl.org/spar/bido/> .
+@prefix ns5: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:dis-0-10-8 a ns1:ReviewRatingValue,
+        owl:NamedIndividual ;
+    rdfs:label "8 out of 10 (Discrete 0 to 10 review rating scale)"@en ;
+    ns1:hasRatingValue "8"^^xsd:int ;
+    ns1:isDefinedIn ns1:dis-0-10 ;
+    vann:example """
+    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
+        tvc:atTime :my-time-interval ;
+        bido:accordingTo :my-organization ;
+        bido:withBibliometricData bido:dis-0-10-8 .
+    """ ;
+    rdfs:comment "The value 8 in a discrete scale from 0 to 10 for review rating."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures/> ;
+    ns5:term_status <http://purl.org/linked-data/registry#statusStable> .
+

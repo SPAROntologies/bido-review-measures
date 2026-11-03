@@ -1,0 +1,23 @@
+@prefix ns1: <http://purl.org/spar/bido/> .
+@prefix ns5: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+ns1:hasConfidenceValue a owl:DatatypeProperty ;
+    rdfs:label "has confidence value"@en ;
+    vann:example """
+    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
+        tvc:atTime :my-time-interval ;
+        bido:accordingTo :my-organization ;
+        bido:withBibliometricData bido:acl-1-5-acl1 .
+
+    bido:acl-1-5-acl1 a bido:ReviewerConfidenceValue ;
+        bido:hasConfidenceValue "1"^^xsd:int .
+    """ ;
+    rdfs:comment "The confidence value of expertise in the review topic given by the reviewer."@en ;
+    rdfs:domain ns1:ReviewerConfidenceValue ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures/> ;
+    rdfs:range rdfs:Literal ;
+    ns5:term_status <http://purl.org/linked-data/registry#statusStable> .
+
