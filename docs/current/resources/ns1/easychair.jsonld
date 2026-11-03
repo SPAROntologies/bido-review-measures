@@ -2,8 +2,8 @@
   {
     "@id": "http://purl.org/spar/bido/easychair",
     "@type": [
-      "http://purl.org/spar/bido/ScholarlyVenueManagementSystem",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/bido/ScholarlyVenueManagementSystem"
     ],
     "http://purl.org/vocab/vann/example": [
       {

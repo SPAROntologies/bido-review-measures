@@ -5,8 +5,8 @@
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/Expression">
     <rdfs:label>expression</rdfs:label>
-    <rdfs:comment>Any possible work such as journals, magazines, books, etc., created for scientific purposes and possibly related with review processes.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdfs:comment>Any possible work such as journals, magazines, books, etc., created for scientific purposes and possibly related with review processes.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
 </rdf:RDF>

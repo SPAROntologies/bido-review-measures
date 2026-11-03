@@ -1,10 +1,10 @@
-@prefix ns3: <http://www.essepuntato.it/2012/04/tvc/> .
+@prefix ns2: <http://www.essepuntato.it/2012/04/tvc/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-ns3:withinContext a owl:ObjectProperty ;
+ns2:withinContext a owl:ObjectProperty ;
     rdfs:label "within context"@en ;
     rdfs:comment "The relation between a value in time and the specific context within which the fact of the entity having the value is relevant."@en ;
-    rdfs:domain ns3:ValueInTime ;
+    rdfs:domain ns2:ValueInTime ;
     rdfs:isDefinedBy <http://purl.org/spar/tvc/> .
 

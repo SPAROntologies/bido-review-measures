@@ -2,8 +2,8 @@
   {
     "@id": "http://purl.org/spar/bido/acl-1-5",
     "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://purl.org/spar/bido/DiscreteReviewerConfidenceScale"
+      "http://purl.org/spar/bido/DiscreteReviewerConfidenceScale",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
     ],
     "http://purl.org/vocab/vann/example": [
       {

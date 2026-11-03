@@ -8,22 +8,22 @@
    xmlns:vann="http://purl.org/vocab/vann/"
 >
   <rdf:Description rdf:about="http://purl.org/spar/bido/a-na-wr-appwr">
-    <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-wacc"/>
-    <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-minrev"/>
-    <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-3"/>
-    <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-nb-wacc"/>
-    <ns1:isDefinedIn rdf:resource="http://purl.org/spar/bido/a-na-wr"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
-    <ns5:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures/"/>
-    <rdfs:label xml:lang="en">Approved with reservations (Approved to Not Approved review rating scale)</rdfs:label>
     <vann:example>
     :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
         tvc:atTime :my-time-interval ;
         bido:accordingTo :my-organization ;
         bido:withBibliometricData bido:a-na-wr-appwr .
     </vann:example>
+    <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-minrev"/>
+    <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-nb-wacc"/>
+    <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-wacc"/>
+    <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-3"/>
+    <rdfs:label xml:lang="en">Approved with reservations (Approved to Not Approved review rating scale)</rdfs:label>
     <rdfs:comment xml:lang="en">The value 'Approved with Reservations' in a discrete scale from 'Approved' to 'Not Approved' for review rating.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures/"/>
+    <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ns1:isDefinedIn rdf:resource="http://purl.org/spar/bido/a-na-wr"/>
+    <ns5:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
   </rdf:Description>
 </rdf:RDF>

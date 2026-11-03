@@ -48,19 +48,19 @@
         "@id": "http://purl.org/spar/bido/dis-0-5-0"
       },
       {
-        "@id": "http://purl.org/spar/bido/a-na-wr-napp"
+        "@id": "http://purl.org/spar/bido/sa-sr-bl-srej"
       },
       {
-        "@id": "http://purl.org/spar/bido/sa-sr-bl-srej"
+        "@id": "http://purl.org/spar/bido/a-r-ts-rej"
+      },
+      {
+        "@id": "http://purl.org/spar/bido/a-na-wr-napp"
       },
       {
         "@id": "http://purl.org/spar/bido/sa-sr-nb-srej"
       },
       {
         "@id": "http://purl.org/spar/bido/dis-0-10-0"
-      },
-      {
-        "@id": "http://purl.org/spar/bido/a-r-ts-rej"
       }
     ]
   }

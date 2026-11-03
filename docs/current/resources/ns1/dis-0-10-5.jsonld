@@ -45,10 +45,10 @@
     ],
     "http://www.w3.org/2004/02/skos/core#closeMatch": [
       {
-        "@id": "http://purl.org/spar/bido/sa-sr-bl-bdl"
+        "@id": "http://purl.org/spar/bido/a-r-ts-majrev"
       },
       {
-        "@id": "http://purl.org/spar/bido/a-r-ts-majrev"
+        "@id": "http://purl.org/spar/bido/sa-sr-bl-bdl"
       },
       {
         "@id": "http://purl.org/spar/bido/dis-n2-p2-0"
