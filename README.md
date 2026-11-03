@@ -1,6 +1,12 @@
 # BiDO Review Measures module (BiDO-Review-Measures)
 
-The BiDO Review Measures module (BiDO-Review-Measures) describes a list of possible reviews measures tha can be used to define bibliometric data of scholarly venues such as conferences, workshops, journals.
+[![License](https://img.shields.io/github/license/SPAROntologies/bido-review-measures)](LICENSE.md)
+[![Release](https://img.shields.io/github/v/release/SPAROntologies/bido-review-measures)](https://github.com/SPAROntologies/bido-review-measures/releases/latest)
+[![Tests](https://img.shields.io/github/actions/workflow/status/SPAROntologies/bido-review-measures/validation.yml?label=tests)](https://github.com/SPAROntologies/bido-review-measures/actions/workflows/validation.yml)
+[![Documentation](https://img.shields.io/badge/docs-sparontologies.net-blue)](http://www.sparontologies.net/ontologies/bido-review-measures)
+[![IRI](https://img.shields.io/badge/IRI-purl.org%2Fspar%2Fbido--review--measures-blue)](http://purl.org/spar/bido-review-measures)
+
+The **_BiDO Review Measures module (BiDO-Review-Measures)_** describes a list of possible reviews measures tha can be used to define bibliometric data of scholarly venues such as conferences, workshops, journals.
 
 **URL:** http://purl.org/spar/http://purl.org/spar/bido-review-measures
 
