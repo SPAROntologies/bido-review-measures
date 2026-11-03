@@ -1,0 +1,23 @@
+@prefix ns1: <http://purl.org/spar/bido/> .
+@prefix ns5: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+ns1:hasRatingValue a owl:DatatypeProperty ;
+    rdfs:label "has rating value"@en ;
+    vann:example """
+    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
+        tvc:atTime :my-time-interval ;
+        bido:accordingTo :my-organization ;
+        bido:withBibliometricData bido:dis-n2-p2-neg1 .
+
+    bido:dis-n2-p2-neg1 a bido:ReviewRatingValue ;
+        bido:hasRatingValue "-1"^^xsd:int .
+    """ ;
+    rdfs:comment "The value of the rating given to a review."@en ;
+    rdfs:domain ns1:ReviewRatingValue ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures/> ;
+    rdfs:range rdfs:Literal ;
+    ns5:term_status <http://purl.org/linked-data/registry#statusStable> .
+

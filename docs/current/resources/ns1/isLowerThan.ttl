@@ -1,0 +1,18 @@
+@prefix ns1: <http://purl.org/spar/bido/> .
+@prefix ns5: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+ns1:isLowerThan a owl:ObjectProperty ;
+    rdfs:label "is lower than"@en ;
+    vann:example """
+    bido:core-b a bido:ConferenceRankingCategory ;
+        bido:isLowerThan bido:core-a .
+
+    bido:core-a a bido:ConferenceRankingCategory .
+    """ ;
+    rdfs:comment "A relation between a ranking category and another that is more important."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures/> ;
+    ns5:term_status <http://purl.org/linked-data/registry#statusStable> .
+

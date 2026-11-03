@@ -5,7 +5,7 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix fabio: <http://purl.org/spar/fabio/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix ns1: <http://www.essepuntato.it/2012/04/tvc/> .
+@prefix tvc: <http://www.essepuntato.it/2012/04/tvc/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -110,7 +110,7 @@ bido:accordingTo a owl:ObjectProperty ;
     rdfs:domain bido:BibliometricDataInTime ;
     rdfs:isDefinedBy <http://purl.org/spar/bido-core/> ;
     rdfs:range prov:Agent ;
-    rdfs:subPropertyOf ns1:withinContext,
+    rdfs:subPropertyOf tvc:withinContext,
         prov:wasAttributedTo ;
     vs:term_status reg:statusStable .
 
@@ -799,23 +799,23 @@ bido:isLowerThan a owl:ObjectProperty ;
     rdfs:isDefinedBy : ;
     vs:term_status reg:statusStable .
 
-ns1:atTime a owl:ObjectProperty ;
+tvc:atTime a owl:ObjectProperty ;
     rdfs:label "at time"@en ;
     rdfs:comment "The relation between a situation and the particular temporal instant or time period in which the situation takes place."@en ;
-    rdfs:domain ns1:ValueInTime ;
+    rdfs:domain tvc:ValueInTime ;
     rdfs:isDefinedBy <http://purl.org/spar/tvc/> ;
     rdfs:range time:TemporalEntity .
 
-ns1:hasValue a owl:ObjectProperty ;
+tvc:hasValue a owl:ObjectProperty ;
     rdfs:label "has value"@en ;
     rdfs:comment "The relation between an entity and a value in time situation."@en ;
     rdfs:isDefinedBy <http://purl.org/spar/tvc/> ;
-    rdfs:range ns1:ValueInTime .
+    rdfs:range tvc:ValueInTime .
 
-ns1:withinContext a owl:ObjectProperty ;
+tvc:withinContext a owl:ObjectProperty ;
     rdfs:label "within context"@en ;
     rdfs:comment "The relation between a value in time and the specific context within which the fact of the entity having the value is relevant."@en ;
-    rdfs:domain ns1:ValueInTime ;
+    rdfs:domain tvc:ValueInTime ;
     rdfs:isDefinedBy <http://purl.org/spar/tvc/> .
 
 xsd:float a rdfs:Datatype .
@@ -1123,11 +1123,11 @@ bido:sa-sr-nb-wrej a bido:ReviewRatingValue,
     skos:closeMatch bido:dis-0-5-2,
         bido:sa-sr-bl-wrej .
 
-ns1:withValue a owl:ObjectProperty ;
+tvc:withValue a owl:ObjectProperty ;
     rdfs:label "with value"@en ;
     rdfs:comment "The relation between the value in time situation and the actual value held by the entity partaking in that situation."@en ;
     rdfs:isDefinedBy <http://purl.org/spar/tvc/> ;
-    rdfs:range ns1:ValueInTime .
+    rdfs:range tvc:ValueInTime .
 
 time:TemporalEntity a owl:Class ;
     rdfs:label "temporal entity"@en ;
@@ -1168,11 +1168,11 @@ bido:BibliometricDataInTime a owl:Class ;
     rdfs:isDefinedBy <http://purl.org/spar/bido-core/> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:allValuesFrom time:Interval ;
-            owl:onProperty ns1:atTime ],
+            owl:onProperty tvc:atTime ],
         [ a owl:Restriction ;
             owl:allValuesFrom bido:BibliometricMeasure ;
-            owl:onProperty ns1:withValue ],
-        ns1:ValueInTime ;
+            owl:onProperty tvc:withValue ],
+        tvc:ValueInTime ;
     vs:term_status reg:statusStable .
 
 bido:PeerReviewType a owl:Class ;
@@ -1638,7 +1638,7 @@ bido:sa-sr-nb-rej a bido:ReviewRatingValue,
         bido:dis-n2-p2-neg1,
         bido:sa-sr-bl-rej .
 
-ns1:ValueInTime a owl:Class ;
+tvc:ValueInTime a owl:Class ;
     rdfs:label "value in time"@en ;
     rdfs:comment "A particular kind of time-indexed situation that represents a hub linking the entity having a particular value, the value itself and the temporal and contextual extents from which the entity-value relationship depends."@en ;
     rdfs:isDefinedBy <http://purl.org/spar/tvc/> .
@@ -2084,8 +2084,7 @@ bido:a-r-ts-rej a bido:ReviewRatingValue,
         bido:sa-sr-nb-srej .
 
 bido:holdsBibliometricDataInTime a owl:ObjectProperty ;
-    rdfs:label "holds bibliometric data in time",
-        "holds bibliometric data in time"@en ;
+    rdfs:label "holds bibliometric data in time"@en ;
     vann:example """
     :my-journal a fabio:Journal ;
         bido:holdsBibliometricDataInTime :my-bibliometric-data-in-time .
@@ -2094,19 +2093,17 @@ bido:holdsBibliometricDataInTime a owl:ObjectProperty ;
         bido:accordingTo :my-organization ;
         bido:withBibliometricData :my-numeric-bibliometric-data .
     """ ;
-    rdfs:comment "A relation between a person or any other publication-related entity and bibliometric data that the entity holds. The ontology permits one to specify the time period over which a bibliometric data is held, and the other contextual entities responsible for having provided such bibliometric data.",
-        "The relation between a person or any other publication-related entity and bibliometric data that the entity holds."@en ;
+    rdfs:comment "The relation between a person or any other publication-related entity and bibliometric data that the entity holds."@en ;
     rdfs:isDefinedBy <http://purl.org/spar/bido-core/> ;
     rdfs:range bido:BibliometricDataInTime ;
-    rdfs:subPropertyOf ns1:hasValue ;
+    rdfs:subPropertyOf tvc:hasValue ;
     vs:term_status reg:statusStable ;
     skos:note """
 The ontology permits one to specify the time period over which a bibliometric data is held, and the other contextual entities responsible for having provided such bibliometric data.
     """@en .
 
 bido:withBibliometricData a owl:ObjectProperty ;
-    rdfs:label "with bibliometric data",
-        "with bibliometric data"@en ;
+    rdfs:label "with bibliometric data"@en ;
     vann:example """
     :my-journal a fabio:Journal ;
         bido:holdsBibliometricDataInTime :my-bibliometric-data-in-time .
@@ -2115,12 +2112,11 @@ bido:withBibliometricData a owl:ObjectProperty ;
         bido:accordingTo :my-organization ;
         bido:withBibliometricData :my-numeric-bibliometric-data .
     """ ;
-    rdfs:comment "A relation between an entity's bibliometric data in time and a definition of the type of bibliometric data held by this entity.",
-        "The relation between an entity's bibliometric data in time and a definition of the type of bibliometric data held by this entity."@en ;
+    rdfs:comment "The relation between an entity's bibliometric data in time and a definition of the type of bibliometric data held by this entity."@en ;
     rdfs:domain bido:BibliometricDataInTime ;
     rdfs:isDefinedBy <http://purl.org/spar/bido-core/> ;
     rdfs:range bido:BibliometricData ;
-    rdfs:subPropertyOf ns1:withValue ;
+    rdfs:subPropertyOf tvc:withValue ;
     vs:term_status reg:statusStable .
 
 bido:ReviewerConfidenceValue a owl:Class ;

@@ -1,0 +1,20 @@
+@prefix ns1: <http://purl.org/spar/bido/> .
+@prefix ns5: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+ns1:core-unranked a ns1:ConferenceRankingCategory,
+        owl:NamedIndividual ;
+    rdfs:label "unranked"@en ;
+    ns1:isDefinedIn ns1:core-conference-ranking ;
+    vann:example """
+    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
+        tvc:atTime :my-time-interval ;
+        bido:accordingTo :my-organization ;
+        bido:withBibliometricData bido:core-unranked .
+    """ ;
+    rdfs:comment "The CORE category for a conference for which no ranking decision has been made."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures/> ;
+    ns5:term_status <http://purl.org/linked-data/registry#statusStable> .
+

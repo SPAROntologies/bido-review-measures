@@ -1,0 +1,25 @@
+@prefix ns1: <http://purl.org/spar/bido/> .
+@prefix ns5: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+ns1:a-na-wr-appwr a ns1:ReviewRatingValue,
+        owl:NamedIndividual ;
+    rdfs:label "Approved with reservations (Approved to Not Approved review rating scale)"@en ;
+    ns1:isDefinedIn ns1:a-na-wr ;
+    vann:example """
+    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
+        tvc:atTime :my-time-interval ;
+        bido:accordingTo :my-organization ;
+        bido:withBibliometricData bido:a-na-wr-appwr .
+    """ ;
+    rdfs:comment "The value 'Approved with Reservations' in a discrete scale from 'Approved' to 'Not Approved' for review rating."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures/> ;
+    ns5:term_status <http://purl.org/linked-data/registry#statusStable> ;
+    skos:closeMatch ns1:a-r-ts-minrev,
+        ns1:dis-0-5-3,
+        ns1:sa-sr-bl-wacc,
+        ns1:sa-sr-nb-wacc .
+

@@ -1,0 +1,24 @@
+@prefix ns1: <http://purl.org/spar/bido/> .
+@prefix ns5: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+ns1:DiscreteReviewRatingScale a owl:Class ;
+    rdfs:label "discrete review rating scale"@en ;
+    vann:example """
+    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
+        tvc:atTime :my-time-interval ;
+        bido:accordingTo :my-organization ;
+        bido:withBibliometricData bido:dis-n2-p2-0 .
+
+    bido:dis-n2-p2-0
+        bido:isDefinedIn bido:dis-n2-p2 .
+    
+    bido:dis-n2-p2 a bido:DiscreteReviewRatingScale .
+    """ ;
+    rdfs:comment "A discrete scale defining the rating given by a reviewer for a specific scientific contribution."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures/> ;
+    rdfs:subClassOf ns1:ReviewRatingScale ;
+    ns5:term_status <http://purl.org/linked-data/registry#statusStable> .
+
