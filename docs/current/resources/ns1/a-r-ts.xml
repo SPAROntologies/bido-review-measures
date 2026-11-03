@@ -6,9 +6,10 @@
    xmlns:vann="http://purl.org/vocab/vann/"
 >
   <rdf:Description rdf:about="http://purl.org/spar/bido/a-r-ts">
-    <ns5:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:label xml:lang="en">Accept to Reject, Two Strikes review rating scale</rdfs:label>
     <rdfs:comment xml:lang="en">Discrete scale from 'Accept' to 'Reject', including pre-screening and two strikes rule.</rdfs:comment>
+    <ns5:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.org/spar/bido/DiscreteReviewRatingScale"/>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures/"/>
     <vann:example>
     :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
@@ -19,7 +20,6 @@
     bido:a-r-ts-acc
         bido:isDefinedIn bido:a-r-ts .
     </vann:example>
-    <rdf:type rdf:resource="http://purl.org/spar/bido/DiscreteReviewRatingScale"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="en">Accept to Reject, Two Strikes review rating scale</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

@@ -28,7 +28,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "_:n5e9878dc7e394fe7ab6bcc4d77272fa0b64"
+        "@id": "_:nbd63f21e4a8a477686b07e29b95e15b7b64"
       },
       {
         "@id": "http://purl.org/spar/bido/CategorialBibliometricData"
@@ -41,39 +41,39 @@
     ]
   },
   {
-    "@id": "_:n5e9878dc7e394fe7ab6bcc4d77272fa0b64",
+    "@id": "_:nbd63f21e4a8a477686b07e29b95e15b7b64",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
     "http://www.w3.org/2002/07/owl#allValuesFrom": [
       {
-        "@id": "_:n5e9878dc7e394fe7ab6bcc4d77272fa0b65"
+        "@id": "_:nbd63f21e4a8a477686b07e29b95e15b7b65"
       }
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "_:n5e9878dc7e394fe7ab6bcc4d77272fa0b70"
+        "@id": "_:nbd63f21e4a8a477686b07e29b95e15b7b70"
       }
     ]
   },
   {
-    "@id": "_:n5e9878dc7e394fe7ab6bcc4d77272fa0b65",
+    "@id": "_:nbd63f21e4a8a477686b07e29b95e15b7b65",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
     "http://www.w3.org/2002/07/owl#allValuesFrom": [
       {
-        "@id": "_:n5e9878dc7e394fe7ab6bcc4d77272fa0b66"
+        "@id": "_:nbd63f21e4a8a477686b07e29b95e15b7b66"
       }
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "_:n5e9878dc7e394fe7ab6bcc4d77272fa0b69"
+        "@id": "_:nbd63f21e4a8a477686b07e29b95e15b7b69"
       }
     ]
   },
   {
-    "@id": "_:n5e9878dc7e394fe7ab6bcc4d77272fa0b66",
+    "@id": "_:nbd63f21e4a8a477686b07e29b95e15b7b66",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -91,7 +91,7 @@
     ]
   },
   {
-    "@id": "_:n5e9878dc7e394fe7ab6bcc4d77272fa0b69",
+    "@id": "_:nbd63f21e4a8a477686b07e29b95e15b7b69",
     "http://www.w3.org/2002/07/owl#inverseOf": [
       {
         "@id": "http://purl.org/spar/bido/holdsBibliometricDataInTime"
@@ -99,7 +99,7 @@
     ]
   },
   {
-    "@id": "_:n5e9878dc7e394fe7ab6bcc4d77272fa0b70",
+    "@id": "_:nbd63f21e4a8a477686b07e29b95e15b7b70",
     "http://www.w3.org/2002/07/owl#inverseOf": [
       {
         "@id": "http://purl.org/spar/bido/withBibliometricData"

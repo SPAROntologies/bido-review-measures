@@ -39,16 +39,16 @@
     ],
     "http://www.w3.org/2004/02/skos/core#closeMatch": [
       {
-        "@id": "http://purl.org/spar/bido/a-na-wr-appwr"
-      },
-      {
         "@id": "http://purl.org/spar/bido/sa-sr-bl-wacc"
       },
       {
-        "@id": "http://purl.org/spar/bido/sa-sr-nb-wacc"
+        "@id": "http://purl.org/spar/bido/dis-0-5-3"
       },
       {
-        "@id": "http://purl.org/spar/bido/dis-0-5-3"
+        "@id": "http://purl.org/spar/bido/a-na-wr-appwr"
+      },
+      {
+        "@id": "http://purl.org/spar/bido/sa-sr-nb-wacc"
       }
     ]
   }

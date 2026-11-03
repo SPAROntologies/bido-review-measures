@@ -2,8 +2,8 @@
   {
     "@id": "http://purl.org/spar/bido/a-na-wr-appwr",
     "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://purl.org/spar/bido/ReviewRatingValue"
+      "http://purl.org/spar/bido/ReviewRatingValue",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
     ],
     "http://purl.org/spar/bido/isDefinedIn": [
       {
@@ -39,16 +39,16 @@
     ],
     "http://www.w3.org/2004/02/skos/core#closeMatch": [
       {
-        "@id": "http://purl.org/spar/bido/sa-sr-bl-wacc"
-      },
-      {
         "@id": "http://purl.org/spar/bido/a-r-ts-minrev"
       },
       {
-        "@id": "http://purl.org/spar/bido/dis-0-5-3"
+        "@id": "http://purl.org/spar/bido/sa-sr-nb-wacc"
       },
       {
-        "@id": "http://purl.org/spar/bido/sa-sr-nb-wacc"
+        "@id": "http://purl.org/spar/bido/sa-sr-bl-wacc"
+      },
+      {
+        "@id": "http://purl.org/spar/bido/dis-0-5-3"
       }
     ]
   }

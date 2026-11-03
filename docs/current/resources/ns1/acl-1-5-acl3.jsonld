@@ -2,8 +2,8 @@
   {
     "@id": "http://purl.org/spar/bido/acl-1-5-acl3",
     "@type": [
-      "http://purl.org/spar/bido/ReviewerConfidenceValue",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/bido/ReviewerConfidenceValue"
     ],
     "http://purl.org/spar/bido/hasConfidenceValue": [
       {
@@ -45,10 +45,10 @@
     ],
     "http://www.w3.org/2004/02/skos/core#closeMatch": [
       {
-        "@id": "http://purl.org/spar/bido/ex-null-med"
+        "@id": "http://purl.org/spar/bido/acl-1-5-acl3"
       },
       {
-        "@id": "http://purl.org/spar/bido/acl-1-5-acl3"
+        "@id": "http://purl.org/spar/bido/ex-null-med"
       }
     ]
   }

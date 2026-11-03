@@ -8,28 +8,28 @@
    xmlns:vann="http://purl.org/vocab/vann/"
 >
   <rdf:Description rdf:about="http://purl.org/spar/bido/a-na-wr-app">
+    <rdfs:label xml:lang="en">Approved (Approved to Not Approved review rating scale)</rdfs:label>
+    <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-sacc"/>
+    <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-acc"/>
+    <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-n2-p2-pos1"/>
+    <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-5"/>
+    <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-4"/>
+    <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-10-10"/>
+    <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-n2-p2-pos2"/>
+    <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-nb-acc"/>
+    <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-acc"/>
+    <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-nb-sacc"/>
+    <ns1:isDefinedIn rdf:resource="http://purl.org/spar/bido/a-na-wr"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures/"/>
+    <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:comment xml:lang="en">The value 'Approved' in a discrete scale from 'Approved' to 'Not Approved' for review rating.</rdfs:comment>
     <vann:example>
     :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
         tvc:atTime :my-time-interval ;
         bido:accordingTo :my-organization ;
         bido:withBibliometricData bido:a-na-wr-app .
     </vann:example>
-    <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-sacc"/>
-    <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-nb-acc"/>
-    <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-n2-p2-pos2"/>
-    <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-10-10"/>
-    <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-acc"/>
-    <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-acc"/>
-    <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-4"/>
-    <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-5"/>
-    <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-n2-p2-pos1"/>
-    <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-nb-sacc"/>
-    <rdfs:comment xml:lang="en">The value 'Approved' in a discrete scale from 'Approved' to 'Not Approved' for review rating.</rdfs:comment>
-    <rdfs:label xml:lang="en">Approved (Approved to Not Approved review rating scale)</rdfs:label>
     <ns5:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures/"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
-    <ns1:isDefinedIn rdf:resource="http://purl.org/spar/bido/a-na-wr"/>
   </rdf:Description>
 </rdf:RDF>

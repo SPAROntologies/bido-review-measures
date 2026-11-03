@@ -1,9 +1,0 @@
-@prefix ns4: <http://purl.org/spar/fabio/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-ns4:Expression a owl:Class ;
-    rdfs:label "expression" ;
-    rdfs:comment "Any possible work such as journals, magazines, books, etc., created for scientific purposes and possibly related with review processes." ;
-    rdfs:isDefinedBy ns4: .
-

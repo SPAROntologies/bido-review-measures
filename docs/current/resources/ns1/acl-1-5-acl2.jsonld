@@ -2,8 +2,8 @@
   {
     "@id": "http://purl.org/spar/bido/acl-1-5-acl2",
     "@type": [
-      "http://purl.org/spar/bido/ReviewerConfidenceValue",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/bido/ReviewerConfidenceValue"
     ],
     "http://purl.org/spar/bido/hasConfidenceValue": [
       {

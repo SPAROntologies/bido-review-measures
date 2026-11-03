@@ -2,8 +2,8 @@
   {
     "@id": "http://purl.org/spar/bido/a-r-ts-majrev",
     "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://purl.org/spar/bido/ReviewRatingValue"
+      "http://purl.org/spar/bido/ReviewRatingValue",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
     ],
     "http://purl.org/spar/bido/isDefinedIn": [
       {
@@ -39,13 +39,13 @@
     ],
     "http://www.w3.org/2004/02/skos/core#closeMatch": [
       {
-        "@id": "http://purl.org/spar/bido/dis-0-10-5"
+        "@id": "http://purl.org/spar/bido/sa-sr-bl-bdl"
       },
       {
         "@id": "http://purl.org/spar/bido/dis-n2-p2-0"
       },
       {
-        "@id": "http://purl.org/spar/bido/sa-sr-bl-bdl"
+        "@id": "http://purl.org/spar/bido/dis-0-10-5"
       }
     ]
   }
