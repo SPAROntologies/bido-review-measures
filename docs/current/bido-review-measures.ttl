@@ -29,6 +29,44 @@ dc:rights a owl:AnnotationProperty .
 
 dc:title a owl:AnnotationProperty .
 
+dc:contributor a owl:AnnotationProperty .
+
+dc:language a owl:AnnotationProperty .
+
+dcterms:created a owl:AnnotationProperty .
+
+dcterms:issued a owl:AnnotationProperty .
+
+dcterms:license a owl:AnnotationProperty .
+
+dcterms:modified a owl:AnnotationProperty .
+
+dcterms:publisher a owl:AnnotationProperty .
+
+dcterms:source a owl:AnnotationProperty .
+
+bibo:doi a owl:AnnotationProperty .
+
+bibo:status a owl:AnnotationProperty .
+
+vann:changes a owl:AnnotationProperty .
+
+vann:example a owl:AnnotationProperty .
+
+vann:preferredNamespacePrefix a owl:AnnotationProperty .
+
+vann:preferredNamespaceUri a owl:AnnotationProperty .
+
+vs:term_status a owl:AnnotationProperty .
+
+foaf:logo a owl:AnnotationProperty .
+
+schema:codeRepository a owl:AnnotationProperty .
+
+schema:includedInDataCatalog a owl:AnnotationProperty .
+
+schema:keywords a owl:AnnotationProperty .
+
 <http://purl.org/spar/bido-review-measures> a owl:Ontology ;
     rdfs:label "BiDO Review Measures module (BiDO-Review-Measures)" ;
     dc:contributor "Aliaksandr Birukou (https://orcid.org/0000-0002-4925-9131)"^^xsd:string,
@@ -36,7 +74,7 @@ dc:title a owl:AnnotationProperty .
     dc:creator "Idafen Santana-Pérez (https://orcid.org/0000-0001-8296-8629)"^^xsd:string,
         "María Poveda-Villalón (https://orcid.org/0000-0003-3587-0367)"^^xsd:string,
         "Silvio Peroni (http://orcid.org/0000-0003-0530-4305)"^^xsd:string ;
-    dc:date "2026-10-05"^^xsd:string ;
+    dc:date "2026-11-24"^^xsd:string ;
     dc:description """
 This module of BiDO describes a list of possible reviews measures that can be used to define bibliometric data of scholarly venues such as conferences, workshops, and journals.
 
@@ -46,7 +84,7 @@ This module of BiDO describes a list of possible reviews measures that can be us
     dcterms:created "2015-07-13" ;
     dcterms:issued "2015-07-13" ;
     dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2026-10-05" ;
+    dcterms:modified "2026-11-24" ;
     dcterms:publisher <https://ror.org/00wb4mk85> ;
     dcterms:source <https://github.com/SPAROntologies/bido/blob/master/docs/cq.md> ;
     bibo:doi "https://doi.org/10.25504/FAIRsharing.d7f0a9" ;
@@ -55,21 +93,21 @@ This module of BiDO describes a list of possible reviews measures that can be us
     vann:preferredNamespacePrefix "bido"@en ;
     vann:preferredNamespaceUri "http://purl.org/spar/bido"@en ;
     rdfs:seeAlso <http://www.sparontologies.net/ontologies/bido> ;
-    owl:backwardCompatibleWith :2026-08-14 ;
+    owl:backwardCompatibleWith :2026-10-05 ;
     owl:imports <http://purl.org/spar/bido-core> ;
-    owl:priorVersion :2026-08-14  ;
-    owl:versionIRI :2026-10-05 ;
-    owl:versionInfo "1.1.2"^^xsd:string ;
+    owl:priorVersion :2026-10-05  ;
+    owl:versionIRI :2026-11-24 ;
+    owl:versionInfo "1.1.3"^^xsd:string ;
     foaf:logo <https://github.com/SPAROntologies/sparontologies.github.io/blob/master/static/img/spar/spar-logo.png> ;
     schema:codeRepository <https://github.com/SPAROntologies/bido> ;
     schema:includedInDataCatalog <https://fairsharing.org/> ;
     dc:language <http://id.loc.gov/vocabulary/iso639-2/eng> ;
     schema:keywords 
         "SPAR Ontologies"@en ,
-        "Semantic Publishing and Referencing Ontologies"@en ,
+        "OWL ontology"@en ,
         "bibliometrics"@en,
         "review measures"@en,
-        "scholarly publishing"@en,
+        "scholarly communication"@en,
         "scientometrics"@en,
         "semantic publishing"@en .
 
@@ -84,7 +122,7 @@ bido:a-r-ts-rejps a bido:ReviewRatingValue,
         bido:withBibliometricData bido:a-r-ts-rejps .
     """ ;
     rdfs:comment "The value 'Reject, Pre-Screening' in a discrete scale from 'Accept' to 'Reject, Two Strikes' for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable .
 
 bido:a-r-ts-rejts a bido:ReviewRatingValue,
@@ -98,7 +136,7 @@ bido:a-r-ts-rejts a bido:ReviewRatingValue,
         bido:withBibliometricData bido:a-r-ts-rejts .
     """ ;
     rdfs:comment "The value 'Reject, Two Strikes' in a discrete scale from 'Accept' to 'Reject, Two Strikes' for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable .
 
 bido:average-of-reviews-per-paper a [ a owl:Restriction ;
@@ -126,7 +164,7 @@ bido:average-of-reviews-per-paper a [ a owl:Restriction ;
         bido:hasNumericValue "3.5"^^xsd:float .
     """ ;
     rdfs:comment "A measure indicating how many reviewers has been used for each paper submitted to a venue." ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable .
 
 bido:conference-management-toolkit a bido:ScholarlyVenueManagementSystem,
@@ -139,7 +177,7 @@ bido:conference-management-toolkit a bido:ScholarlyVenueManagementSystem,
         bido:withBibliometricData bido:conference-management-toolkit .
     """ ;
     rdfs:comment "A free conference management service sponsored by Microsoft Research." ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable .
 
 bido:core-a-star a bido:ConferenceRankingCategory,
@@ -154,7 +192,7 @@ bido:core-a-star a bido:ConferenceRankingCategory,
         bido:withBibliometricData bido:core-a-star .
     """ ;
     rdfs:comment "The CORE category for a flagship conference, a leading venue in a discipline area." ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable .
 
 bido:demo-paper-accepted a [ a owl:Restriction ;
@@ -182,7 +220,7 @@ bido:demo-paper-accepted a [ a owl:Restriction ;
         bido:hasNumericValue "6"^^xsd:float .
     """ ;
     rdfs:comment "A measure indicating how many demo papers has been accepted for publication or presentation in the venue." ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable .
 
 bido:dis-0-10-1 a bido:ReviewRatingValue,
@@ -197,7 +235,7 @@ bido:dis-0-10-1 a bido:ReviewRatingValue,
         bido:withBibliometricData bido:dis-0-10-1 .
     """ ;
     rdfs:comment "The value 1 in a discrete scale from 0 to 10 for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable .
 
 bido:dis-0-10-2 a bido:ReviewRatingValue,
@@ -212,7 +250,7 @@ bido:dis-0-10-2 a bido:ReviewRatingValue,
         bido:withBibliometricData bido:dis-0-10-2 .
     """ ;
     rdfs:comment "The value 2 in a discrete scale from 0 to 10 for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable .
 
 bido:dis-0-10-3 a bido:ReviewRatingValue,
@@ -227,7 +265,7 @@ bido:dis-0-10-3 a bido:ReviewRatingValue,
         bido:withBibliometricData bido:dis-0-10-3 .
     """ ;
     rdfs:comment "The value 3 in a discrete scale from 0 to 10 for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable .
 
 bido:dis-0-10-4 a bido:ReviewRatingValue,
@@ -242,7 +280,7 @@ bido:dis-0-10-4 a bido:ReviewRatingValue,
         bido:withBibliometricData bido:dis-0-10-4 .
     """ ;
     rdfs:comment "The value 4 in a discrete scale from 0 to 10 for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable .
 
 bido:dis-0-10-6 a bido:ReviewRatingValue,
@@ -257,7 +295,7 @@ bido:dis-0-10-6 a bido:ReviewRatingValue,
         bido:withBibliometricData bido:dis-0-10-6 .
     """ ;
     rdfs:comment "The value 6 in a discrete scale from 0 to 10 for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable .
 
 bido:dis-0-10-7 a bido:ReviewRatingValue,
@@ -272,7 +310,7 @@ bido:dis-0-10-7 a bido:ReviewRatingValue,
         bido:withBibliometricData bido:dis-0-10-7 .
     """ ;
     rdfs:comment "The value 7 in a discrete scale from 0 to 10 for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable .
 
 bido:dis-0-10-8 a bido:ReviewRatingValue,
@@ -287,7 +325,7 @@ bido:dis-0-10-8 a bido:ReviewRatingValue,
         bido:withBibliometricData bido:dis-0-10-8 .
     """ ;
     rdfs:comment "The value 8 in a discrete scale from 0 to 10 for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable .
 
 bido:dis-0-10-9 a bido:ReviewRatingValue,
@@ -302,7 +340,7 @@ bido:dis-0-10-9 a bido:ReviewRatingValue,
         bido:withBibliometricData bido:dis-0-10-9 .
     """ ;
     rdfs:comment "The value 9 in a discrete scale from 0 to 10 for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable .
 
 bido:double-blind-peer-review a bido:PeerReviewType,
@@ -315,7 +353,7 @@ bido:double-blind-peer-review a bido:PeerReviewType,
         bido:withBibliometricData bido:double-blind-peer-review .
     """ ;
     rdfs:comment "A review process where the identity of the authors is concealed from the reviewers, and vice versa." ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable .
 
 bido:easychair a bido:ScholarlyVenueManagementSystem,
@@ -328,7 +366,7 @@ bido:easychair a bido:ScholarlyVenueManagementSystem,
         bido:withBibliometricData bido:easychair .
     """ ;
     rdfs:comment "A conference management system that is flexible, easy to use, and has many features to make it suitable for various conference models. It is currently probably the most commonly used conference management system." ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable .
 
 bido:external-reviewers-involved a [ a owl:Restriction ;
@@ -356,7 +394,7 @@ bido:external-reviewers-involved a [ a owl:Restriction ;
         bido:hasNumericValue "20"^^xsd:float .
     """ ;
     rdfs:comment "A measure indicating how many external reviewers have been involved in the reviewing phase." ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable .
 
 bido:full-papers-accepted a [ a owl:Restriction ;
@@ -384,7 +422,7 @@ bido:full-papers-accepted a [ a owl:Restriction ;
         bido:hasNumericValue "30"^^xsd:float .
     """ ;
     rdfs:comment "A measure indicating how many full papers has been accepted for publication or presentation in the venue." ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable .
 
 bido:hasConfidenceValue a owl:DatatypeProperty ;
@@ -400,7 +438,7 @@ bido:hasConfidenceValue a owl:DatatypeProperty ;
     """ ;
     rdfs:comment "The confidence value of expertise in the review topic given by the reviewer."@en ;
     rdfs:domain bido:ReviewerConfidenceValue ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     rdfs:range rdfs:Literal ;
     vs:term_status reg:statusStable .
 
@@ -417,7 +455,7 @@ bido:hasRatingValue a owl:DatatypeProperty ;
     """ ;
     rdfs:comment "The value of the rating given to a review."@en ;
     rdfs:domain bido:ReviewRatingValue ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     rdfs:range rdfs:Literal ;
     vs:term_status reg:statusStable .
 
@@ -429,7 +467,7 @@ bido:isDefinedIn a owl:ObjectProperty ;
     """ ;
     rdfs:comment "A relation between a ranking category and the ranking that defines it."@en ;
     rdfs:domain bido:CategorialBibliometricData ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     rdfs:range skos:ConceptScheme ;
     rdfs:subPropertyOf skos:inScheme ;
     vs:term_status reg:statusStable .
@@ -444,7 +482,7 @@ bido:isHigherThan a owl:ObjectProperty ;
     """ ;
     rdfs:comment "A relation between a ranking category and another that is less important."@en ;
     rdfs:domain bido:CategorialBibliometricData ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     rdfs:range bido:CategorialBibliometricData ;
     owl:inverseOf bido:isLowerThan ;
     vs:term_status reg:statusStable .
@@ -459,7 +497,7 @@ bido:open-peer-review a bido:PeerReviewType,
         bido:withBibliometricData bido:open-peer-review .
     """ ;
     rdfs:comment "A review process where the identity of the authors and the reviewers is known."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable .
 
 bido:poster-papers-accepted a [ a owl:Restriction ;
@@ -487,7 +525,7 @@ bido:poster-papers-accepted a [ a owl:Restriction ;
         bido:hasNumericValue "25"^^xsd:float .
     """ ;
     rdfs:comment "A measure indicating how many poster papers has been accepted for publication/presentation in the venue."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable .
 
 bido:short-papers-accepted a [ a owl:Restriction ;
@@ -515,7 +553,7 @@ bido:short-papers-accepted a [ a owl:Restriction ;
         bido:hasNumericValue "35"^^xsd:float .
     """ ;
     rdfs:comment "A measure indicating how many short papers has been accepted for publication or presentation in the venue."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable .
 
 bido:single-blind-peer-review a bido:PeerReviewType,
@@ -528,7 +566,7 @@ bido:single-blind-peer-review a bido:PeerReviewType,
         bido:withBibliometricData bido:single-blind-peer-review .
     """ ;
     rdfs:comment "A review process where the identity of the reviewers is concealed from the authors."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable .
 
 bido:submissions-sent-for-review a [ a owl:Restriction ;
@@ -556,7 +594,7 @@ bido:submissions-sent-for-review a [ a owl:Restriction ;
         bido:hasNumericValue "200"^^xsd:float .
     """ ;
     rdfs:comment "The number of submitted papers assigned to reviewers for revision."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable .
 
 bido:to-10-continuous a bido:ReviewRatingScale,
@@ -572,7 +610,7 @@ bido:to-10-continuous a bido:ReviewRatingScale,
         bido:isDefinedIn bido:to-10-continuous .
     """ ;
     rdfs:comment "A continuous review rating scale, ranging from 0 to 10."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable .
 
 bido:to-15-continuous a bido:ReviewRatingScale,
@@ -588,7 +626,7 @@ bido:to-15-continuous a bido:ReviewRatingScale,
         bido:isDefinedIn bido:to-15-continuous .
     """ ;
     rdfs:comment "A continuous review rating scale, ranging from 0 to 15."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable .
 
 bido:to-5-continuous a bido:ReviewRatingScale,
@@ -604,7 +642,7 @@ bido:to-5-continuous a bido:ReviewRatingScale,
         bido:isDefinedIn bido:to-5-continuous .
     """ ;
     rdfs:comment "A continuous review rating scale, ranging from 0 to 5."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable .
 
 rdfs:comment a owl:AnnotationProperty .
@@ -620,7 +658,7 @@ owl:versionInfo a owl:AnnotationProperty .
 skos:closeMatch a owl:ObjectProperty ;
     rdfs:label "has close match"@en ;
     rdfs:comment "A relation between two concepts that are sufficiently similar that they can be used interchangeably in some information retrieval applications."@en ;
-    rdfs:isDefinedBy skos: .
+    rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> .
 
 bido:ConferenceRanking a owl:Class ;
     rdfs:label "conference ranking"@en ;
@@ -636,7 +674,7 @@ bido:ConferenceRanking a owl:Class ;
     bido:core-conference-ranking a bido:ConferenceRanking .
     """ ;
     rdfs:comment "A ranking involving conferences that is composed by categories identifying different rankings."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     rdfs:subClassOf skos:ConceptScheme ;
     vs:term_status reg:statusStable .
 
@@ -656,7 +694,7 @@ bido:ReviewerConfidenceScale a owl:Class ;
     bido:DiscreteReviewerConfidenceScale rdfs:subClassOf bido:ReviewerConfidenceScale .
     """ ;
     rdfs:comment "A scale defining the confidence of a reviewer for a given topic."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     rdfs:subClassOf skos:ConceptScheme ;
     vs:term_status reg:statusStable .
 
@@ -672,7 +710,7 @@ bido:core-a a bido:ConferenceRankingCategory,
         bido:withBibliometricData bido:core-a .
     """ ;
     rdfs:comment "The CORE category for an excellent conference, and highly respected in a discipline area."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable .
 
 bido:core-b a bido:ConferenceRankingCategory,
@@ -687,7 +725,7 @@ bido:core-b a bido:ConferenceRankingCategory,
         bido:withBibliometricData bido:core-b .
     """ ;
     rdfs:comment "The CORE category for a good conference, and well regarded in a discipline area."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable .
 
 bido:core-c a bido:ConferenceRankingCategory,
@@ -702,7 +740,7 @@ bido:core-c a bido:ConferenceRankingCategory,
         bido:withBibliometricData bido:core-c .
     """ ;
     rdfs:comment "The CORE category for other ranked conference venues that meet minimum standards."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable .
 
 bido:core-unranked a bido:ConferenceRankingCategory,
@@ -716,7 +754,7 @@ bido:core-unranked a bido:ConferenceRankingCategory,
         bido:withBibliometricData bido:core-unranked .
     """ ;
     rdfs:comment "The CORE category for a conference for which no ranking decision has been made."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable .
 
 bido:isLowerThan a owl:ObjectProperty ;
@@ -728,27 +766,27 @@ bido:isLowerThan a owl:ObjectProperty ;
     bido:core-a a bido:ConferenceRankingCategory .
     """ ;
     rdfs:comment "A relation between a ranking category and another that is more important."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable .
 
 tvc:atTime a owl:ObjectProperty ;
     rdfs:label "at time"@en ;
     rdfs:comment "The relation between a situation and the particular temporal instant or time period in which the situation takes place."@en ;
     rdfs:domain tvc:ValueInTime ;
-    rdfs:isDefinedBy <http://purl.org/spar/tvc/> ;
+    rdfs:isDefinedBy <http://purl.org/spar/tvc> ;
     rdfs:range time:TemporalEntity .
 
 tvc:hasValue a owl:ObjectProperty ;
     rdfs:label "has value"@en ;
     rdfs:comment "The relation between an entity and a value in time situation."@en ;
-    rdfs:isDefinedBy <http://purl.org/spar/tvc/> ;
+    rdfs:isDefinedBy <http://purl.org/spar/tvc> ;
     rdfs:range tvc:ValueInTime .
 
 tvc:withinContext a owl:ObjectProperty ;
     rdfs:label "within context"@en ;
     rdfs:comment "The relation between a value in time and the specific context within which the fact of the entity having the value is relevant."@en ;
     rdfs:domain tvc:ValueInTime ;
-    rdfs:isDefinedBy <http://purl.org/spar/tvc/> .
+    rdfs:isDefinedBy <http://purl.org/spar/tvc> .
 
 xsd:float a rdfs:Datatype .
 
@@ -757,23 +795,23 @@ xsd:integer a rdfs:Datatype .
 skos:Concept a owl:Class ;
     rdfs:label "concept"@en ;
     rdfs:comment "An idea or notion; a unit of thought."@en ;
-    rdfs:isDefinedBy skos: .
+    rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> .
 
 skos:inScheme a owl:ObjectProperty ;
     rdfs:label "is in scheme"@en ;
     rdfs:comment "A relation between an entity and the concept scheme it is contained in."@en ;
-    rdfs:isDefinedBy skos: .
+    rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> .
 
 time:Interval a owl:Class ;
     rdfs:label "time interval"@en ;
     rdfs:comment "A temporal entity with an extent or duration."@en ;
-    rdfs:isDefinedBy time: ;
+    rdfs:isDefinedBy <http://www.w3.org/2006/time> ;
     rdfs:subClassOf time:TemporalEntity .
 
 prov:wasAttributedTo a owl:ObjectProperty ;
     rdfs:label "was attributed to"@en ;
     rdfs:comment "The relation between an entity ascribed to an agent and that agent."@en ;
-    rdfs:isDefinedBy prov: ;
+    rdfs:isDefinedBy <http://www.w3.org/ns/prov> ;
     rdfs:range prov:Agent .
 
 bido:DiscreteReviewerConfidenceScale a owl:Class ;
@@ -790,7 +828,7 @@ bido:DiscreteReviewerConfidenceScale a owl:Class ;
     bido:acl-1-5 a bido:DiscreteReviewerConfidenceScale .
     """ ;
     rdfs:comment "A discrete scale defining the confidence of a reviewer for a given topic."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     rdfs:subClassOf bido:ReviewerConfidenceScale ;
     vs:term_status reg:statusStable .
 
@@ -808,7 +846,7 @@ bido:ScholarlyVenueManagementSystem a owl:Class ;
     bido:conference-management-toolkit a bido:ScholarlyVenueManagementSystem .
     """ ;
     rdfs:comment "A venue management system (such as a conference management system, or a journal management system) that can be used for managing scholarly venues."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Restriction ;
                     owl:allValuesFrom [ a owl:Class ;
@@ -830,7 +868,7 @@ bido:acl-1-5-acl1 a bido:ReviewerConfidenceValue,
         bido:withBibliometricData bido:acl-1-5-acl1 .
     """ ;
     rdfs:comment "The value 1 in a discrete scale from 1 to 5 for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:acl-1-5-acl1,
         bido:ex-null-null .
@@ -847,7 +885,7 @@ bido:acl-1-5-acl2 a bido:ReviewerConfidenceValue,
         bido:withBibliometricData bido:acl-1-5-acl2 .
     """ ;
     rdfs:comment "The value 2 in a discrete scale from 1 to 5 for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:acl-1-5-acl2,
         bido:ex-null-low .
@@ -864,7 +902,7 @@ bido:acl-1-5-acl3 a bido:ReviewerConfidenceValue,
         bido:withBibliometricData bido:acl-1-5-acl3 .
     """ ;
     rdfs:comment "The value 3 in a discrete scale from 1 to 5 for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:acl-1-5-acl3,
         bido:ex-null-med .
@@ -881,7 +919,7 @@ bido:acl-1-5-acl4 a bido:ReviewerConfidenceValue,
         bido:withBibliometricData bido:acl-1-5-acl4 .
     """ ;
     rdfs:comment "The value 4 in a discrete scale from 1 to 5 for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:acl-1-5-acl4,
         bido:ex-null-high .
@@ -898,7 +936,7 @@ bido:acl-1-5-acl5 a bido:ReviewerConfidenceValue,
         bido:withBibliometricData bido:acl-1-5-acl5 .
     """ ;
     rdfs:comment "The value 5 in a discrete scale from 1 to 5 for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:acl-1-5-acl5,
         bido:ex-null-exp .
@@ -915,7 +953,7 @@ bido:dis-0-5-2 a bido:ReviewRatingValue,
         bido:withBibliometricData bido:dis-0-5-2 .
     """ ;
     rdfs:comment "The value 2 in a discrete scale from 0 to 5 for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:sa-sr-bl-wrej,
         bido:sa-sr-nb-wrej .
@@ -932,7 +970,7 @@ bido:ex-null-exp a bido:ReviewerConfidenceValue,
         bido:withBibliometricData bido:ex-null-exp .
     """ ;
     rdfs:comment "The value 'Expert' in a discrete scale from 'Expert' to 'Null' for rating reviewers' confidence."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:acl-1-5-acl5,
         bido:ex-null-exp .
@@ -949,7 +987,7 @@ bido:ex-null-high a bido:ReviewerConfidenceValue,
         bido:withBibliometricData bido:ex-null-high .
     """ ;
     rdfs:comment "The value 'High' in a discrete scale from 'Expert' to 'Null' for rating reviewers' confidence."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:acl-1-5-acl4,
         bido:ex-null-high .
@@ -966,7 +1004,7 @@ bido:ex-null-low a bido:ReviewerConfidenceValue,
         bido:withBibliometricData bido:ex-null-low .
     """ ;
     rdfs:comment "The value 'Low' in a discrete scale from 'Expert' to 'Null' for rating reviewers' confidence."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:acl-1-5-acl2,
         bido:ex-null-low .
@@ -983,7 +1021,7 @@ bido:ex-null-med a bido:ReviewerConfidenceValue,
         bido:withBibliometricData bido:ex-null-med .
     """ ;
     rdfs:comment "The value 'Medium' in a discrete scale from 'Expert' to 'Null' for rating reviewers' confidence."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:acl-1-5-acl3,
         bido:ex-null-med .
@@ -1000,7 +1038,7 @@ bido:ex-null-null a bido:ReviewerConfidenceValue,
         bido:withBibliometricData bido:ex-null-null .
     """ ;
     rdfs:comment "The value 'Null' in a discrete scale from 'Expert' to 'Null' for rating reviewers' confidence."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:acl-1-5-acl1,
         bido:ex-null-null .
@@ -1016,7 +1054,7 @@ bido:sa-sr-bl-wrej a bido:ReviewRatingValue,
         bido:withBibliometricData bido:sa-sr-bl-wrej .
     """ ;
     rdfs:comment "The value 'Weak Reject' in a discrete scale from 'Strong Reject' to 'Strong Accept' for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:dis-0-5-2,
         bido:sa-sr-nb-wrej .
@@ -1032,7 +1070,7 @@ bido:sa-sr-nb-wrej a bido:ReviewRatingValue,
         bido:withBibliometricData bido:sa-sr-nb-wrej .
     """ ;
     rdfs:comment "The value 'Weak Reject' in a discrete scale from 'Strong Reject' to 'Strong Accept' for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:dis-0-5-2,
         bido:sa-sr-bl-wrej .
@@ -1040,18 +1078,18 @@ bido:sa-sr-nb-wrej a bido:ReviewRatingValue,
 tvc:withValue a owl:ObjectProperty ;
     rdfs:label "with value"@en ;
     rdfs:comment "The relation between the value in time situation and the actual value held by the entity partaking in that situation."@en ;
-    rdfs:isDefinedBy <http://purl.org/spar/tvc/> ;
+    rdfs:isDefinedBy <http://purl.org/spar/tvc> ;
     rdfs:range tvc:ValueInTime .
 
 time:TemporalEntity a owl:Class ;
     rdfs:label "temporal entity"@en ;
     rdfs:comment "A temporal interval or instant."@en ;
-    rdfs:isDefinedBy time: .
+    rdfs:isDefinedBy <http://www.w3.org/2006/time> .
 
 prov:Agent a owl:Class ;
     rdfs:label "agent"@en ;
     rdfs:comment "Something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent's activity."@en ;
-    rdfs:isDefinedBy prov: .
+    rdfs:isDefinedBy <http://www.w3.org/ns/prov> .
 
 bido:PeerReviewType a owl:Class ;
     rdfs:label "peer review type"@en ;
@@ -1064,7 +1102,7 @@ bido:PeerReviewType a owl:Class ;
     :double-blind-peer-review a bido:PeerReviewType .
     """ ;
     rdfs:comment "A type of of peer review process, such as 'double-blind' or 'open'."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Restriction ;
                     owl:allValuesFrom [ a owl:Class ;
@@ -1087,7 +1125,7 @@ bido:a-na-wr a bido:DiscreteReviewRatingScale,
         bido:isDefinedIn bido:a-na-wr .
     """ ;
     rdfs:comment "Discrete scale from 'Approved' to 'Not Approved', including Aprproved With Reservations."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable .
 
 bido:a-r-ts-majrev a bido:ReviewRatingValue,
@@ -1101,7 +1139,7 @@ bido:a-r-ts-majrev a bido:ReviewRatingValue,
         bido:withBibliometricData bido:a-r-ts-majrev .
     """ ;
     rdfs:comment "The value 'Major revision' in a discrete scale from 'Accept' to 'Reject, Two Strikes' for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:dis-0-10-5,
         bido:dis-n2-p2-0,
@@ -1119,7 +1157,7 @@ bido:dis-0-10-5 a bido:ReviewRatingValue,
         bido:withBibliometricData bido:dis-0-10-5 .
     """ ;
     rdfs:comment "The value 5 in a discrete scale from 0 to 10 for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:a-r-ts-majrev,
         bido:dis-n2-p2-0,
@@ -1137,7 +1175,7 @@ bido:dis-n2-p2-0 a bido:ReviewRatingValue,
         bido:withBibliometricData bido:dis-n2-p2-0 .
     """ ;
     rdfs:comment "The value 0 in a discrete scale from -2 to 2 for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:a-r-ts-majrev,
         bido:dis-0-10-5,
@@ -1154,7 +1192,7 @@ bido:sa-sr-bl-bdl a bido:ReviewRatingValue,
         bido:withBibliometricData bido:sa-sr-bl-bdl .
     """ ;
     rdfs:comment "The value 'Borderline' in a discrete scale from 'Strong Reject' to 'Strong Accept' for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:a-r-ts-majrev,
         bido:dis-0-10-5,
@@ -1174,7 +1212,7 @@ bido:ReviewRatingScale a owl:Class ;
     bido:to-5-continuous a bido:ReviewRatingScale .
     """ ;
     rdfs:comment "A scale defining the rating given by a reviewer for a specific scientific contribution."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     rdfs:subClassOf skos:ConceptScheme ;
     vs:term_status reg:statusStable .
 
@@ -1189,7 +1227,7 @@ bido:a-na-wr-appwr a bido:ReviewRatingValue,
         bido:withBibliometricData bido:a-na-wr-appwr .
     """ ;
     rdfs:comment "The value 'Approved with Reservations' in a discrete scale from 'Approved' to 'Not Approved' for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:a-r-ts-minrev,
         bido:dis-0-5-3,
@@ -1207,7 +1245,7 @@ bido:a-r-ts-minrev a bido:ReviewRatingValue,
         bido:withBibliometricData bido:a-r-ts-minrev .
     """ ;
     rdfs:comment "The value 'Minor revision' in a discrete scale from 'Accept' to 'Reject, Two Strikes' for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:a-na-wr-appwr,
         bido:dis-0-5-3,
@@ -1226,7 +1264,7 @@ bido:dis-0-5-3 a bido:ReviewRatingValue,
         bido:withBibliometricData bido:dis-0-5-3 .
     """ ;
     rdfs:comment "The value 3 in a discrete scale from 0 to 5 for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:a-na-wr-appwr,
         bido:a-r-ts-minrev,
@@ -1244,7 +1282,7 @@ bido:sa-sr-bl-wacc a bido:ReviewRatingValue,
         bido:withBibliometricData bido:sa-sr-bl-wacc .
     """ ;
     rdfs:comment "The value 'Weak Accept' in a discrete scale from 'Strong Reject' to 'Strong Accept' for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:a-na-wr-appwr,
         bido:a-r-ts-minrev,
@@ -1262,7 +1300,7 @@ bido:sa-sr-nb-wacc a bido:ReviewRatingValue,
         bido:withBibliometricData bido:sa-sr-nb-wacc .
     """ ;
     rdfs:comment "The value 'Weak Accept' in a discrete scale from 'Strong Reject' to 'Strong Accept' for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:a-na-wr-appwr,
         bido:a-r-ts-minrev,
@@ -1272,7 +1310,7 @@ bido:sa-sr-nb-wacc a bido:ReviewRatingValue,
 skos:ConceptScheme a owl:Class ;
     rdfs:label "concept scheme"@en ;
     rdfs:comment "A SKOS concept scheme can be viewed as an aggregation of one or more SKOS concepts."@en ;
-    rdfs:isDefinedBy skos: .
+    rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> .
 
 bido:ConferenceRankingCategory a owl:Class ;
     rdfs:label "conference ranking category"@en ;
@@ -1285,7 +1323,7 @@ bido:ConferenceRankingCategory a owl:Class ;
     bido:core-a a bido:ConferenceRankingCategory .
     """ ;
     rdfs:comment "A category that can be used for ranking a conference according to the related ranking that defines it."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Restriction ;
                     owl:allValuesFrom swc:AcademicEvent ;
@@ -1307,7 +1345,7 @@ bido:acl-1-5 a bido:DiscreteReviewerConfidenceScale,
         bido:isDefinedIn bido:acl-1-5 .
     """ ;
     rdfs:comment "Discrete scale from 1 to 5, used by Association for Computational Linguistics annual meetings."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable .
 
 bido:core-conference-ranking a bido:ConferenceRanking,
@@ -1323,7 +1361,7 @@ bido:core-conference-ranking a bido:ConferenceRanking,
         bido:isDefinedIn bido:core-conference-ranking .
     """ ;
     rdfs:comment "The CORE Conference Ranking (http://www.core.edu.au/index.php/conference-rankings) is an ongoing activity that provides assessments of major conferences in the computing disciplines.The rankings are managed by the CORE Executive Committee, with updates processed from time to time by a subcommittee established as needed."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable .
 
 bido:dis-0-5-1 a bido:ReviewRatingValue,
@@ -1338,7 +1376,7 @@ bido:dis-0-5-1 a bido:ReviewRatingValue,
         bido:withBibliometricData bido:dis-0-5-1 .
     """ ;
     rdfs:comment "The value 1 in a discrete scale from 0 to 5 for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:a-na-wr-napp,
         bido:a-r-ts-rej,
@@ -1358,7 +1396,7 @@ bido:dis-0-5-4 a bido:ReviewRatingValue,
         bido:withBibliometricData bido:dis-0-5-4 .
     """ ;
     rdfs:comment "The value 4 in a discrete scale from 0 to 5 for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:a-na-wr-app,
         bido:a-r-ts-acc,
@@ -1379,7 +1417,7 @@ bido:dis-n2-p2 a bido:DiscreteReviewRatingScale,
         bido:isDefinedIn bido:dis-n2-p2 .
     """ ;
     rdfs:comment "Discrete scale from -2 to 2, including 0."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable .
 
 bido:dis-n2-p2-neg1 a bido:ReviewRatingValue,
@@ -1394,7 +1432,7 @@ bido:dis-n2-p2-neg1 a bido:ReviewRatingValue,
         bido:withBibliometricData bido:dis-n2-p2-neg1 .
     """ ;
     rdfs:comment "The value -1 in a discrete scale from -2 to 2 for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:a-na-wr-napp,
         bido:a-r-ts-rej,
@@ -1414,7 +1452,7 @@ bido:dis-n2-p2-pos1 a bido:ReviewRatingValue,
         bido:withBibliometricData bido:dis-n2-p2-pos1 .
     """ ;
     rdfs:comment "The value 1 in a discrete scale from -2 to 2 for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:a-na-wr-app,
         bido:a-r-ts-acc,
@@ -1435,7 +1473,7 @@ bido:ex-null a bido:DiscreteReviewerConfidenceScale,
         bido:isDefinedIn bido:ex-null .
     """ ;
     rdfs:comment "Discrete scale from 'Expert' to 'Null', also represented in an scale from 4 to 0."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable .
 
 bido:sa-sr-bl-acc a bido:ReviewRatingValue,
@@ -1449,7 +1487,7 @@ bido:sa-sr-bl-acc a bido:ReviewRatingValue,
         bido:withBibliometricData bido:sa-sr-bl-acc .
     """ ;
     rdfs:comment "The value 'Accept' in a scale from 'Strong Reject' to 'Strong Accept' for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:a-na-wr-app,
         bido:a-r-ts-acc,
@@ -1468,7 +1506,7 @@ bido:sa-sr-bl-rej a bido:ReviewRatingValue,
         bido:withBibliometricData bido:sa-sr-bl-rej .
     """ ;
     rdfs:comment "The value 'Reject' in a scale from 'Strong Reject' to 'Strong Accept' for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:a-na-wr-napp,
         bido:a-r-ts-rej,
@@ -1487,7 +1525,7 @@ bido:sa-sr-nb-acc a bido:ReviewRatingValue,
         bido:withBibliometricData bido:sa-sr-nb-acc .
     """ ;
     rdfs:comment "The value 'Accept' in a scale from 'Strong Reject' to 'Strong Accept' for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:a-na-wr-app,
         bido:a-r-ts-acc,
@@ -1507,7 +1545,7 @@ bido:sa-sr-nb-rej a bido:ReviewRatingValue,
         bido:withBibliometricData bido:sa-sr-nb-rej .
     """ ;
     rdfs:comment "The value 'Reject' in a scale from 'Strong Accept' to 'Strong Accept' for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:a-na-wr-napp,
         bido:a-r-ts-rej,
@@ -1519,7 +1557,7 @@ bido:sa-sr-nb-rej a bido:ReviewRatingValue,
 tvc:ValueInTime a owl:Class ;
     rdfs:label "value in time"@en ;
     rdfs:comment "A particular kind of time-indexed situation that represents a hub linking the entity having a particular value, the value itself and the temporal and contextual extents from which the entity-value relationship depends."@en ;
-    rdfs:isDefinedBy <http://purl.org/spar/tvc/> .
+    rdfs:isDefinedBy <http://purl.org/spar/tvc> .
 
 bido:a-r-ts a bido:DiscreteReviewRatingScale,
         owl:NamedIndividual ;
@@ -1534,7 +1572,7 @@ bido:a-r-ts a bido:DiscreteReviewRatingScale,
         bido:isDefinedIn bido:a-r-ts .
     """ ;
     rdfs:comment "Discrete scale from 'Accept' to 'Reject', including pre-screening and two strikes rule."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable .
 
 bido:dis-0-5 a bido:DiscreteReviewRatingScale,
@@ -1550,7 +1588,7 @@ bido:dis-0-5 a bido:DiscreteReviewRatingScale,
         bido:isDefinedIn bido:dis-0-5 .
     """ ;
     rdfs:comment "Discrete scale from 0 to 5."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable .
 
 bido:dis-0-5-0 a bido:ReviewRatingValue,
@@ -1565,7 +1603,7 @@ bido:dis-0-5-0 a bido:ReviewRatingValue,
         bido:withBibliometricData bido:dis-0-5-0 .
     """ ;
     rdfs:comment "The value 0 in a discrete scale from 0 to 5 for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:a-na-wr-napp,
         bido:a-r-ts-rej,
@@ -1586,7 +1624,7 @@ bido:dis-0-5-5 a bido:ReviewRatingValue,
         bido:withBibliometricData bido:dis-0-5-5 .
     """ ;
     rdfs:comment "The value 5 in a discrete scale from 0 to 5 for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:a-na-wr-app,
         bido:a-r-ts-acc,
@@ -1607,7 +1645,7 @@ bido:dis-n2-p2-neg2 a bido:ReviewRatingValue,
         bido:withBibliometricData bido:dis-n2-p2-neg2 .
     """ ;
     rdfs:comment "The value -2 in a discrete scale from -2 to 2 for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:a-na-wr-napp,
         bido:a-r-ts-rej,
@@ -1628,7 +1666,7 @@ bido:dis-n2-p2-pos2 a bido:ReviewRatingValue,
         bido:withBibliometricData bido:dis-n2-p2-pos2 .
     """ ;
     rdfs:comment "The value 2 in a discrete scale from -2 to 2 for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:a-na-wr-app,
         bido:a-r-ts-acc,
@@ -1648,7 +1686,7 @@ bido:sa-sr-bl-sacc a bido:ReviewRatingValue,
         bido:withBibliometricData bido:sa-sr-bl-sacc .
     """ ;
     rdfs:comment "The value 'Strong Accept' in a scale from 'Strong Reject' to 'Strong Accept' for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:a-na-wr-app,
         bido:a-r-ts-acc,
@@ -1668,7 +1706,7 @@ bido:sa-sr-bl-srej a bido:ReviewRatingValue,
         bido:withBibliometricData bido:sa-sr-bl-srej .
     """ ;
     rdfs:comment "The value 'Strong Reject' in a scale from 'Strong Reject' to 'Strong Accept' for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:a-na-wr-napp,
         bido:a-r-ts-rej,
@@ -1690,7 +1728,7 @@ bido:sa-sr-nb a bido:DiscreteReviewRatingScale,
         bido:isDefinedIn bido:sa-sr-nb .
     """ ;
     rdfs:comment "Discrete scale from Strong Reject to Strong Accept, excluding Bordeline"@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable .
 
 bido:sa-sr-nb-sacc a bido:ReviewRatingValue,
@@ -1704,7 +1742,7 @@ bido:sa-sr-nb-sacc a bido:ReviewRatingValue,
         bido:withBibliometricData bido:sa-sr-nb-sacc .
     """ ;
     rdfs:comment "The value 'Strong Accept' in a scale from 'Strong Reject' to 'Strong Accept' for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:a-na-wr-app,
         bido:a-r-ts-acc,
@@ -1724,7 +1762,7 @@ bido:sa-sr-nb-srej a bido:ReviewRatingValue,
         bido:withBibliometricData bido:sa-sr-nb-srej .
     """ ;
     rdfs:comment "The value 'Strong Reject' in a scale from 'Strong Reject' to 'Strong Accept' for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:a-na-wr-napp,
         bido:a-r-ts-rej,
@@ -1747,7 +1785,7 @@ bido:DiscreteReviewRatingScale a owl:Class ;
     bido:dis-n2-p2 a bido:DiscreteReviewRatingScale .
     """ ;
     rdfs:comment "A discrete scale defining the rating given by a reviewer for a specific scientific contribution."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     rdfs:subClassOf bido:ReviewRatingScale ;
     vs:term_status reg:statusStable .
 
@@ -1763,7 +1801,7 @@ bido:dis-0-10-0 a bido:ReviewRatingValue,
         bido:withBibliometricData bido:dis-0-10-0 .
     """ ;
     rdfs:comment "The value 0 in a discrete scale from 0 to 10 for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:a-na-wr-napp,
         bido:a-r-ts-rej,
@@ -1784,7 +1822,7 @@ bido:dis-0-10-10 a bido:ReviewRatingValue,
         bido:withBibliometricData bido:dis-0-10-10 .
     """ ;
     rdfs:comment "The value 10 in a discrete scale from 0 to 10 for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:a-na-wr-app,
         bido:a-r-ts-acc,
@@ -1806,7 +1844,7 @@ bido:sa-sr-bl a bido:DiscreteReviewRatingScale,
         bido:isDefinedIn bido:sa-sr-bl .
     """ ;
     rdfs:comment "Discrete scale from Strong Reject to Strong Accept, including Bordeline"@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable .
 
 fabio:Expression a owl:Class ;
@@ -1817,7 +1855,7 @@ fabio:Expression a owl:Class ;
 swc:AcademicEvent a owl:Class ;
     rdfs:label "academic event" ;
     rdfs:comment "Any academic event such as conferences, workshops, symposia." ;
-    rdfs:isDefinedBy swc: .
+    rdfs:isDefinedBy <http://data.semanticweb.org/ns/swc/ontology> .
 
 bido:a-na-wr-app a bido:ReviewRatingValue,
         owl:NamedIndividual ;
@@ -1830,7 +1868,7 @@ bido:a-na-wr-app a bido:ReviewRatingValue,
         bido:withBibliometricData bido:a-na-wr-app .
     """ ;
     rdfs:comment "The value 'Approved' in a discrete scale from 'Approved' to 'Not Approved' for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:a-r-ts-acc,
         bido:dis-0-10-10,
@@ -1854,7 +1892,7 @@ bido:a-na-wr-napp a bido:ReviewRatingValue,
         bido:withBibliometricData bido:a-na-wr-napp .
     """ ;
     rdfs:comment "The value 'Not Approved' in a discrete scale from 'Approved' to 'Not Approved' for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:a-r-ts-rej,
         bido:dis-0-10-0,
@@ -1878,7 +1916,7 @@ bido:a-r-ts-acc a bido:ReviewRatingValue,
         bido:withBibliometricData bido:a-r-ts-acc .
     """ ;
     rdfs:comment "The value 'Accept' in a discrete scale from 'Accept' to 'Reject, Two Strikes' for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:a-na-wr-app,
         bido:dis-0-10-10,
@@ -1902,7 +1940,7 @@ bido:a-r-ts-rej a bido:ReviewRatingValue,
         bido:withBibliometricData bido:a-r-ts-rej .
     """ ;
     rdfs:comment "The value 'Reject' in a discrete scale from 'Accept' to 'Reject, Two Strikes' for review rating."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable ;
     skos:closeMatch bido:a-na-wr-napp,
         bido:dis-0-10-0,
@@ -1926,7 +1964,7 @@ bido:ReviewerConfidenceValue a owl:Class ;
     bido:ex-null-null a bido:ReviewerConfidenceValue .
     """ ;
     rdfs:comment "The set of values compliant with a given reviewer confidence scale."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     rdfs:subClassOf bido:CategorialBibliometricData ;
     vs:term_status reg:statusStable .
 
@@ -1943,7 +1981,7 @@ bido:dis-0-10 a bido:DiscreteReviewRatingScale,
         bido:isDefinedIn bido:dis-0-10 .
     """ ;
     rdfs:comment "Discrete scale from 0 to 10."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     vs:term_status reg:statusStable .
 
 bido:ReviewRatingValue a owl:Class ;
@@ -1957,7 +1995,7 @@ bido:ReviewRatingValue a owl:Class ;
     bido:a-r-ts-rejps a bido:ReviewRatingValue .
     """ ;
     rdfs:comment "The set of values compliant with a given review rating scale."@en ;
-    rdfs:isDefinedBy : ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures>;
     rdfs:subClassOf bido:CategorialBibliometricData ;
     vs:term_status reg:statusStable .
 
