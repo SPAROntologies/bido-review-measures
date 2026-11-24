@@ -1,0 +1,127 @@
+[
+  {
+    "@id": "http://purl.org/spar/bido/external-reviewers-involved",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      {
+        "@id": "_:nc6246541bd914323876e6283cfde682db19"
+      },
+      "http://purl.org/spar/bido/BibliometricMeasure"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-academic-event a swc:AcademicEvent ;\n        bido:holdsBibliometricDataInTime :my-bibliometric-data-in-time .\n\n    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;\n        tvc:atTime :my-time-interval ;\n        bido:accordingTo :my-organization ;\n        bido:withBibliometricData :my-numeric-bibliometric-data .\n\n    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;\n        bido:hasMeasure bido:external-reviews-involved ;\n        bido:hasNumericValue \"20\"^^xsd:float .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A measure indicating how many external reviewers have been involved in the reviewing phase."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-review-measures"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "number of external reviewers involved"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "_:nc6246541bd914323876e6283cfde682db19",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:nc6246541bd914323876e6283cfde682db20"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:nc6246541bd914323876e6283cfde682db27"
+      }
+    ]
+  },
+  {
+    "@id": "_:nc6246541bd914323876e6283cfde682db20",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:nc6246541bd914323876e6283cfde682db21"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:nc6246541bd914323876e6283cfde682db26"
+      }
+    ]
+  },
+  {
+    "@id": "_:nc6246541bd914323876e6283cfde682db21",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:nc6246541bd914323876e6283cfde682db22"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:nc6246541bd914323876e6283cfde682db25"
+      }
+    ]
+  },
+  {
+    "@id": "_:nc6246541bd914323876e6283cfde682db22",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://data.semanticweb.org/ns/swc/ontology#AcademicEvent"
+          },
+          {
+            "@id": "http://purl.org/spar/fabio/Expression"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:nc6246541bd914323876e6283cfde682db25",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/holdsBibliometricDataInTime"
+      }
+    ]
+  },
+  {
+    "@id": "_:nc6246541bd914323876e6283cfde682db26",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/withBibliometricData"
+      }
+    ]
+  },
+  {
+    "@id": "_:nc6246541bd914323876e6283cfde682db27",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/hasMeasure"
+      }
+    ]
+  }
+]

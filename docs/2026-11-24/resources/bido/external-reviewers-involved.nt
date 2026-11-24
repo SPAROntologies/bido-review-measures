@@ -1,0 +1,26 @@
+_:nc6246541bd914323876e6283cfde682db26 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
+_:nc6246541bd914323876e6283cfde682db19 <http://www.w3.org/2002/07/owl#allValuesFrom> _:nc6246541bd914323876e6283cfde682db20 .
+_:nc6246541bd914323876e6283cfde682db21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido/external-reviewers-involved> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures> .
+_:nc6246541bd914323876e6283cfde682db21 <http://www.w3.org/2002/07/owl#allValuesFrom> _:nc6246541bd914323876e6283cfde682db22 .
+_:nc6246541bd914323876e6283cfde682db25 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
+<http://purl.org/spar/bido/external-reviewers-involved> <http://purl.org/vocab/vann/example> "\n    :my-academic-event a swc:AcademicEvent ;\n        bido:holdsBibliometricDataInTime :my-bibliometric-data-in-time .\n\n    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;\n        tvc:atTime :my-time-interval ;\n        bido:accordingTo :my-organization ;\n        bido:withBibliometricData :my-numeric-bibliometric-data .\n\n    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;\n        bido:hasMeasure bido:external-reviews-involved ;\n        bido:hasNumericValue \"20\"^^xsd:float .\n    " .
+_:nc6246541bd914323876e6283cfde682db23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nc6246541bd914323876e6283cfde682db24 .
+<http://purl.org/spar/bido/external-reviewers-involved> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:nc6246541bd914323876e6283cfde682db24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/spar/bido/external-reviewers-involved> <http://www.w3.org/2000/01/rdf-schema#label> "number of external reviewers involved" .
+<http://purl.org/spar/bido/external-reviewers-involved> <http://www.w3.org/2000/01/rdf-schema#comment> "A measure indicating how many external reviewers have been involved in the reviewing phase." .
+_:nc6246541bd914323876e6283cfde682db23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.semanticweb.org/ns/swc/ontology#AcademicEvent> .
+<http://purl.org/spar/bido/external-reviewers-involved> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/bido/external-reviewers-involved> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:nc6246541bd914323876e6283cfde682db19 .
+<http://purl.org/spar/bido/external-reviewers-involved> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/BibliometricMeasure> .
+_:nc6246541bd914323876e6283cfde682db20 <http://www.w3.org/2002/07/owl#allValuesFrom> _:nc6246541bd914323876e6283cfde682db21 .
+_:nc6246541bd914323876e6283cfde682db22 <http://www.w3.org/2002/07/owl#unionOf> _:nc6246541bd914323876e6283cfde682db23 .
+_:nc6246541bd914323876e6283cfde682db20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:nc6246541bd914323876e6283cfde682db19 <http://www.w3.org/2002/07/owl#onProperty> _:nc6246541bd914323876e6283cfde682db27 .
+_:nc6246541bd914323876e6283cfde682db21 <http://www.w3.org/2002/07/owl#onProperty> _:nc6246541bd914323876e6283cfde682db25 .
+_:nc6246541bd914323876e6283cfde682db24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/Expression> .
+_:nc6246541bd914323876e6283cfde682db22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:nc6246541bd914323876e6283cfde682db19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:nc6246541bd914323876e6283cfde682db20 <http://www.w3.org/2002/07/owl#onProperty> _:nc6246541bd914323876e6283cfde682db26 .
+_:nc6246541bd914323876e6283cfde682db27 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/hasMeasure> .
