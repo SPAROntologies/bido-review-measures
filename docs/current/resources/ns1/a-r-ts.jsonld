@@ -2,8 +2,8 @@
   {
     "@id": "http://purl.org/spar/bido/a-r-ts",
     "@type": [
-      "http://purl.org/spar/bido/DiscreteReviewRatingScale",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/bido/DiscreteReviewRatingScale"
     ],
     "http://purl.org/vocab/vann/example": [
       {

@@ -4,9 +4,9 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#inScheme">
-    <rdfs:comment xml:lang="en">A relation between an entity and the concept scheme it is contained in.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:label xml:lang="en">is in scheme</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">A relation between an entity and the concept scheme it is contained in.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
   </rdf:Description>
 </rdf:RDF>

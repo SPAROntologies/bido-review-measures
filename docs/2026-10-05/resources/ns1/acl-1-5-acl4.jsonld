@@ -45,10 +45,10 @@
     ],
     "http://www.w3.org/2004/02/skos/core#closeMatch": [
       {
-        "@id": "http://purl.org/spar/bido/acl-1-5-acl4"
+        "@id": "http://purl.org/spar/bido/ex-null-high"
       },
       {
-        "@id": "http://purl.org/spar/bido/ex-null-high"
+        "@id": "http://purl.org/spar/bido/acl-1-5-acl4"
       }
     ]
   }

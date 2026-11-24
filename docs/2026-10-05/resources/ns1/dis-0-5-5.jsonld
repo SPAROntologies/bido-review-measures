@@ -45,22 +45,22 @@
     ],
     "http://www.w3.org/2004/02/skos/core#closeMatch": [
       {
-        "@id": "http://purl.org/spar/bido/sa-sr-bl-sacc"
-      },
-      {
         "@id": "http://purl.org/spar/bido/dis-n2-p2-pos2"
-      },
-      {
-        "@id": "http://purl.org/spar/bido/a-r-ts-acc"
-      },
-      {
-        "@id": "http://purl.org/spar/bido/a-na-wr-app"
       },
       {
         "@id": "http://purl.org/spar/bido/dis-0-10-10"
       },
       {
         "@id": "http://purl.org/spar/bido/sa-sr-nb-sacc"
+      },
+      {
+        "@id": "http://purl.org/spar/bido/sa-sr-bl-sacc"
+      },
+      {
+        "@id": "http://purl.org/spar/bido/a-r-ts-acc"
+      },
+      {
+        "@id": "http://purl.org/spar/bido/a-na-wr-app"
       }
     ]
   }

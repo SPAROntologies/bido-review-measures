@@ -2,8 +2,8 @@
   {
     "@id": "http://purl.org/spar/bido/to-15-continuous",
     "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://purl.org/spar/bido/ReviewRatingScale"
+      "http://purl.org/spar/bido/ReviewRatingScale",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
     ],
     "http://purl.org/vocab/vann/example": [
       {
