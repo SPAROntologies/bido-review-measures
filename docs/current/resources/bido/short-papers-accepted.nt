@@ -1,0 +1,26 @@
+<http://purl.org/spar/bido/short-papers-accepted> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/bido/short-papers-accepted> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures> .
+<http://purl.org/spar/bido/short-papers-accepted> <http://www.w3.org/2000/01/rdf-schema#comment> "A measure indicating how many short papers has been accepted for publication or presentation in the venue."@en .
+_:nc6246541bd914323876e6283cfde682db51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:nc6246541bd914323876e6283cfde682db47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido/short-papers-accepted> <http://www.w3.org/2000/01/rdf-schema#label> "number of short paper accepted"@en .
+_:nc6246541bd914323876e6283cfde682db46 <http://www.w3.org/2002/07/owl#allValuesFrom> _:nc6246541bd914323876e6283cfde682db47 .
+<http://purl.org/spar/bido/short-papers-accepted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:nc6246541bd914323876e6283cfde682db48 <http://www.w3.org/2002/07/owl#onProperty> _:nc6246541bd914323876e6283cfde682db52 .
+_:nc6246541bd914323876e6283cfde682db47 <http://www.w3.org/2002/07/owl#allValuesFrom> _:nc6246541bd914323876e6283cfde682db48 .
+<http://purl.org/spar/bido/short-papers-accepted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/BibliometricMeasure> .
+_:nc6246541bd914323876e6283cfde682db46 <http://www.w3.org/2002/07/owl#onProperty> _:nc6246541bd914323876e6283cfde682db54 .
+<http://purl.org/spar/bido/short-papers-accepted> <http://purl.org/vocab/vann/example> "\n    :my-academic-event a swc:AcademicEvent ;\n        bido:holdsBibliometricDataInTime :my-bibliometric-data-in-time .\n\n    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;\n        tvc:atTime :my-time-interval ;\n        bido:accordingTo :my-organization ;\n        bido:withBibliometricData :my-numeric-bibliometric-data .\n\n    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;\n        bido:hasMeasure bido:short-papers-accepted ;\n        bido:hasNumericValue \"35\"^^xsd:float .\n    " .
+_:nc6246541bd914323876e6283cfde682db50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nc6246541bd914323876e6283cfde682db51 .
+_:nc6246541bd914323876e6283cfde682db49 <http://www.w3.org/2002/07/owl#unionOf> _:nc6246541bd914323876e6283cfde682db50 .
+_:nc6246541bd914323876e6283cfde682db46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:nc6246541bd914323876e6283cfde682db53 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
+_:nc6246541bd914323876e6283cfde682db47 <http://www.w3.org/2002/07/owl#onProperty> _:nc6246541bd914323876e6283cfde682db53 .
+_:nc6246541bd914323876e6283cfde682db52 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
+_:nc6246541bd914323876e6283cfde682db51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/Expression> .
+_:nc6246541bd914323876e6283cfde682db54 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/hasMeasure> .
+_:nc6246541bd914323876e6283cfde682db49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:nc6246541bd914323876e6283cfde682db48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:nc6246541bd914323876e6283cfde682db48 <http://www.w3.org/2002/07/owl#allValuesFrom> _:nc6246541bd914323876e6283cfde682db49 .
+<http://purl.org/spar/bido/short-papers-accepted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:nc6246541bd914323876e6283cfde682db46 .
+_:nc6246541bd914323876e6283cfde682db50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.semanticweb.org/ns/swc/ontology#AcademicEvent> .

@@ -1,0 +1,16 @@
+_:nc6246541bd914323876e6283cfde682db78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido/ConferenceRankingCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/bido/CategorialBibliometricData> .
+_:nc6246541bd914323876e6283cfde682db79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:nc6246541bd914323876e6283cfde682db79 <http://www.w3.org/2002/07/owl#onProperty> _:nc6246541bd914323876e6283cfde682db80 .
+_:nc6246541bd914323876e6283cfde682db79 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://data.semanticweb.org/ns/swc/ontology#AcademicEvent> .
+<http://purl.org/spar/bido/ConferenceRankingCategory> <http://www.w3.org/2000/01/rdf-schema#label> "conference ranking category"@en .
+<http://purl.org/spar/bido/ConferenceRankingCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "A category that can be used for ranking a conference according to the related ranking that defines it."@en .
+<http://purl.org/spar/bido/ConferenceRankingCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:nc6246541bd914323876e6283cfde682db78 <http://www.w3.org/2002/07/owl#allValuesFrom> _:nc6246541bd914323876e6283cfde682db79 .
+<http://purl.org/spar/bido/ConferenceRankingCategory> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:nc6246541bd914323876e6283cfde682db81 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
+<http://purl.org/spar/bido/ConferenceRankingCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nc6246541bd914323876e6283cfde682db78 .
+<http://purl.org/spar/bido/ConferenceRankingCategory> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures> .
+_:nc6246541bd914323876e6283cfde682db80 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
+<http://purl.org/spar/bido/ConferenceRankingCategory> <http://purl.org/vocab/vann/example> "\n    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;\n        tvc:atTime :my-time-interval ;\n        bido:accordingTo :my-organization ;\n        bido:withBibliometricData bido:core-a .\n\n    bido:core-a a bido:ConferenceRankingCategory .\n    " .
+_:nc6246541bd914323876e6283cfde682db78 <http://www.w3.org/2002/07/owl#onProperty> _:nc6246541bd914323876e6283cfde682db81 .

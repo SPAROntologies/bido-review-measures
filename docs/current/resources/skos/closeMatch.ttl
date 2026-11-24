@@ -5,5 +5,5 @@
 skos:closeMatch a owl:ObjectProperty ;
     rdfs:label "has close match"@en ;
     rdfs:comment "A relation between two concepts that are sufficiently similar that they can be used interchangeably in some information retrieval applications."@en ;
-    rdfs:isDefinedBy skos: .
+    rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> .
 
