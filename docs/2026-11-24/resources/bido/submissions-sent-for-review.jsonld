@@ -1,0 +1,129 @@
+[
+  {
+    "@id": "http://purl.org/spar/bido/submissions-sent-for-review",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      {
+        "@id": "_:nc6246541bd914323876e6283cfde682db55"
+      },
+      "http://purl.org/spar/bido/BibliometricMeasure"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-academic-event a swc:AcademicEvent ;\n        bido:holdsBibliometricDataInTime :my-bibliometric-data-in-time .\n\n    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;\n        tvc:atTime :my-time-interval ;\n        bido:accordingTo :my-organization ;\n        bido:withBibliometricData :my-numeric-bibliometric-data .\n\n    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;\n        bido:hasMeasure bido:submissions-sent-for-review ;\n        bido:hasNumericValue \"200\"^^xsd:float .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The number of submitted papers assigned to reviewers for revision."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-review-measures"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "number of submission sent for review"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "_:nc6246541bd914323876e6283cfde682db55",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:nc6246541bd914323876e6283cfde682db56"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:nc6246541bd914323876e6283cfde682db63"
+      }
+    ]
+  },
+  {
+    "@id": "_:nc6246541bd914323876e6283cfde682db56",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:nc6246541bd914323876e6283cfde682db57"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:nc6246541bd914323876e6283cfde682db62"
+      }
+    ]
+  },
+  {
+    "@id": "_:nc6246541bd914323876e6283cfde682db57",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:nc6246541bd914323876e6283cfde682db58"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:nc6246541bd914323876e6283cfde682db61"
+      }
+    ]
+  },
+  {
+    "@id": "_:nc6246541bd914323876e6283cfde682db58",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://data.semanticweb.org/ns/swc/ontology#AcademicEvent"
+          },
+          {
+            "@id": "http://purl.org/spar/fabio/Expression"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:nc6246541bd914323876e6283cfde682db61",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/holdsBibliometricDataInTime"
+      }
+    ]
+  },
+  {
+    "@id": "_:nc6246541bd914323876e6283cfde682db62",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/withBibliometricData"
+      }
+    ]
+  },
+  {
+    "@id": "_:nc6246541bd914323876e6283cfde682db63",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/hasMeasure"
+      }
+    ]
+  }
+]
